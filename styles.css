@@ -28,3 +28,14 @@ html {
     grid-column: 2/3;
 
 }
+
+nav {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+#home {
+grid-column: 2/3;
+}

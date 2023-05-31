@@ -42,3 +42,7 @@ nav {
 #home {
 grid-column: 2/3;
 }
+
+.logo {
+    height: 50%;
+}

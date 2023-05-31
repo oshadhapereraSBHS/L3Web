@@ -1,12 +1,8 @@
-@font-face{
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-    }
-
 html {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Georgia", serif;
 
 }
 
@@ -45,4 +41,9 @@ grid-column: 2/3;
 
 .logo {
     height: 50%;
+}
+
+P{
+    font-family: "Ink Free Regular", cursive;
+
 }

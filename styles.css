@@ -43,11 +43,6 @@ nav {
     height: 50%;
 }
 
-P {
-    font-family: "Ink Free Regular", cursive;
-
-}
-
 #home, #overview, #forMembers {
     text-align: end;
 }
@@ -64,4 +59,5 @@ a {
 #homeHeadingText {
     text-decoration: underline;
     text-decoration-color: #118AB2;
+    font-family: "Ink Free Regular", cursive;
 }

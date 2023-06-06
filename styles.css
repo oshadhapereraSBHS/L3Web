@@ -53,6 +53,7 @@ nav {
 
 #homeBodyText {
     color: #118AB2;
+    font-size: 150%;
 }
 
 a {
@@ -64,13 +65,16 @@ a {
     text-decoration: underline;
     text-decoration-color: #118AB2;
     font-family: "Ink Free Regular", cursive;
+    font-size: 300%;
+    font-weight:bold;
 }
 
-button {
+#signUpButton {
 background-color: rgba(17, 138, 178, 0.5);
 border: none;
 color: #073B4C;
 font-family: "Ink Free Regular", cursive;
+font-size: 150%;
 
 }
 
@@ -78,9 +82,9 @@ font-family: "Ink Free Regular", cursive;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: auto;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-bottom: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 #homeHeadingDiv {

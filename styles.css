@@ -13,17 +13,19 @@ html {
 }
 
 .logoDiv {
-    grid-row: 1/3;
+    grid-row: 1/2;
     grid-column: 2/3;
+
 }
 
 .navbarDiv {
-    grid-row: 2/3;
+    grid-row: 1/2;
     grid-column: 2/4;
+    align-self: end;
 }
 
 .bodyDiv {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 2/3;
     background-color: #e5e3df93;
 }
@@ -40,11 +42,13 @@ nav {
 }
 
 .logo {
-    height: 50%;
+    height: auto;
 }
 
 #home, #overview, #forMembers {
     text-align: end;
+    font-size: 200%;
+    font-weight: bold;
 }
 
 #homeBodyText {
@@ -60,4 +64,37 @@ a {
     text-decoration: underline;
     text-decoration-color: #118AB2;
     font-family: "Ink Free Regular", cursive;
+}
+
+button {
+background-color: rgba(17, 138, 178, 0.5);
+border: none;
+color: #073B4C;
+font-family: "Ink Free Regular", cursive;
+
+}
+
+.bodyDiv {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+}
+
+#homeHeadingDiv {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#homeBodyDiv {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#signUpButtonDiv {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: center;
 }

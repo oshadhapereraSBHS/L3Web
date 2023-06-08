@@ -56,6 +56,7 @@ nav {
     font-size: 150%;
 }
 
+
 a {
     color: #073B4C;
     text-decoration: none;
@@ -108,6 +109,8 @@ font-size: 150%;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
     grid-row: 2/3;
     grid-column: 2/4;
+    background-color: #e5e3df93;
+    margin-top: 10%;
 }
 
 #contactCol1 {

@@ -102,3 +102,20 @@ font-size: 150%;
     grid-column: 2/3;
     justify-self: center;
 }
+
+.contactDiv {
+    display: grid;
+    grid-template-columns: 5% 1fr 5% 1fr 5%;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+#contactCol1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#contactCol2 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}

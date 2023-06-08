@@ -51,7 +51,7 @@ nav {
     font-weight: bold;
 }
 
-#homeBodyText {
+#homeBodyText, .contactText, label {
     color: #118AB2;
     font-size: 150%;
 }
@@ -61,7 +61,7 @@ a {
     text-decoration: none;
 }
 
-#homeHeadingText {
+#homeHeadingText, h1 {
     text-decoration: underline;
     text-decoration-color: #118AB2;
     font-family: "Ink Free Regular", cursive;
@@ -69,7 +69,7 @@ a {
     font-weight:bold;
 }
 
-#signUpButton {
+#signUpButton, #contactButton {
 background-color: rgba(17, 138, 178, 0.5);
 border: none;
 color: #073B4C;

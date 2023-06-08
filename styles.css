@@ -117,5 +117,10 @@ font-size: 150%;
 
 #contactCol2 {
     grid-column: 4/5;
-    grid-row: 3/4;
+    grid-row: 2/3;
+}
+
+#contactHeadingDiv {
+    grid-column: 2/5;
+    justify-self: center;
 }

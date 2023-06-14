@@ -113,6 +113,15 @@ font-size: 150%;
     margin-top: 10%;
 }
 
+.signUpDiv {
+    display: grid;
+    grid-template-columns: 40% 1fr 40%;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    background-color: #e5e3df93;
+    margin-top: 10%;
+}
+
 #contactCol1 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -125,5 +134,13 @@ font-size: 150%;
 
 #contactHeadingDiv {
     grid-column: 2/5;
+    justify-self: center;
+}
+#signUpCol {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#signUpHeadingDiv {
+    grid-column: 2/3;
     justify-self: center;
 }

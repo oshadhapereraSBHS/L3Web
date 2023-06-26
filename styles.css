@@ -41,6 +41,14 @@ nav {
     grid-column: 2/3;
 }
 
+#forMembers {
+    grid-column: 3/4;
+}
+
+#contact {
+    grid-column: 4/5;
+}
+
 .logo {
     height: auto;
 }

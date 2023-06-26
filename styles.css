@@ -32,12 +32,12 @@ html {
 
 nav {
     display: grid;
-    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-columns: 30% 1fr 1.8fr 1fr;
     grid-template-rows: auto;
 
 }
 
-#home {
+#overview {
     grid-column: 2/3;
 }
 
@@ -45,7 +45,7 @@ nav {
     height: auto;
 }
 
-#home,
+#contact,
 #overview,
 #forMembers {
     text-align: end;

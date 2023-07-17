@@ -42,21 +42,13 @@
             <nav>
 
                 <div class="dropdownGroup1">
-                    <a class="overview">Overview</a>
-                    <div class="dropdownItems1">
-                        <a href="index.html">About Us</a>
-                        <a href="index.html">Gallery</a>
-                        <a href="index.html">Sign Up</a>
-                    </div>
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
                 </div>
 
                 <div class="dropdownGroup2">
-                    <a class="forMembers">For members</a>
-                    <div class="dropdownItems2">
-                        <a href="index.html">Notices</a>
-                        <a href="index.html">Leaderboard</a>
-                        <a href="index.html">Resources</a> 
-                    </div>
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
                 </div>
                 <div class="dropdownGroup3">
                     <a href="contact.html" id="contact">Contact</a>
@@ -69,9 +61,20 @@
             </nav>
         </div>
 
+        <div class="navbarDiv2">
+        <div class="dropdownItems1" id="dropdownItems1">
+            <a href="aboutUs.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="signUp.html">Sign Up</a>
+            <a onclick="removeDropdown1()">x</a>
+        </div>
 
-
-
+        <div class="dropdownItems2" id="dropdownItems2">
+            <a href="notices.html">Notices</a><br>
+            <a href="leaderboard.html">Leaderboard</a><br>
+            <a href="resources.html">Resources</a> 
+        </div>
+    </div>
 
 
         <div class="bodyDiv">

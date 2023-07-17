@@ -16,20 +16,67 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        <!--logo in nav bar-->
+        <!-- old navbar
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo"></img>
+            <img src="images/logo.png" alt="logo" width="20%" class="logo">
         </div>
 
         <div class="navbarDiv">
-            <!--nav tag in grid layout - this allows nav links to be spaced evenly-->
             <nav>
-                <!--links in nav bar-->
                 <a id="overview">Overview</a>
                 <a id="forMembers">For members</a>
                 <a href="contact.html" id="contact">Contact</a>
             </nav>
         </div>
+
+
+    -->
+
+
+
+        <div class="logoDiv">
+            <img src="images/logo.png" alt="logo" width="20%" class="logo">
+        </div>
+
+        <div class="navbarDiv">
+            <nav>
+
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+                
+
+
+
+
+            </nav>
+        </div>
+
+        <div class="navbarDiv2">
+        <div class="dropdownItems1" id="dropdownItems1">
+            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
+            <div id="gallery"><a href="gallery.html">Gallery</a></div>
+            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+            <div id="cross"><a id="cross" onclick="removeDropdown1()">x</a></div>
+        </div>
+
+        <div class="dropdownItems2" id="dropdownItems2">
+            <div id="gallery"><a href="notices.html">Notices</a></div>
+            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
+            <div id="resources"><a href="resources.html">Resources</a> </div>
+            <div id="cross"><a id="cross" onclick="removeDropdown2()">x</a></div>
+        </div>
+    </div>
+
 
         <div class="bodyDiv">
             <!--div for body text-->

@@ -44,8 +44,8 @@ nav {
     
 
     #contact,
-    #overview,
-    #forMembers {
+    .overview,
+    .forMembers {
         text-align: end;
         font-size: 200%;
         font-weight: bold;
@@ -221,4 +221,22 @@ h1 {
 
 .dropdownGroup1:hover .dropdownItems1 {
     display: block;
+}
+
+.dropdownItems2 {
+    display: none;
+}
+
+.dropdownGroup2:hover .dropdownItems2 {
+    display: block;
+}
+
+.dropdownGroup1{
+    grid-column: 2/3;
+}
+.dropdownGroup2{
+    grid-column: 3/4;
+}
+.dropdownGroup3{
+    grid-column: 4/5;
 }

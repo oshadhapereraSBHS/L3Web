@@ -3,8 +3,12 @@ function signUpPage (){
 }
 
 function dropdown1 (){
-    document.getElementById("dropdownItems1").style.display = "grid";
-    document.getElementById("overview").style.textDecoration = "underline"
+    if(document.getElementById("dropdownItems2").style.display != "grid"
+    ){
+        document.getElementById("dropdownItems1").style.display = "grid";
+        document.getElementById("overview").style.textDecoration = "underline"
+    }
+    
 }
 function removeDropdown1 (){
     document.getElementById("dropdownItems1").style.display = "none";
@@ -12,8 +16,11 @@ function removeDropdown1 (){
 
 }
 function dropdown2 (){
-    document.getElementById("dropdownItems2").style.display = "grid"
-    document.getElementById("forMembers").style.textDecoration = "underline"
+    if(document.getElementById("dropdownItems1").style.display != "grid"){
+        document.getElementById("dropdownItems2").style.display = "grid"
+        document.getElementById("forMembers").style.textDecoration = "underline"
+    }
+
 }
 function removeDropdown2 (){
     document.getElementById("dropdownItems2").style.display = "none";

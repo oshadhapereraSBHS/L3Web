@@ -244,12 +244,15 @@ h1 {
     grid-row: 2/3;
     grid-column: 2/5;
     display: none;
+    padding-top: 5%;
 }
 
-.navbarDiv2 a {
-    font-size: 150%;
-padding-right: 15%;
-
-
+.dropdownItems1, .dropdownItems2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
 }
 
+.navbarDiv2 a{
+    font-size: 120%;
+}

@@ -59,3 +59,5 @@ function openOverlay() {
     slides[slideIndex-1].style.display = "block";
     
   }
+
+  

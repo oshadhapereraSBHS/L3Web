@@ -292,23 +292,19 @@ h1 {
 }
 
 #galleryDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: 4/5;
     grid-column: 2/4;
 }
 
 
   
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
   /* The Modal (background) */
   .galleryOverlay {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -391,14 +387,51 @@ h1 {
     top: 0;
   }
   
- 
-  
-
-  
   img.hoverShadow {
     transition: 0.3s;
   }
   
   .hoverShadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  } *
+  }
+
+.noticesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    grid-gap: 2%;
+}
+.notices {
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#notice1 {
+    grid-column: 1/2;
+
+}
+#notice2 {
+    grid-column: 2/3;
+}
+
+#notice3 {
+    grid-column: 3/4;
+}
+
+#notice4 {
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#notice5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#notice6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}

@@ -62,45 +62,75 @@
 
 
 <div id="galleryDiv">
-    <div class="row">
+
         <div class="column">
-          <img src="images/aboutUs1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <img src="images/aboutUs1.jpg" style="width:100%" onclick="openOverlay();currentSlide(1)" class="hoverShadow cursor">
         </div>
         <div class="column">
-          <img src="images/aboutUs2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <img src="images/aboutUs2.jpg" style="width:100%" onclick="openOverlay();currentSlide(2)" class="hoverShadow cursor">
         </div>
         <div class="column">
-          <img src="images/aboutUs3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <img src="images/aboutUs3.jpg" style="width:100%" onclick="openOverlay();currentSlide(3)" class="hoverShadow cursor">
         </div>
         <div class="column">
-          <img src="images/aboutUs4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          <img src="images/aboutUs4.jpg" style="width:100%" onclick="openOverlay();currentSlide(4)" class="hoverShadow cursor">
         </div>
-      </div>
+        <div class="column">
+          <img src="images/aboutUs5.jpg" style="width:100%" onclick="openOverlay();currentSlide(5)" class="hoverShadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/aboutUs6.jpg" style="width:100%" onclick="openOverlay();currentSlide(6)" class="hoverShadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/aboutUs7.jpg" style="width:100%" onclick="openOverlay();currentSlide(7)" class="hoverShadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/aboutUs8.jpg" style="width:100%" onclick="openOverlay();currentSlide(8)" class="hoverShadow cursor">
+        </div>
+
       
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+      <div id="galleryOverlay" class="galleryOverlay">
+        <span class="close cursor" onclick="closeOverlay()">&times;</span>
+        <div class="overlayContent">
       
-          <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
+          <div class="slides">
+            <div class="slideNumber">1 / 4</div>
             <img src="images/aboutUs1.jpg" style="width:100%">
           </div>
       
-          <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
+          <div class="slides">
+            <div class="slideNumber">2 / 4</div>
             <img src="images/aboutUs2.jpg" style="width:100%">
           </div>
       
-          <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
+          <div class="slides">
+            <div class="slideNumber">3 / 4</div>
             <img src="images/aboutUs3.jpg" style="width:100%">
           </div>
           
-          <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
+          <div class="slides">
+            <div class="slideNumber">4 / 4</div>
             <img src="images/aboutUs4.jpg" style="width:100%">
           </div>
+          <div class="slides">
+            <div class="slideNumber">5 / 5</div>
+            <img src="images/aboutUs5.jpg" style="width:100%">
+          </div>
+      
+          <div class="slides">
+            <div class="slideNumber">6 / 6</div>
+            <img src="images/aboutUs6.jpg" style="width:100%">
+          </div>
+      
+          <div class="slides">
+            <div class="slideNumber">7 / 7</div>
+            <img src="images/aboutUs7.jpg" style="width:100%">
+          </div>
           
+          <div class="slides">
+            <div class="slideNumber">8 / 8</div>
+            <img src="images/aboutUs8.jpg" style="width:100%">
+          </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
       

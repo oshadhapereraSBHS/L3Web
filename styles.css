@@ -403,15 +403,35 @@ h1 {
     grid-column: 2/4;
     grid-gap: 2%;
 }
-
+.notices {
+    background-color: #e5e3df93;
+    padding: 2%;
+}
 
 #notice1 {
     grid-column: 1/2;
-    background-color: #e5e3df93;
 
 }
 #notice2 {
     grid-column: 2/3;
-    background-color: #e5e3df93;
+}
 
+#notice3 {
+    grid-column: 3/4;
+}
+
+#notice4 {
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#notice5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#notice6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
 }

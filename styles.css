@@ -435,3 +435,16 @@ h1 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
+
+#noticesHeading, #leaderboardHeading {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#leaderboardDiv {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 10fr 4fr;
+}

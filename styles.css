@@ -22,7 +22,7 @@ html {
     grid-row: 3/4;
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 30% 1fr 1.8fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 .bodyDiv {
@@ -35,10 +35,6 @@ nav {
     display: grid;
     grid-template-columns: 30% 1fr 1.6fr 1fr;
     grid-template-rows: auto;
-}
-#contact {
-    align-self: flex-end;
-    display: block;
 }
 
 
@@ -267,7 +263,7 @@ h1 {
 }
 
 .dropdownItems1, .dropdownItems2 {
-    grid-template-columns: 30% 1fr 1.6fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
     
 }
@@ -509,4 +505,18 @@ li a:hover {
 
 #overview:hover, #forMembers:hover, #contact:hover {
 text-decoration: underline;
+}
+
+.navbarDiv2 {
+    min-height: 40px;;
+}
+
+.dropdownItems1, .dropdownItems2{
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+#overview, #forMembers, #contact {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }

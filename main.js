@@ -9,9 +9,19 @@ function dropdown1() {
 dropdown1Clicks++;
 if (dropdown1Clicks % 2 === 0) {
 document.getElementById("dropdownItems1").style.display = "grid";
+document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 black";
+document.getElementById("forMembers").style.boxShadow = "none";
+document.getElementById("forMembers").style.color = "#999"
+document.getElementById("contact").style.color = "#999"
 document.getElementById("dropdownItems2").style.display = "none";
+document.getElementById("overview").style.color = "#073B4C"
+
 } else {
   document.getElementById("dropdownItems1").style.display = "none";
+  document.getElementById("forMembers").style.color = "#073B4C"
+document.getElementById("overview").style.color = "#073B4C"
+document.getElementById("contact").style.color = "#073B4C"
+document.getElementById("overview").style.boxShadow = "none"
 }
 }
 
@@ -22,8 +32,18 @@ function dropdown2(){
 
     document.getElementById("dropdownItems2").style.display = "grid";
     document.getElementById("dropdownItems1").style.display = "none";
+    document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 black"
+    document.getElementById("overview").style.boxShadow = "none";
+document.getElementById("overview").style.color = "#999"
+document.getElementById("contact").style.color = "#999"
+document.getElementById("forMembers").style.color = "#073B4C"
   } else {
     document.getElementById("dropdownItems2").style.display = "none";
+    document.getElementById("overview").style.color = "#073B4C"
+    document.getElementById("forMembers").style.color = "#073B4C"
+    document.getElementById("contact").style.color = "#073B4C"
+    document.getElementById("forMembers").style.boxShadow = "none"
+
   }
 }
 

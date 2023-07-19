@@ -1,33 +1,23 @@
 function signUpPage (){
     location.href = "signup.html";
 }
+var dropdown1Clicks = 1;
 
-function dropdown1 (){
-    if(document.getElementById("dropdownItems2").style.display != "grid"
-    ){
-        document.getElementById("dropdownItems1").style.display = "grid";
-        document.getElementById("overview").style.textDecoration = "underline"
-    }
-    
+function dropdown1() {
+dropdown1Clicks++;
+if (dropdown1Clicks % 2 === 0) {
+document.getElementById("dropdownItems1").style.display = "block";
+document.getElementById("dropdownItems2").style.display = "none";
+} else {
+  document.getElementById("dropdownItems1").style.display = "none";
 }
-function removeDropdown1 (){
+}
+
+function dropdown2(){
+  dropdown1Clicks++;
+    document.getElementById("dropdownItems2").style.display = "block";
     document.getElementById("dropdownItems1").style.display = "none";
-    document.getElementById("overview").style.textDecoration = "none"
-
 }
-function dropdown2 (){
-    if(document.getElementById("dropdownItems1").style.display != "grid"){
-        document.getElementById("dropdownItems2").style.display = "grid"
-        document.getElementById("forMembers").style.textDecoration = "underline"
-    }
-
-}
-function removeDropdown2 (){
-    document.getElementById("dropdownItems2").style.display = "none";
-    document.getElementById("forMembers").style.textDecoration = "none"
-
-}
-
 
 function openOverlay() {
     document.getElementById("galleryOverlay").style.display = "block";
@@ -56,7 +46,6 @@ function openOverlay() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block";
     
   }
 

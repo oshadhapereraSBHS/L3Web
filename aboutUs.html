@@ -16,39 +16,50 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        <!--logo in nav bar-->
+       
+        
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo"></img>
+            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
-            <!--nav tag in grid layout - this allows nav links to be spaced evenly-->
             <nav>
-                <!--links in nav bar-->
-                <div id="dropdownGroup1">
-                    <a id="overview">Overview</a>
-                    <div id="dropdownItems1">
-                        <a id="aboutUs">About Us</a>
-                        <a id="gallery">Gallery</a>
-                        <a id="signUp">Sign Up</a>
-                    </div>
+
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
                 </div>
 
-                <div id="dropdownGroup2">
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
 
-                    <a id="forMembers">For members</a>
-                    <div id="dropdownITems2">
-                        <a id="notices">Notices</a>
-                        <a id="leaderboard">Leaderboard</a>
-                        <a id="resources">Resources</a>
-
-                    </div>
                 </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+                
 
 
-                <a href="contact.html" id="contact">Contact</a>
+
+
             </nav>
         </div>
+
+        <div class="navbarDiv2">
+        <div class="dropdownItems1" id="dropdownItems1">
+            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
+            <div id="gallery"><a href="gallery.html">Gallery</a></div>
+            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+        </div>
+
+        <div class="dropdownItems2" id="dropdownItems2">
+            <div id="notices"><a href="notices.html">Notices</a></div>
+            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
+            <div id="resources"><a href="resources.html">Resources</a> </div>
+        </div>
+    </div>
+
+
 
         <div class="aboutUsDiv">
 
@@ -57,12 +68,13 @@
             <div id="aboutUsBodyDiv1">
                 <h1 id="aboutUsHeadingText1">Welcome</h1>
 
-                <p id="aboutUsBodyText1">We are the largest school chess club in Invercargill
+                <p id="aboutUsBodyText1">Welcome to the Southland Boys' High School Chess Club! <br><br>
+                    We are the largest school chess club in Invercargill
                     with over 50 members. <br><br>
 
                     Whether you are a beginner wanting to learn to play
                     chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
+                    competitions, we would love you to be part of our club! 
 
 
 
@@ -74,12 +86,8 @@
             <div id="aboutUsBodyDiv2">
                 <h1 id="aboutUsHeadingText2">History</h1>
 
-                <p id="aboutUsBodyText2">We are the largest school chess club in Invercargill
-                    with over 50 members. <br><br>
-
-                    Whether you are a beginner wanting to learn to play
-                    chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
+                <p id="aboutUsBodyText2">The SBHS Chess Club is a relatively new addition to the school community. 
+                    <br><br>Initially, chess club meetings were held in 8P with a few members. Over time, this has grown into a club with over 50 members. We now have both chess board and computers and use two classes (6P and 2P) to accomodate the club.</p>
 
             </div>
             <div id="aboutUsImage2">
@@ -89,12 +97,10 @@
             <div id="aboutUsBodyDiv3">
                 <h1 id="aboutUsHeadingText3">What we do</h1>
 
-                <p id="aboutUsBodyText3">We are the largest school chess club in Invercargill
-                    with over 50 members. <br><br>
-
-                    Whether you are a beginner wanting to learn to play
-                    chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
+                <p id="aboutUsBodyText3">We meet every week on Tuesday lunchtimes to play chess - these can be as relaxed or competitive as you like!
+                    <br><br>We have chess sets to play over-the-board chess and computers for those who prefer to play online.<br><br>
+                    We also take part in tournaments such as the NZCF Regionals, Chess Power Competitions and interschools.
+                </p>
 
 
             </div>
@@ -105,12 +111,7 @@
             <div id="aboutUsBodyDiv4">
                 <h1 id="aboutUsHeadingText4">Sign Up</h1>
 
-                <p id="aboutUsBodyText4">We are the largest school chess club in Invercargill
-                    with over 50 members. <br><br>
-
-                    Whether you are a beginner wanting to learn to play
-                    chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
+                <p id="aboutUsBodyText4">If you are wanting to join the chess club, click the button below, fill the form and turn up to chess club. We look forward to seeing you!
                 <div id="aboutUsButtonDiv">
                     <button id="aboutUsButton" onclick="signUpPage()">Sign Up</button>
                 </div>

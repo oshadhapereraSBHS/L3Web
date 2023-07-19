@@ -17,13 +17,12 @@ html {
 .navbarDiv {
     grid-row: 2/3;
     grid-column: 2/4;
-    align-self: end;
 }
 .navbarDiv2 {
     grid-row: 3/4;
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 30% 1fr 1.8fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 .bodyDiv {
@@ -36,9 +35,7 @@ nav {
     display: grid;
     grid-template-columns: 30% 1fr 1.6fr 1fr;
     grid-template-rows: auto;
-    text-align: end;
 }
-
 
 
 
@@ -55,12 +52,18 @@ nav {
     #contact,
     .overview,
     .forMembers {
-        text-align: end;
         font-size: 200%;
         font-weight: bold;
     }
-    
 
+    
+#overview {
+    text-align: start;
+}
+
+#forMembers {
+    text-align: center;
+}
 
 #homeBodyText,
 .contactText,
@@ -248,19 +251,19 @@ h1 {
 
 .dropdownItems1{
     grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 1/5;
     display: none;
 
 }
 .dropdownItems2{
     grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 1/5;
     display: none;
 
 }
 
 .dropdownItems1, .dropdownItems2 {
-    grid-template-columns: 1fr 1fr 1fr 0.4fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
     
 }
@@ -274,16 +277,19 @@ h1 {
     text-align: start;
 }
 
-.aboutUs {
+#aboutUs {
     grid-column: 2/3;
 }
 
-.gallery {
+#gallery {
     grid-column: 3/4;
     
 }
+#notices {
+    grid-column: 2/3;
+}
 
-.signUp {
+#signUp {
     grid-column: 4/5;
 }
 
@@ -447,9 +453,13 @@ h1 {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: 2%;
+    background-color: #e5e3df93;
 }
+
 .row1 {
     grid-row: 2/3;
+    
 }
 
 .row2 {
@@ -486,4 +496,27 @@ h1 {
 
 .row10 {
     grid-row: 11/12;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+#overview:hover, #forMembers:hover, #contact:hover {
+text-decoration: underline;
+}
+
+.navbarDiv2 {
+    min-height: 40px;;
+}
+
+.dropdownItems1, .dropdownItems2{
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+#overview, #forMembers, #contact {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }

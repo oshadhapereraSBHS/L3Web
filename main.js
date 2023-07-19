@@ -8,7 +8,7 @@ function dropdown1() {
   dropdown2Clicks = 1;
 dropdown1Clicks++;
 if (dropdown1Clicks % 2 === 0) {
-document.getElementById("dropdownItems1").style.display = "block";
+document.getElementById("dropdownItems1").style.display = "grid";
 document.getElementById("dropdownItems2").style.display = "none";
 } else {
   document.getElementById("dropdownItems1").style.display = "none";
@@ -20,7 +20,7 @@ function dropdown2(){
   dropdown2Clicks++;
   if (dropdown2Clicks % 2 === 0) {
 
-    document.getElementById("dropdownItems2").style.display = "block";
+    document.getElementById("dropdownItems2").style.display = "grid";
     document.getElementById("dropdownItems1").style.display = "none";
   } else {
     document.getElementById("dropdownItems2").style.display = "none";

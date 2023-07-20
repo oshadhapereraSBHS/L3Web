@@ -16,41 +16,119 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        <!--logo in nav bar-->
+       
+        
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo"></img>
+            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
-            <!--nav tag in grid layout - this allows nav links to be spaced evenly-->
             <nav>
-                <!--links in nav bar-->
-                <a id="overview">Overview</a>
-                <a id="forMembers">For members</a>
-                <a href="contact.html" id="contact">Contact</a>
+
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+                
+
+
+
+
             </nav>
         </div>
 
-        <div class="bodyDiv">
-            <!--div for body text-->
-            <div id="homeHeadingDiv">
-                <h1 id="homeHeadingText">SBHS CHESS CLUB</h1>
-                <!--heading-->
+        <div class="navbarDiv2">
+        <div class="dropdownItems1" id="dropdownItems1">
+            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
+            <div id="gallery"><a href="gallery.html">Gallery</a></div>
+            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+        </div>
+
+        <div class="dropdownItems2" id="dropdownItems2">
+            <div id="gallery"><a href="notices.html">Notices</a></div>
+            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
+            <div id="resources"><a href="resources.html">Resources</a> </div>
+        </div>
+    </div>
+
+
+
+        <div class="aboutUsDiv">
+
+
+
+            <div id="aboutUsBodyDiv1">
+                <h1 id="aboutUsHeadingText1">Chess Organisations</h1>
+
+                <ul>
+                    <li><a href="https://iscc.nz/">Invercargill-Southland Chess Club</a></li>
+                    <li><a href="https://otagochess.org/">Otago Chess Club</a></li>
+                    <li><a href="https://www.newzealandchess.co.nz/">New Zealand Chess Federation</a></li>
+                    <li><a href="https://chesspower.co.nz/">Chess Power</a></li>
+                </ul>
+
+
+
+
+            </div>
+            <div id="aboutUsImage1">
+                <img src="images/aboutUs1.jpg" width="100%" height="100%">
             </div>
 
-            <div id="homeBodyDiv">
-                <p id="homeBodyText">We are the largest school chess club in Invercargill
-                    with over 50 members. <br><br>
+            <div id="aboutUsBodyDiv2">
+                <h1 id="aboutUsHeadingText2">Chess Tournaments</h1>
 
-                    Whether you are a beginner wanting to learn to play
-                    chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
+                <ul>
+                    <li><a href="https://www.chesspower.co.nz/page/events">Chess Power Invercargill Regionals</a></li>
+                    <li><a href="https://www.newzealandchess.co.nz/interschools.html">NZCF Otago-Southland Regionals</a></li>
+                    <li><a href="https://www.sporty.co.nz/southlandboys/Registrations/Active-Registrations">Interschools</a></li>
+                </ul>
 
             </div>
-
-            <div id="signUpButtonDiv">
-                <button id="signUpButton" onclick="signUpPage()">Sign Up</button>
+            <div id="aboutUsImage2">
+                <img src="images/aboutUs2.jpg" width="100%" height="100%">
             </div>
+
+            <div id="aboutUsBodyDiv3">
+                <h1 id="aboutUsHeadingText3">Online Chess</h1>
+
+                <ul>
+                    <li><a href="https://chess.com/">Chess.com</a></li>
+
+                    <li><a href="https://lichess.org/">Lichess</a></li>
+
+                    <li><a href="https://www.chesskid.com/">Chesskid</a></li>
+                </ul>
+
+            </div>
+            <div id="aboutUsImage3">
+                <img src="images/aboutUs3.jpg" width="100%" height="100%">
+            </div>
+
+            <div id="aboutUsBodyDiv4">
+                <h1 id="aboutUsHeadingText4">Youtube Channels</h1>
+
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCQHX6ViZmPsWiYSFAyS0a3Q">GothamChess</a></li>
+                    <li><a href="https://www.youtube.com/@eric-rosen">Eric Rosen</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCsKZ2yOsgfNxln8xH5WkGvg">Remote Chess Academy</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCM-ONC2bCHytG2mYtKDmIeA">Saint Louis Chess Club</a></li>
+                </ul>
+
+            </div>
+            <div id="aboutUsImage4">
+                <img src="images/aboutUs4.jpg" width="100%" height="100%">
+            </div>
+
+
 
 
         </div>

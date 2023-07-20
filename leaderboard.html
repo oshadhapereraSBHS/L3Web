@@ -16,44 +16,88 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        <!--logo in nav bar-->
+        
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo"></img>
+            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
-            <!--nav tag in grid layout - this allows nav links to be spaced evenly-->
             <nav>
-                <!--links in nav bar-->
-                <a id="overview">Overview</a>
-                <a id="forMembers">For members</a>
-                <a href="contact.html" id="contact">Contact</a>
+
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+                
+
+
+
+
             </nav>
         </div>
 
-        <div class="bodyDiv">
-            <!--div for body text-->
-            <div id="homeHeadingDiv">
-                <h1 id="homeHeadingText">SBHS CHESS CLUB</h1>
-                <!--heading-->
-            </div>
-
-            <div id="homeBodyDiv">
-                <p id="homeBodyText">We are the largest school chess club in Invercargill
-                    with over 50 members. <br><br>
-
-                    Whether you are a beginner wanting to learn to play
-                    chess or an experienced player wanting to take part in
-                    competitions, we would love you to be part of our club!</p>
-
-            </div>
-
-            <div id="signUpButtonDiv">
-                <button id="signUpButton" onclick="signUpPage()">Sign Up</button>
-            </div>
-
-
+        <div class="navbarDiv2">
+        <div class="dropdownItems1" id="dropdownItems1">
+            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
+            <div id="gallery"><a href="gallery.html">Gallery</a></div>
+            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
         </div>
+
+        <div class="dropdownItems2" id="dropdownItems2">
+            <div id="gallery"><a href="notices.html">Notices</a></div>
+            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
+            <div id="resources"><a href="resources.html">Resources</a> </div>
+        </div>
+    </div>
+
+
+    <div class="leaderboardDiv">
+        <h1 id="leaderboardHeading">Leaderboard</h1>
+
+            <div class="row1">Rank</div>
+            <div class="row1">Name</div>
+            <div class="row1">Year</div>
+
+            <div class="row2">1</div>
+            <div class="row2">Lorem ipsum</div>
+            <div class="row2">11</div>
+
+            <div class="row3">1</div>
+            <div class="row3">Lorem ipsum</div>
+            <div class="row3">11</div>
+            <div class="row4">1</div>
+            <div class="row4">Lorem ipsum</div>
+            <div class="row4">11</div>
+            <div class="row5">1</div>
+            <div class="row5">Lorem ipsum</div>
+            <div class="row5">11</div>
+            <div class="row6">1</div>
+            <div class="row6">Lorem ipsum</div>
+            <div class="row6">11</div>
+            <div class="row7">1</div>
+            <div class="row7">Lorem ipsum</div>
+            <div class="row7">11</div>
+            <div class="row8">1</div>
+            <div class="row8">Lorem ipsum</div>
+            <div class="row8">11</div>
+            <div class="row9">1</div>
+            <div class="row9">Lorem ipsum</div>
+            <div class="row9">11</div> 
+
+            <div class="row10">1</div>
+            <div class="row10">Lorem ipsum</div>
+            <div class="row10">11</div>
+    </div>
+
+
     </div>
 </body>
 

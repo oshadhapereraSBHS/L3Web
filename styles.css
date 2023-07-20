@@ -5,27 +5,31 @@ html {
     font-family: "Georgia", serif;
     color: #073B4C;
 }
+
 .container {
     display: grid;
     grid-template-columns: 10% 1.5fr 1fr 10%;
     grid-template-rows: auto;
 }
+
 .logoDiv {
     grid-row: 1/3;
     grid-column: 2/3;
 }
+
 .navbarDiv {
     grid-row: 2/3;
     grid-column: 2/4;
-    align-self: end;
 }
+
 .navbarDiv2 {
     grid-row: 3/4;
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 30% 1fr 1.8fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
+
 .bodyDiv {
     grid-row: 4/5;
     grid-column: 2/3;
@@ -36,31 +40,32 @@ nav {
     display: grid;
     grid-template-columns: 30% 1fr 1.6fr 1fr;
     grid-template-rows: auto;
-    text-align: end;
+}
+
+#overview {
+    grid-column: 2/3;
+}
+
+.logo {
+    height: auto;
 }
 
 
+#contact,
+.overview,
+.forMembers {
+    font-size: 200%;
+    font-weight: bold;
+}
 
 
+#overview {
+    text-align: start;
+}
 
-    #overview {
-        grid-column: 2/3;
-    }
-    
-    .logo {
-        height: auto;
-    }
-    
-
-    #contact,
-    .overview,
-    .forMembers {
-        text-align: end;
-        font-size: 200%;
-        font-weight: bold;
-    }
-    
-
+#forMembers {
+    text-align: center;
+}
 
 #homeBodyText,
 .contactText,
@@ -68,10 +73,12 @@ label {
     color: #118AB2;
     font-size: 150%;
 }
+
 a {
     color: #073B4C;
     text-decoration: none;
 }
+
 #homeHeadingText,
 h1 {
     text-decoration: underline;
@@ -80,6 +87,7 @@ h1 {
     font-size: 300%;
     font-weight: bold;
 }
+
 #signUpButton,
 #contactButton,
 #aboutUsButton {
@@ -89,6 +97,7 @@ h1 {
     font-family: "Ink Free Regular", cursive;
     font-size: 150%;
 }
+
 .bodyDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -97,6 +106,7 @@ h1 {
     margin-bottom: 5%;
     padding-bottom: 5%;
 }
+
 .aboutUsDiv {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
@@ -108,48 +118,57 @@ h1 {
     grid-column: 2/4;
     row-gap: 5%;
 }
+
 .aboutUsBodyDivs {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto;
 }
+
 #aboutUsBodyDiv1 {
     grid-row: 1/2;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
 }
+
 #aboutUsBodyDiv2 {
     grid-row: 2/3;
     grid-column: 1/4;
     background-color: #e5e3df93;
-        padding: 2%;
+    padding: 2%;
 }
+
 #aboutUsBodyDiv3 {
     grid-row: 3/4;
     grid-column: 1/4;
     background-color: #e5e3df93;
-        padding: 2%;
+    padding: 2%;
 }
+
 #aboutUsBodyDiv4 {
     grid-row: 4/5;
     grid-column: 1/4;
     background-color: #e5e3df93;
-        padding: 2%;
+    padding: 2%;
 }
+
 #homeHeadingDiv {
     grid-row: 1/2;
     grid-column: 2/3;
 }
+
 #homeBodyDiv {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+
 #signUpButtonDiv {
     grid-row: 3/4;
     grid-column: 2/3;
     justify-self: center;
 }
+
 .contactDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
@@ -158,6 +177,7 @@ h1 {
     background-color: #e5e3df93;
     margin-top: 10%;
 }
+
 .signUpDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
@@ -170,22 +190,26 @@ h1 {
 
 
 #signUpCol1 {
- grid-column: 2/3;
- grid-row: 2/3;
- 
+    grid-column: 2/3;
+    grid-row: 2/3;
+
 }
+
 #signUpCol2 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
+
 #contactCol1 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 #contactCol2 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
+
 #contactHeadingDiv {
     grid-column: 2/5;
     justify-self: center;
@@ -196,39 +220,48 @@ h1 {
     justify-self: center;
     grid-row: 1/2;
 }
+
 #aboutUsButtonDiv {
     grid-row: 5/6;
     grid-column: 2/3;
     justify-self: center;
 }
+
 #aboutUsBodyDiv1 {
     grid-row: 1/2;
     grid-column: 1/3;
 }
+
 #aboutUsBodyDiv2 {
     grid-row: 2/3;
     grid-column: 2/4;
 }
+
 #aboutUsBodyDiv3 {
     grid-row: 3/4;
     grid-column: 1/3;
 }
+
 #aboutUsBodyDiv4 {
     grid-row: 4/5;
     grid-column: 2/4;
 }
+
 #aboutUsImage1 {
     grid-row: 1/2;
     grid-column: 3/4;
 }
+
 #aboutUsImage2 {
     grid-row: 2/3;
     grid-column: 1/2;
 }
+
 #aboutUsImage3 {
     grid-row: 3/4;
     grid-column: 3/4;
 }
+
 #aboutUsImage4 {
     grid-row: 4/5;
     grid-column: 1/2;
@@ -236,54 +269,63 @@ h1 {
 
 
 
-.dropdownGroup1{
+.dropdownGroup1 {
     grid-column: 2/3;
 }
-.dropdownGroup2{
+
+.dropdownGroup2 {
     grid-column: 3/4;
 }
-.dropdownGroup3{
+
+.dropdownGroup3 {
     grid-column: 4/5;
 }
 
-.dropdownItems1{
+.dropdownItems1 {
     grid-row: 2/3;
-    grid-column: 2/5;
-    display: none;
-
-}
-.dropdownItems2{
-    grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 1/5;
     display: none;
 
 }
 
-.dropdownItems1, .dropdownItems2 {
-    grid-template-columns: 1fr 1fr 1fr 0.4fr;
+.dropdownItems2 {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: none;
+
+}
+
+.dropdownItems1,
+.dropdownItems2 {
+    grid-template-columns: 30% 1fr 1fr 1fr;
     grid-template-rows: auto;
-    
+
 }
 
-.navbarDiv2 a{
-    
+.navbarDiv2 a {
+
     font-size: 130%;
 }
-.navbarDiv2{
+
+.navbarDiv2 {
     padding-top: 2%;
     text-align: start;
 }
 
-.aboutUs {
+#aboutUs {
     grid-column: 2/3;
 }
 
-.gallery {
+#gallery {
     grid-column: 3/4;
-    
+
 }
 
-.signUp {
+#notices {
+    grid-column: 2/3;
+}
+
+#signUp {
     grid-column: 4/5;
 }
 
@@ -296,12 +338,13 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: 4/5;
     grid-column: 2/4;
+    grid-gap: 2%;
 }
 
 
-  
-  /* The Modal (background) */
-  .galleryOverlay {
+
+/* The Modal (background) */
+.galleryOverlay {
     display: none;
     position: fixed;
     z-index: 1;
@@ -311,46 +354,46 @@ h1 {
     height: 100%;
     overflow: auto;
     background-color: black;
-  }
-  
-  /* Modal Content */
-  .overlayContent {
+}
+
+/* Modal Content */
+.overlayContent {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
-  }
+}
 
-  /* The Close Button */
-  .close {
+/* The Close Button */
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .slides {
+}
+
+.slides {
     display: none;
-  }
-  
-  .cursor {
+}
+
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -364,36 +407,36 @@ h1 {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numberText {
+}
+
+/* Number text (1/3 etc) */
+.numberText {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  img.hoverShadow {
+}
+
+img.hoverShadow {
     transition: 0.3s;
-  }
-  
-  .hoverShadow:hover {
+}
+
+.hoverShadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
 .noticesDiv {
     display: grid;
@@ -403,6 +446,7 @@ h1 {
     grid-column: 2/4;
     grid-gap: 2%;
 }
+
 .notices {
     background-color: #e5e3df93;
     padding: 2%;
@@ -410,33 +454,44 @@ h1 {
 
 #notice1 {
     grid-column: 1/2;
+    grid-row: 2/3;
 
 }
+
 #notice2 {
     grid-column: 2/3;
+    grid-row: 2/3;
+
 }
 
 #notice3 {
     grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+
+p a {
+    text-decoration: underline;
 }
 
 #notice4 {
 
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4
 }
 
 #notice5 {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #notice6 {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
-#noticesHeading, #leaderboardHeading {
+#noticesHeading,
+#leaderboardHeading {
     grid-column: 2/3;
     text-align: center;
 }
@@ -444,12 +499,18 @@ h1 {
 .leaderboardDiv {
     grid-row: 4/5;
     grid-column: 2/4;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 5fr 1fr;
+   
+    grid-gap: 2%;
+    background-color: #e5e3df93;
 }
+
+.leaderboardTable {
+text-align: center;
+}
+
 .row1 {
     grid-row: 2/3;
+
 }
 
 .row2 {
@@ -486,4 +547,33 @@ h1 {
 
 .row10 {
     grid-row: 11/12;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+#overview:hover,
+#forMembers:hover,
+#contact:hover {
+    text-decoration: underline;
+}
+
+.navbarDiv2 {
+    min-height: 40px;
+    ;
+}
+
+.dropdownItems1,
+.dropdownItems2 {
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+#overview,
+#forMembers,
+#contact {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }

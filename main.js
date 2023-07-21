@@ -96,3 +96,66 @@ function hover1Stop() {
   document.getElementById("img1").src = "images/aboutUs1.jpg"
 
 }
+
+function hover2() {
+  document.getElementById("img2").src = "images/aboutUs2Hover.jpg"
+}
+
+function hover2Stop() {
+  document.getElementById("img2").src = "images/aboutUs2.jpg"
+
+}
+
+function hover3() {
+  document.getElementById("img3").src = "images/aboutUs1Hover.jpg"
+}
+
+function hover3Stop() {
+  document.getElementById("img3").src = "images/aboutUs3.jpg"
+
+}
+
+function hover4() {
+  document.getElementById("img4").src = "images/aboutUs2Hover.jpg"
+}
+
+function hover4Stop() {
+  document.getElementById("img4").src = "images/aboutUs4.jpg"
+
+}
+
+function hover5() {
+  document.getElementById("img5").src = "images/aboutUs5Hover.jpg"
+}
+
+function hover5Stop() {
+  document.getElementById("img5").src = "images/aboutUs5.jpg"
+
+}
+
+function hover6() {
+  document.getElementById("img6").src = "images/aboutUs6Hover.jpg"
+}
+
+function hover6Stop() {
+  document.getElementById("img6").src = "images/aboutUs6.jpg"
+
+}
+
+function hover7() {
+  document.getElementById("img7").src = "images/aboutUs7Hover.jpg"
+}
+
+function hover7Stop() {
+  document.getElementById("img7").src = "images/aboutUs7.jpg"
+
+}
+
+function hover8() {
+  document.getElementById("img8").src = "images/aboutUs8Hover.jpg"
+}
+
+function hover8Stop() {
+  document.getElementById("img8").src = "images/aboutUs8.jpg"
+
+}

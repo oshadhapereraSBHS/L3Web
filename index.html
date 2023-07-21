@@ -15,8 +15,7 @@
 
     <!--div for adding grid layout for page-->
     <div class="container">
-
-        <!-- old navbar
+        <!-- 
         <div class="logoDiv">
             <img src="images/logo.png" alt="logo" width="20%" class="logo">
         </div>
@@ -28,14 +27,31 @@
                 <a href="contact.html" id="contact">Contact</a>
             </nav>
         </div>
+ -->
 
+        <!-- <div class="logoDiv">
+    <img src="images/logo.png" alt="logo" width="20%" class="logo">
+</div>
 
-    -->
+ <div class="dropdownGroup1">
+    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+    <div class="dropdownItems1">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
 
+<div class="dropdownGroup2">
+    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+</div>
+<div class="dropdownGroup3">
+    <a href="contact.html" id="contact">Contact</a>
+</div> -->
 
 
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo">
+            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -53,7 +69,7 @@
                 <div class="dropdownGroup3">
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
-                
+
 
 
 
@@ -62,20 +78,18 @@
         </div>
 
         <div class="navbarDiv2">
-        <div class="dropdownItems1" id="dropdownItems1">
-            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-            <div id="gallery"><a href="gallery.html">Gallery</a></div>
-            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
-            <div id="cross"><a id="cross" onclick="removeDropdown1()">x</a></div>
-        </div>
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+            </div>
 
-        <div class="dropdownItems2" id="dropdownItems2">
-            <div id="gallery"><a href="notices.html">Notices</a></div>
-            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-            <div id="resources"><a href="resources.html">Resources</a> </div>
-            <div id="cross"><a id="cross" onclick="removeDropdown2()">x</a></div>
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a href="resources.html">Resources</a> </div>
+            </div>
         </div>
-    </div>
 
 
         <div class="bodyDiv">

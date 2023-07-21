@@ -18,7 +18,7 @@
 
 
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -65,15 +65,15 @@
 
 
             <div id="contactCol1">
-
-                <form>
+                <p id="contactReceived"></p>
+                <form id="contactForm">
                     <label>Name</label>
                     <br>
-                    <input type="text">
+                    <input placeholder="Required" id="name" type="text" for="name">
                     <br><br>
                     <label>Email</label>
                     <br>
-                    <input type="email">
+                    <input placeholder="Required" id="email" type="email">
                     <br><br>
                     <label>Phone number</label>
                     <br>
@@ -81,9 +81,9 @@
                     <br><br>
                     <label>Message</label>
                     <br>
-                    <input type="text">
+                    <input placeholder="Required" id="message" type="text">
                     <br><br>
-                    <button id="contactButton">Submit</button>
+                    <button id="contactButton" type="button" onclick="contactSubmit()">Submit</button>
                 </form>
 
 

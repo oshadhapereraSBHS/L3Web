@@ -18,7 +18,7 @@
 
 
     <div class="logoDiv">
-      <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+      <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
     </div>
 
     <div class="navbarDiv">
@@ -60,6 +60,11 @@
 
 
     <div id="galleryDiv">
+      <div class="galleryHeading">
+        <h1 id="galleryHeading">Gallery</h1>
+        <p>Hover on image for image captions. Click on image for slideshow.</p>
+
+      </div>
 
       <div class="column" id="img1Div">
         <img id="img1" src="images/aboutUs1.jpg" style="width:100%" onmouseover="hover1()" onmouseout="hover1Stop()"
@@ -67,31 +72,31 @@
 
       </div>
       <div class="column">
-        <img id="img2" src="images/aboutUs2.jpg" style="width:100%" onclick="openOverlay();currentSlide(2)"
+        <img id="img2" src="images/aboutUs2.jpg" style="width:100%"  onmouseover="hover2()" onmouseout="hover2Stop()" onclick="openOverlay();currentSlide(2)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img3" src="images/aboutUs3.jpg" style="width:100%" onclick="openOverlay();currentSlide(3)"
+        <img id="img3" src="images/aboutUs3.jpg" style="width:100%" onmouseover="hover3()" onmouseout="hover3Stop()" onclick="openOverlay();currentSlide(3)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img4" src="images/aboutUs4.jpg" style="width:100%" onclick="openOverlay();currentSlide(4)"
+        <img id="img4" src="images/aboutUs4.jpg" style="width:100%" onmouseover="hover4()" onmouseout="hover4Stop()" onclick="openOverlay();currentSlide(4)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img5" src="images/aboutUs5.jpg" style="width:100%" onclick="openOverlay();currentSlide(5)"
+        <img id="img5" src="images/aboutUs5.jpg" style="width:100%" onmouseover="hover5()" onmouseout="hover5Stop()" onclick="openOverlay();currentSlide(5)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img6" src="images/aboutUs6.jpg" style="width:100%" onclick="openOverlay();currentSlide(6)"
+        <img id="img6" src="images/aboutUs6.jpg" style="width:100%" onmouseover="hover6()" onmouseout="hover6Stop()" onclick="openOverlay();currentSlide(6)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img7" src="images/aboutUs7.jpg" style="width:100%" onclick="openOverlay();currentSlide(7)"
+        <img id="img7" src="images/aboutUs7.jpg" style="width:100%" onmouseover="hover7()" onmouseout="hover7Stop()" onclick="openOverlay();currentSlide(7)"
           class="hoverShadow cursor">
       </div>
       <div class="column">
-        <img id="img8" src="images/aboutUs8.jpg" style="width:100%" onclick="openOverlay();currentSlide(8)"
+        <img id="img8" src="images/aboutUs8.jpg" style="width:100%" onmouseover="hover8()" onmouseout="hover8Stop()" onclick="openOverlay();currentSlide(8)"
           class="hoverShadow cursor">
       </div>
 
@@ -102,41 +107,41 @@
 
           <div class="slides">
             <div class="slideNumber">1 / 4</div>
-            <img src="images/aboutUs1.jpg" style="width:100%">
+            <img src="images/aboutUs1.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">2 / 4</div>
-            <img src="images/aboutUs2.jpg" style="width:100%">
+            <img src="images/aboutUs2.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">3 / 4</div>
-            <img src="images/aboutUs3.jpg" style="width:100%">
+            <img src="images/aboutUs3.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">4 / 4</div>
-            <img src="images/aboutUs4.jpg" style="width:100%">
+            <img src="images/aboutUs4.jpg" style="height:95vh">
           </div>
           <div class="slides">
             <div class="slideNumber">5 / 5</div>
-            <img src="images/aboutUs5.jpg" style="width:100%">
+            <img src="images/aboutUs5.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">6 / 6</div>
-            <img src="images/aboutUs6.jpg" style="width:100%">
+            <img src="images/aboutUs6.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">7 / 7</div>
-            <img src="images/aboutUs7.jpg" style="width:100%">
+            <img src="images/aboutUs7.jpg" style="height:95vh">
           </div>
 
           <div class="slides">
             <div class="slideNumber">8 / 8</div>
-            <img src="images/aboutUs8.jpg" style="width:100%">
+            <img src="images/aboutUs8.jpg" style="height:95vh">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>

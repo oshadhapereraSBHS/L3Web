@@ -19,7 +19,7 @@
 
 
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -62,8 +62,10 @@
 
 
         <div class="aboutUsDiv">
-
-
+<div id="aboutUsHeadingDiv">
+    <h1 class="aboutUsHeading">About Us</h1>
+</div>
+    
 
             <div id="aboutUsBodyDiv1">
                 <h1 id="aboutUsHeadingText1">Welcome</h1>

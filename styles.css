@@ -34,7 +34,7 @@ html {
 .bodyDiv {
     grid-row: 4/5;
     grid-column: 2/3;
-    background-color: #e5e3df93;
+    background-color: rgba(229, 227, 223, 0.576);
 }
 
 nav {
@@ -120,35 +120,42 @@ h1 {
     row-gap: 5%;
 }
 
+#contactReceived, #signUpReceived {
+    display: none;
+}
 .aboutUsBodyDivs {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto;
 }
-
-#aboutUsBodyDiv1 {
+#aboutUsHeadingDiv, #resourcesHeadingDiv {
     grid-row: 1/2;
-    grid-column: 1/4;
-    background-color: #e5e3df93;
-    padding: 2%;
+    grid-column: 1/5;
+    text-align: center  ;
 }
-
-#aboutUsBodyDiv2 {
+#aboutUsBodyDiv1 {
     grid-row: 2/3;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
 }
 
-#aboutUsBodyDiv3 {
+#aboutUsBodyDiv2 {
     grid-row: 3/4;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
 }
 
-#aboutUsBodyDiv4 {
+#aboutUsBodyDiv3 {
     grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#aboutUsBodyDiv4 {
+    grid-row: 5/6;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
@@ -187,18 +194,27 @@ h1 {
     background-color: #e5e3df93;
     margin-top: 10%;
 }
+.slides {
+    background-color: black;
+    text-align: center;
 
+}
+.slideNumber{
+    color:white;
+}
 
 
 #signUpCol1 {
-    grid-column: 2/3;
+    grid-column: 4/5;
     grid-row: 2/3;
+    margin-bottom: 4%;
 
 }
 
 #signUpCol2 {
-    grid-column: 4/5;
+    grid-column: 2/3;
     grid-row: 2/3;
+
 }
 
 #contactCol1 {
@@ -229,42 +245,42 @@ h1 {
 }
 
 #aboutUsBodyDiv1 {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 1/3;
 }
 
 #aboutUsBodyDiv2 {
-    grid-row: 2/3;
+    grid-row:3/4;
     grid-column: 2/4;
 }
 
 #aboutUsBodyDiv3 {
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/3;
 }
 
 #aboutUsBodyDiv4 {
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 2/4;
 }
 
 #aboutUsImage1 {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 3/4;
 }
 
 #aboutUsImage2 {
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/2;
 }
 
 #aboutUsImage3 {
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 3/4;
 }
 
 #aboutUsImage4 {
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 1/2;
 }
 
@@ -340,6 +356,10 @@ h1 {
     grid-row: 4/5;
     grid-column: 2/4;
     grid-gap: 2%;
+    margin-bottom: 5%;
+    background-color: #e5e3df93;
+    padding: 2%;
+    padding-bottom: 2%;
 }
 
 
@@ -439,6 +459,12 @@ img.hoverShadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.galleryHeading {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+}
+
 .noticesDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -492,7 +518,7 @@ p a {
 }
 
 #noticesHeading,
-#leaderboardHeading {
+#leaderboardHeading  {
     grid-column: 2/3;
     text-align: center;
 }
@@ -587,4 +613,18 @@ li a:hover {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.even {
+    background-color: #999;
+
+}
+
+.odd {
+    background-color: #073B4C;
+    color: #999;
+}
+
+.even, .odd {
+    font-weight: bold;
 }

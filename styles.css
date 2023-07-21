@@ -120,7 +120,7 @@ h1 {
     row-gap: 5%;
 }
 
-#contactReceived {
+#contactReceived, #signUpReceived {
     display: none;
 }
 .aboutUsBodyDivs {
@@ -198,13 +198,13 @@ h1 {
 
 
 #signUpCol1 {
-    grid-column: 2/3;
+    grid-column: 4/5;
     grid-row: 2/3;
 
 }
 
 #signUpCol2 {
-    grid-column: 4/5;
+    grid-column: 2/3;
     grid-row: 2/3;
 }
 

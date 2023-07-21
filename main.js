@@ -187,3 +187,24 @@ function hover8Stop() {
     
   
 
+    function signUpSubmit(){ 
+      var signUpName = document.getElementById("signUpName").value;
+      var signUpTutor = document.getElementById("signUpTutor").value;
+  
+      if(signUpName = null || signUpName == ""){
+        alert("Please enter your name");
+      } else if (signUpTutor = null || signUpTutor ==""){
+        alert("Please enter your tutor class");
+      } else {
+        var signUpName = document.getElementById("signUpName").value;
+  
+        document.getElementById("signUpForm").style.display = "none";
+        document.getElementById("signUpReceived").style.display = "block";
+        document.getElementById("signUpReceived").innerHTML = "Thank you for your interest in joining the chess club, " + signUpName + ". All you have to do now is turn up to chess club next Tuesday in 6P.";
+      }
+      
+        
+      }
+      
+    
+  

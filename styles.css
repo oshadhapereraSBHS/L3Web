@@ -8,36 +8,42 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-columns: 6% 1.5fr 1fr 6%;
     grid-template-rows: auto;
 }
 
 .logoDiv {
-    grid-row: 1/2;
+    grid-row: 1/3;
     grid-column: 2/3;
-
+    padding-top: 5%;
 }
 
 .navbarDiv {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 2/4;
-    align-self: end;
+}
+
+.navbarDiv2 {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .bodyDiv {
-    grid-row: 2/3;
+    grid-row: 4/5;
     grid-column: 2/3;
-    background-color: #e5e3df93;
+    background-color: rgba(229, 227, 223, 0.576);
 }
 
 nav {
     display: grid;
-    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-columns: 30% 1fr 1.6fr 1fr;
     grid-template-rows: auto;
-
 }
 
-#home {
+#overview {
     grid-column: 2/3;
 }
 
@@ -45,38 +51,52 @@ nav {
     height: auto;
 }
 
-#home, #overview, #forMembers {
-    text-align: end;
+
+#contact,
+.overview,
+.forMembers {
     font-size: 200%;
     font-weight: bold;
 }
 
-#homeBodyText, .contactText, label {
+
+#overview {
+    text-align: start;
+}
+
+#forMembers {
+    text-align: center;
+}
+
+#homeBodyText,
+.contactText,
+label {
     color: #118AB2;
     font-size: 150%;
 }
-
 
 a {
     color: #073B4C;
     text-decoration: none;
 }
 
-#homeHeadingText, h1 {
+#homeHeadingText,
+h1 {
     text-decoration: underline;
     text-decoration-color: #118AB2;
     font-family: "Ink Free Regular", cursive;
     font-size: 300%;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#signUpButton, #contactButton {
-background-color: rgba(17, 138, 178, 0.5);
-border: none;
-color: #073B4C;
-font-family: "Ink Free Regular", cursive;
-font-size: 150%;
-
+#signUpButton,
+#contactButton,
+#aboutUsButton {
+    background-color: rgba(17, 138, 178, 0.5);
+    border: none;
+    color: #073B4C;
+    font-family: "Ink Free Regular", cursive;
+    font-size: 150%;
 }
 
 .bodyDiv {
@@ -86,6 +106,59 @@ font-size: 150%;
     margin-top: 15%;
     margin-bottom: 5%;
     padding-bottom: 5%;
+}
+
+.aboutUsDiv {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    row-gap: 5%;
+}
+
+#contactReceived {
+    display: none;
+}
+.aboutUsBodyDivs {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto;
+}
+#aboutUsHeadingDiv, #resourcesHeadingDiv {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center  ;
+}
+#aboutUsBodyDiv1 {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#aboutUsBodyDiv2 {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#aboutUsBodyDiv3 {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#aboutUsBodyDiv4 {
+    grid-row: 5/6;
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+    padding: 2%;
 }
 
 #homeHeadingDiv {
@@ -107,10 +180,32 @@ font-size: 150%;
 .contactDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
-    grid-row: 2/3;
+    grid-row: 4/5;
     grid-column: 2/4;
     background-color: #e5e3df93;
     margin-top: 10%;
+}
+
+.signUpDiv {
+    display: grid;
+    grid-template-columns: 5% 1fr 5% 1fr 5%;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    background-color: #e5e3df93;
+    margin-top: 10%;
+}
+
+
+
+#signUpCol1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+#signUpCol2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
 }
 
 #contactCol1 {
@@ -126,4 +221,387 @@ font-size: 150%;
 #contactHeadingDiv {
     grid-column: 2/5;
     justify-self: center;
+}
+
+#signUpHeadingDiv {
+    grid-column: 2/5;
+    justify-self: center;
+    grid-row: 1/2;
+}
+
+#aboutUsButtonDiv {
+    grid-row: 5/6;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+#aboutUsBodyDiv1 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#aboutUsBodyDiv2 {
+    grid-row:3/4;
+    grid-column: 2/4;
+}
+
+#aboutUsBodyDiv3 {
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+#aboutUsBodyDiv4 {
+    grid-row: 5/6;
+    grid-column: 2/4;
+}
+
+#aboutUsImage1 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+#aboutUsImage2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#aboutUsImage3 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+#aboutUsImage4 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+
+
+.dropdownGroup1 {
+    grid-column: 2/3;
+}
+
+.dropdownGroup2 {
+    grid-column: 3/4;
+}
+
+.dropdownGroup3 {
+    grid-column: 4/5;
+}
+
+.dropdownItems1 {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: none;
+
+}
+
+.dropdownItems2 {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: none;
+
+}
+
+.dropdownItems1,
+.dropdownItems2 {
+    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+.navbarDiv2 a {
+
+    font-size: 130%;
+}
+
+.navbarDiv2 {
+    padding-top: 2%;
+    text-align: start;
+}
+
+#aboutUs {
+    grid-column: 2/3;
+}
+
+#gallery {
+    grid-column: 3/4;
+
+}
+
+#notices {
+    grid-column: 2/3;
+}
+
+#signUp {
+    grid-column: 4/5;
+}
+
+#cross {
+    text-align: end;
+}
+
+#galleryDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    grid-gap: 2%;
+    margin-bottom: 5%;
+    background-color: #e5e3df93;
+    padding: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+/* The Modal (background) */
+.galleryOverlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.overlayContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img.hoverShadow {
+    transition: 0.3s;
+}
+
+.hoverShadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryHeading {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.noticesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    grid-gap: 2%;
+}
+
+.notices {
+    background-color: #e5e3df93;
+    padding: 2%;
+}
+
+#notice1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+#notice2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+#notice3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+
+p a {
+    text-decoration: underline;
+}
+
+#notice4 {
+
+    grid-column: 1/2;
+    grid-row: 3/4
+}
+
+#notice5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#notice6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#noticesHeading,
+#leaderboardHeading  {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.leaderboardDiv {
+    grid-row: 4/5;
+    grid-column: 2/4;
+   margin-top: 5%;
+    grid-gap: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: #e5e3df93;
+}
+
+.leaderboardTable {
+text-align: center;
+border-collapse: collapse;
+}
+
+
+th, td {
+    border: 1px solid black;
+    max-width: 50px;
+}
+
+.row1 {
+    grid-row: 2/3;
+
+}
+
+.row2 {
+    grid-row: 3/4;
+}
+
+.row3 {
+    grid-row: 4/5;
+}
+
+.row4 {
+    grid-row: 5/6;
+}
+
+.row5 {
+    grid-row: 6/7;
+}
+
+.row6 {
+    grid-row: 7/8;
+}
+
+.row7 {
+    grid-row: 8/9;
+}
+
+.row8 {
+    grid-row: 9/10;
+}
+
+.row9 {
+    grid-row: 10/11;
+}
+
+.row10 {
+    grid-row: 11/12;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+#overview:hover,
+#forMembers:hover,
+#contact:hover {
+    text-decoration: underline;
+}
+
+.navbarDiv2 {
+    min-height: 40px;
+    ;
+}
+
+.dropdownItems1,
+.dropdownItems2 {
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+#overview,
+#forMembers,
+#contact {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }

@@ -159,3 +159,52 @@ function hover8Stop() {
   document.getElementById("img8").src = "images/aboutUs8.jpg"
 
 }
+
+
+
+
+  function contactSubmit(){ 
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if(name = null || name == ""){
+      alert("Please enter your name");
+    } else if (email = null || email ==""){
+      alert("Please enter your email");
+    } else if (message = null || message ==""){
+      alert("Please enter your message");
+    } else {
+      var name = document.getElementById("name").value;
+
+      document.getElementById("contactForm").style.display = "none";
+      document.getElementById("contactReceived").style.display = "block";
+      document.getElementById("contactReceived").innerHTML = "Thank you " + name + ", we will get back to you as soon as possible.";
+    }
+    
+      
+    }
+    
+  
+
+    function signUpSubmit(){ 
+      var signUpName = document.getElementById("signUpName").value;
+      var signUpTutor = document.getElementById("signUpTutor").value;
+  
+      if(signUpName = null || signUpName == ""){
+        alert("Please enter your name");
+      } else if (signUpTutor = null || signUpTutor ==""){
+        alert("Please enter your tutor class");
+      } else {
+        var signUpName = document.getElementById("signUpName").value;
+  
+        document.getElementById("signUpForm").style.display = "none";
+        document.getElementById("signUpReceived").style.display = "block";
+        document.getElementById("signUpReceived").innerHTML = "Thank you for your interest in joining the chess club, " + signUpName + ". All you have to do now is turn up to chess club next Tuesday in 6P.";
+      }
+      
+        
+      }
+      
+    
+  

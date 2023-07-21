@@ -164,11 +164,25 @@ function hover8Stop() {
 
 
   function contactSubmit(){ 
-    
-    var name = document.getElementById("name").value
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if(name = null || name == ""){
+      alert("Please enter your name");
+    } else if (email = null || email ==""){
+      alert("Please enter your email");
+    } else if (message = null || message ==""){
+      alert("Please enter your message");
+    } else {
+      var name = document.getElementById("name").value;
+
       document.getElementById("contactForm").style.display = "none";
       document.getElementById("contactReceived").style.display = "block";
       document.getElementById("contactReceived").innerHTML = "Thank you " + name + ", we will get back to you as soon as possible.";
+    }
+    
+      
     }
     
   

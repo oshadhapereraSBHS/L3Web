@@ -90,6 +90,7 @@ function home() {
 
 function hover1() {
   document.getElementById("img1").src = "images/aboutUs1Hover.jpg"
+  document.getElementById("img1").display.transform = "scale(2)";
 }
 
 function hover1Stop() {
@@ -207,4 +208,10 @@ function hover8Stop() {
       }
       
     
-  
+function logoChange1(){
+  document.getElementById("logo").src = "images/logo1.png";
+}
+
+function logoChange2(){
+  document.getElementById("logo").src = "images/logo.png";
+}

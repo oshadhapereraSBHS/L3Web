@@ -194,7 +194,14 @@ h1 {
     background-color: #e5e3df93;
     margin-top: 10%;
 }
+.slides {
+    background-color: black;
+    text-align: center;
 
+}
+.slideNumber{
+    color:white;
+}
 
 
 #signUpCol1 {
@@ -606,4 +613,18 @@ li a:hover {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.even {
+    background-color: #999;
+
+}
+
+.odd {
+    background-color: #073B4C;
+    color: #999;
+}
+
+.even, .odd {
+    font-weight: bold;
 }

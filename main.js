@@ -3,7 +3,9 @@ function signUpPage() {
 }
 var dropdown1Clicks = 1;
 var dropdown2Clicks = 1;
-var darkMode = false;
+
+localStorage.setItem("darkMode", "false");
+var darkMode = localStorage.getItem("darkMode");
 function darkModeOn(){
   darkMode = true;
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";

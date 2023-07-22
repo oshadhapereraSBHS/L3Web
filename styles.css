@@ -8,14 +8,14 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 6% 1.5fr 1fr 6%;
+    grid-template-columns: 4% 1.5fr 1fr 4%;
     grid-template-rows: auto;
 }
 
 .logoDiv {
     grid-row: 1/3;
     grid-column: 2/3;
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
 .navbarDiv {
@@ -36,6 +36,20 @@ html {
     grid-column: 2/3;
     background-color: rgba(229, 227, 223, 0.576);
 }
+#galleryDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    grid-gap: 2%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    background-color: #e5e3df93;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+
 
 nav {
     display: grid;
@@ -71,7 +85,7 @@ nav {
 #homeBodyText,
 .contactText,
 label {
-    color: #118AB2;
+
     font-size: 150%;
 }
 
@@ -112,12 +126,12 @@ h1 {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 18%;
     grid-row: 4/5;
     grid-column: 2/4;
-    row-gap: 5%;
+    row-gap: 2%;
+    
 }
 
 #contactReceived, #signUpReceived {
@@ -131,13 +145,18 @@ h1 {
 #aboutUsHeadingDiv, #resourcesHeadingDiv {
     grid-row: 1/2;
     grid-column: 1/5;
-    text-align: center  ;
+    text-align: center;
+    background-color: #e5e3df93;
+    box-shadow:3px 3px 4px 0px black;
+
 }
 #aboutUsBodyDiv1 {
     grid-row: 2/3;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
+    box-shadow:3px 3px 4px 0px black;
+
 }
 
 #aboutUsBodyDiv2 {
@@ -145,6 +164,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
+    box-shadow:3px 3px 4px 0px black;
 }
 
 #aboutUsBodyDiv3 {
@@ -152,6 +172,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
+    box-shadow:3px 3px 4px 0px black;
 }
 
 #aboutUsBodyDiv4 {
@@ -159,6 +180,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
+    box-shadow:3px 3px 4px 0px black;
 }
 
 #homeHeadingDiv {
@@ -183,7 +205,9 @@ h1 {
     grid-row: 4/5;
     grid-column: 2/4;
     background-color: #e5e3df93;
-    margin-top: 10%;
+    margin-top: 2%;
+    box-shadow:3px 3px 4px 0px black;
+    margin-bottom: 2%;
 }
 
 .signUpDiv {
@@ -192,7 +216,12 @@ h1 {
     grid-row: 4/5;
     grid-column: 2/4;
     background-color: #e5e3df93;
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.signUpDiv, #galleryDiv, .leaderboardDiv, .noticesHeadingDiv, .notices, .leaderboardDiv {
+    box-shadow: 3px 3px 4px 0 black;
 }
 .slides {
     background-color: black;
@@ -267,21 +296,26 @@ h1 {
 #aboutUsImage1 {
     grid-row: 2/3;
     grid-column: 3/4;
+    box-shadow:3px 3px 4px 0px black;
+
 }
 
 #aboutUsImage2 {
     grid-row: 3/4;
     grid-column: 1/2;
+    box-shadow:0px 3px 4px 0px black;
 }
 
 #aboutUsImage3 {
     grid-row: 4/5;
     grid-column: 3/4;
+    box-shadow:3px 3px 4px 0px black;
 }
 
 #aboutUsImage4 {
     grid-row: 5/6;
     grid-column: 1/2;
+    box-shadow:0px 3px 4px 0px black;
 }
 
 
@@ -350,17 +384,6 @@ h1 {
     text-align: end;
 }
 
-#galleryDiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 4/5;
-    grid-column: 2/4;
-    grid-gap: 2%;
-    margin-bottom: 5%;
-    background-color: #e5e3df93;
-    padding: 2%;
-    padding-bottom: 2%;
-}
 
 
 
@@ -471,7 +494,9 @@ img.hoverShadow {
     grid-template-rows: auto;
     grid-row: 4/5;
     grid-column: 2/4;
-    grid-gap: 2%;
+    grid-gap: 2.2%;
+    margin-bottom: 6%;
+    margin-top: 2%;
 }
 
 .notices {
@@ -522,11 +547,16 @@ p a {
     grid-column: 2/3;
     text-align: center;
 }
+.noticesHeadingDiv {
+    grid-column: 1/4;
+    background-color: #e5e3df93;
+}
 
 .leaderboardDiv {
     grid-row: 4/5;
     grid-column: 2/4;
-   margin-top: 5%;
+   margin-top: 2%;
+   margin-bottom: 4%;
     grid-gap: 2%;
     padding-left: 2%;
     padding-right: 2%;

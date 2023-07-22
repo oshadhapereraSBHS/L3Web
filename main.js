@@ -8,6 +8,7 @@ localStorage.setItem("darkMode", "false");
 var darkMode = localStorage.getItem("darkMode");
 function darkModeOn(){
   darkMode = true;
+  document.getElementById("logo").src = "images/logoDark.png"
   document.getElementById("dark").src = "images/light.png"
   document.getElementById("dark").style.width = "60%";
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
@@ -263,10 +264,20 @@ function hover8Stop() {
       
     
 function logoChange1(){
-  document.getElementById("logo").src = "images/logo1.png";
+  if(darkMode == true){
+    document.getElementById("logo").src = "images/logoDark.png";
+  } else {    document.getElementById("logo").src = "images/logo1.png";
+
+  }
+
 }
 
 function logoChange2(){
-  document.getElementById("logo").src = "images/logo.png";
+  if(darkMode == true){
+    document.getElementById("logo").src = "images/logoDark.png";
+  } else {    document.getElementById("logo").src = "images/logo.png";
+
+  }
+  
 }
 

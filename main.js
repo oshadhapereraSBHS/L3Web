@@ -3,10 +3,13 @@ function signUpPage() {
 }
 var dropdown1Clicks = 1;
 var dropdown2Clicks = 1;
-
+var darkModeCount = 1;
 localStorage.setItem("darkMode", "false");
 var darkMode = localStorage.getItem("darkMode");
 function darkModeOn(){
+darkModeCount++;
+
+if(darkModeCount % 2 == 0){
   darkMode = true;
   document.getElementById("logo").src = "images/logoDark.png"
   document.getElementById("dark").src = "images/light.png"
@@ -18,6 +21,21 @@ function darkModeOn(){
   document.getElementById("overview").style.color = "white";
   document.getElementById("forMembers").style.color = "white";
   document.getElementById("contact").style.color = "white";
+} else {
+  darkMode = false;
+  document.getElementById("logo").src = "images/logo.png"
+  document.getElementById("dark").src = "images/dark.png"
+  document.getElementById("dark").style.width = "60%";
+  document.body.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+  document.getElementById("html").style.background = "none";
+  document.getElementById("contactDiv").style.backgroundColor = "rgba(0, 0, 0, 0)";
+  document.body.style.color = "rgba(0, 0, 0, 0.9)"
+  document.getElementById("overview").style.color = "#073B4C"
+  document.getElementById("forMembers").style.color = "#073B4C"
+  document.getElementById("contact").style.color = "#073B4C"
+  document.getElementById("html").style.backgroundImage = "url('images/bg.png')"
+}
+
 }
 function dropdown1() {
   dropdown2Clicks = 1;

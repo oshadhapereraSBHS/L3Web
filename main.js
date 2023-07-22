@@ -3,74 +3,92 @@ function signUpPage() {
 }
 var dropdown1Clicks = 1;
 var dropdown2Clicks = 1;
-var darkModeCount = 1;
-localStorage.setItem("darkMode", "false");
-var darkMode = localStorage.getItem("darkMode");
-function darkModeOn(){
-darkModeCount++;
+var dropdown1Display = false;
+var dropdown2Display = false;
+window.onload = function() {
+  localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")));
+  localStorage.setItem("darkMode", localStorage.getItem("darkMode"));
+  if(localStorage.getItem("darkModeCount") % 2 == 0){
+    darkModeChanges();
+  }
 
-if(darkModeCount % 2 == 0){
-  darkMode = true;
-  document.getElementById("logo").src = "images/logoDark.png"
-  document.getElementById("dark").src = "images/light.png"
-  document.getElementById("dark").style.width = "60%";
-  document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-  document.getElementById("html").style.background = "none";
-  document.getElementById("contactDiv").style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-  document.body.style.color = "rgba(255, 255, 255, 0.9)"
-  document.getElementById("overview").style.color = "white";
-  document.getElementById("forMembers").style.color = "white";
-  document.getElementById("contact").style.color = "white";
-} else {
-  darkMode = false;
-  document.getElementById("logo").src = "images/logo.png"
-  document.getElementById("dark").src = "images/dark.png"
-  document.getElementById("dark").style.width = "60%";
-  document.body.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
-  document.getElementById("html").style.background = "none";
-  document.getElementById("contactDiv").style.backgroundColor = "rgba(0, 0, 0, 0)";
-  document.body.style.color = "rgba(0, 0, 0, 0.9)"
-  document.getElementById("overview").style.color = "#073B4C"
-  document.getElementById("forMembers").style.color = "#073B4C"
-  document.getElementById("contact").style.color = "#073B4C"
-  document.getElementById("html").style.backgroundImage = "url('images/bg.png')"
 }
+function darkModeChanges(){
+  if(localStorage.getItem("darkModeCount") % 2 == 0){
+  
+    localStorage.setItem("darkMode", true)
+      document.getElementById("logo").src = "images/logoDark.png"
+      document.getElementById("dark").src = "images/light.png"
+      document.getElementById("dark").style.width = "60%";
+      document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+      document.getElementById("html").style.background = "none";
+      document.getElementById("contactDiv").style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+      document.body.style.color = "rgba(255, 255, 255, 0.9)"
+      document.getElementById("overview").style.color = "white";
+      document.getElementById("forMembers").style.color = "white";
+      document.getElementById("contact").style.color = "white";
+      document.getElementsByClassName("links")[0].style.color = "white"
+      document.getElementsByClassName("links")[1].style.color = "white"
+      document.getElementsByClassName("links")[2].style.color = "white"
+      document.getElementsByClassName("links")[3].style.color = "white"
+      document.getElementsByClassName("links")[4].style.color = "white"
+      document.getElementsByClassName("links")[5].style.color = "white"
+      document.getElementById("forMembers").style.color = "white"
+      if(dropdown1Display){document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 white"}
+      if(dropdown2Display){document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 white"}
+      
+      
+      document.getElementById("dropdownItems2").style.boxShadow = "2px 2px 1px 0 white"
+      document.getElementById("dropdownItems1").style.boxShadow = "2px 2px 1px 0 white"
+    } else {
+      localStorage.setItem("darkMode", false)
+    
+      location.reload();
+    
+    }
+}
+function darkModeOn(){
+localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")) + 1);
+darkModeChanges();
 
 }
 function dropdown1() {
   dropdown2Clicks = 1;
   dropdown1Clicks++;
-  if(darkMode == true){
+  if(localStorage.getItem("darkMode") == true){
     document.getElementsByClassName("links")[0].style.color = "white"
     document.getElementsByClassName("links")[1].style.color = "white"
     document.getElementsByClassName("links")[2].style.color = "white"
 }
   if (dropdown1Clicks % 2 === 0) {
+dropdown1Display = true;
     document.getElementById("dropdownItems1").style.display = "grid";
     document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 black";
     document.getElementById("forMembers").style.boxShadow = "none";
     
     document.getElementById("dropdownItems2").style.display = "none";
-    if(darkMode == false){
-      document.getElementById("overview").style.color = "#073B4C"
-      document.getElementById("forMembers").style.color = "#999"
-      document.getElementById("contact").style.color = "#999"
-  
-    }else {
+    if(localStorage.getItem("darkMode") == true){
+
+
       document.getElementById("forMembers").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
       document.getElementById("overview").style.color = "white"
       document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 white"
       document.getElementById("dropdownItems1").style.boxShadow = "2px 2px 1px 0 white"
 
+    }else {
+      document.getElementById("overview").style.color = "#073B4C"
+      document.getElementById("forMembers").style.color = "#999"
+      document.getElementById("contact").style.color = "#999"
     }
     
     
   } else {
+    dropdown1Display = false;
     document.getElementById("dropdownItems1").style.display = "none";
 
     document.getElementById("overview").style.boxShadow = "none"
-    if(darkMode == false){
+    if(localStorage.getItem("darkMode") == false){
     document.getElementById("forMembers").style.color = "#073B4C"
     document.getElementById("overview").style.color = "#073B4C"
     document.getElementById("contact").style.color = "#073B4C"
@@ -84,34 +102,36 @@ function dropdown1() {
 function dropdown2() {
   dropdown1Clicks = 1;
   dropdown2Clicks++;
-  if(darkMode == true){
+  if(localStorage.getItem("darkMode") == true){
     document.getElementsByClassName("links")[3].style.color = "white"
     document.getElementsByClassName("links")[4].style.color = "white"
     document.getElementsByClassName("links")[5].style.color = "white"
 }
   if (dropdown2Clicks % 2 === 0) {
-
+dropdown2Display = true;
     document.getElementById("dropdownItems2").style.display = "grid";
     document.getElementById("dropdownItems1").style.display = "none";
     document.getElementById("overview").style.boxShadow = "none";
-    if(darkMode == false){
-    document.getElementById("overview").style.color = "#999"
-    document.getElementById("contact").style.color = "#999"
-    document.getElementById("forMembers").style.color = "#073B4C"
-    document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 black"
+    if(localStorage.getItem("darkMode") == true){
 
-    } else {
-      document.getElementById("overview").style.color = "#999"
+
+    document.getElementById("overview").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
       document.getElementById("forMembers").style.color = "white"
       document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 white"
       document.getElementById("dropdownItems2").style.boxShadow = "2px 2px 1px 0 white"
-
+    } else {
+      
+      document.getElementById("overview").style.color = "#999"
+      document.getElementById("contact").style.color = "#999"
+      document.getElementById("forMembers").style.color = "#073B4C"
+      document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 black"
     }
   } else {
+    dropdown2Display = false;
     document.getElementById("dropdownItems2").style.display = "none";
     document.getElementById("forMembers").style.boxShadow = "none"
-if(darkMode == false){
+if(localStorage.getItem("darkMode") == false){
   document.getElementById("overview").style.color = "#073B4C"
     document.getElementById("forMembers").style.color = "#073B4C"
     document.getElementById("contact").style.color = "#073B4C"
@@ -282,7 +302,7 @@ function hover8Stop() {
       
     
 function logoChange1(){
-  if(darkMode == true){
+  if(localStorage.getItem("darkMode") == true){
     document.getElementById("logo").src = "images/logoDark.png";
   } else {    document.getElementById("logo").src = "images/logo1.png";
 
@@ -291,7 +311,7 @@ function logoChange1(){
 }
 
 function logoChange2(){
-  if(darkMode == true){
+  if(localStorage.getItem("darkMode") == true){
     document.getElementById("logo").src = "images/logoDark.png";
   } else {    document.getElementById("logo").src = "images/logo.png";
 

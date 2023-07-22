@@ -215,3 +215,14 @@ function logoChange1(){
 function logoChange2(){
   document.getElementById("logo").src = "images/logo.png";
 }
+var darkMode = false;
+function darkMode(){
+  darkMode = true;
+  document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+  document.getElementById("html").style.background = "none";
+  document.getElementById("contactDiv").style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+  // document.body.style.color = "rgba(255, 255, 255, 0.9)"
+  // document.getElementById("overview").style.color = "white";
+  // document.getElementById("forMembers").style.color = "white";
+  // document.getElementById("contact").style.color = "white";
+}

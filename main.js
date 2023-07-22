@@ -8,6 +8,8 @@ localStorage.setItem("darkMode", "false");
 var darkMode = localStorage.getItem("darkMode");
 function darkModeOn(){
   darkMode = true;
+  document.getElementById("dark").src = "images/light.png"
+  document.getElementById("dark").style.width = "60%";
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
   document.getElementById("html").style.background = "none";
   document.getElementById("contactDiv").style.backgroundColor = "rgba(255, 255, 255, 0.1)";

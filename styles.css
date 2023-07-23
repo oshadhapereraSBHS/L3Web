@@ -699,7 +699,7 @@ li a:hover {
 
 }
 
-#choose1, #choose2, #choose3, #choose4, #nextQuestion, #checkAnswer, #restart, #result2 {
+#checkAnswer, #restart {
     display: none;
 }
 
@@ -723,8 +723,9 @@ li a:hover {
 }
 
 iframe {
-    min-height: 80%;
-    margin-bottom: 70%;
+    min-height: 530px;
+    
+    margin-bottom: 150%;
 }
 
 
@@ -930,4 +931,8 @@ vertical-align: bottom;
 
 #merch {
     grid-column: 4/5;
+}
+
+h3 a:hover {
+    text-decoration: underline;
 }

@@ -344,3 +344,11 @@ function logoChange2(){
 }
 
 
+function cartPage() {
+  location.href = "cart.html";
+}
+
+function checkout(){
+  document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
+            document.getElementById("form5").style.display = "none";
+}

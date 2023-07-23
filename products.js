@@ -62,80 +62,80 @@ function minus2() {
         document.getElementById("quantity2").stepDown();
         localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-    }
+//     }
 
-}
+// }
 
-function plus2() {
-    document.getElementById("quantity2").stepUp();
-    localStorage.setItem("quantity2", document.getElementById("quantity2").value)
+// function plus2() {
+//     document.getElementById("quantity2").stepUp();
+//     localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-}
-
-
-function minus3() {
-    if (localStorage.getItem("quantity3") > 0) {
-        document.getElementById("quantity3").stepDown();
-        localStorage.setItem("quantity3", document.getElementById("quantity3").value)
-
-    }
-
-}
-
-function plus3() {
-
-    document.getElementById("quantity3").stepUp();
-    localStorage.setItem("quantity3", document.getElementById("quantity3").value)
-
-}
-
-function minus4() {
-    if (localStorage.getItem("quantity4") > 0) {
-
-        document.getElementById("quantity4").stepDown();
-        localStorage.setItem("quantity4", document.getElementById("quantity4").value)
-
-    }
-}
-
-function plus4() {
-    document.getElementById("quantity4").stepUp();
-    localStorage.setItem("quantity4", document.getElementById("quantity4").value)
+// }
 
 
-}
+// function minus3() {
+//     if (localStorage.getItem("quantity3") > 0) {
+//         document.getElementById("quantity3").stepDown();
+//         localStorage.setItem("quantity3", document.getElementById("quantity3").value)
 
-function minus5() {
-    if (localStorage.getItem("quantity5") > 0) {
-        document.getElementById("quantity5").stepDown();
-        localStorage.setItem("quantity5", document.getElementById("quantity5").value)
+//     }
 
-    }
+// }
 
-}
+// function plus3() {
 
-function plus5() {
+//     document.getElementById("quantity3").stepUp();
+//     localStorage.setItem("quantity3", document.getElementById("quantity3").value)
 
-    document.getElementById("quantity5").stepUp();
-    localStorage.setItem("quantity5", document.getElementById("quantity5").value)
+// }
 
-}
+// function minus4() {
+//     if (localStorage.getItem("quantity4") > 0) {
 
-function minus6() {
-    if (localStorage.getItem("quantity6") > 0) {
-        document.getElementById("quantity6").stepDown();
-        localStorage.setItem("quantity6", document.getElementById("quantity6").value)
+//         document.getElementById("quantity4").stepDown();
+//         localStorage.setItem("quantity4", document.getElementById("quantity4").value)
 
-    }
+//     }
+// }
 
-}
-
-function plus6() {
-    document.getElementById("quantity6").stepUp();
-    localStorage.setItem("quantity6", document.getElementById("quantity6").value)
+// function plus4() {
+//     document.getElementById("quantity4").stepUp();
+//     localStorage.setItem("quantity4", document.getElementById("quantity4").value)
 
 
-}
+// }
+
+// function minus5() {
+//     if (localStorage.getItem("quantity5") > 0) {
+//         document.getElementById("quantity5").stepDown();
+//         localStorage.setItem("quantity5", document.getElementById("quantity5").value)
+
+//     }
+
+// }
+
+// function plus5() {
+
+//     document.getElementById("quantity5").stepUp();
+//     localStorage.setItem("quantity5", document.getElementById("quantity5").value)
+
+// }
+
+// function minus6() {
+//     if (localStorage.getItem("quantity6") > 0) {
+//         document.getElementById("quantity6").stepDown();
+//         localStorage.setItem("quantity6", document.getElementById("quantity6").value)
+
+//     }
+
+// }
+
+// function plus6() {
+//     document.getElementById("quantity6").stepUp();
+//     localStorage.setItem("quantity6", document.getElementById("quantity6").value)
+
+
+// }
 
 
 function updateQuantity1() {

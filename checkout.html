@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+
+    <title>SBHS Chess Club</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <!--div for adding grid layout for page-->
+    <div class="container">
+
+
+
+        <div class="logoDiv">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+        </div>
+
+        <div class="navbarDiv">
+            <nav>
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+
+
+
+
+
+            </nav>
+        </div>
+
+        <div class="navbarDiv2">
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+            </div>
+
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+            </div>
+        </div>
+
+        <div class="checkoutDiv" id="checkoutDiv">
+            <div id="contactHeadingDiv">
+                <h1>Checkout</h1>
+                
+                
+            </div>
+
+            <div class="checkoutCol1">
+                <!--first column of checkout form-->
+                <form id="form4">
+                    <!--heading for column 1-->
+                    <h3>Billing Details</h3><br><br>
+
+                    <!--form with labels and input-->
+                    <label>First Name</label><br>
+                    <input type="text" placeholder="Required" id="firstName"><br><br>
+
+                    <label>Last Name</label><br>
+                    <input type="text" placeholder="Required" id="lastName"><br><br>
+
+                    <label>Phone number</label><br>
+                    <input type="number"><br><br>
+
+                    <label>Email</label><br>
+                    <input type="text" placeholder="Required" id="email"><br><br>
+
+                    <label>Street Address</label><br>
+                    <input type="text"><br><br>
+
+                    <label>City</label><br>
+                    <input type="text"><br><br>
+
+                    <label>Post Code</label><br>
+                    <input type="number"><br><br>
+
+                    <input type="checkbox" checked="checked"> Shipping address same as billing
+
+
+                </form>
+
+            </div>
+
+            <div class="checkoutCol2">
+                <!--first column of checkout form-->
+
+                <form id="form5">
+                    <!--heading for column 1-->
+
+                    <h3>Payment Details</h3><br><br>
+
+                    <!--form with labels and input-->
+
+                    <label>Credit Card Number</label><br>
+                    <input type="number"><br><br>
+
+                    <label>Expiry Date</label><br>
+                    <input type="number"><br><br>
+
+                    <label>CVV</label><br>
+                    <input type="number"><br><br>
+
+                    <!--total price as readonly text-->
+                    <label>Total</label><br>
+                    <input id="totalValue" type="text" readonly><br><br>
+
+
+
+                    <!--submit button-->
+                    <button type="button" id="confirmButton" onclick="checkout()">Confirm</button>
+
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

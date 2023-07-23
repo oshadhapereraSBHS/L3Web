@@ -21,6 +21,14 @@ window.onload = function() {
     document.getElementById("forMembers").style.color = "white";
     document.getElementById("contact").style.color = "white";
   }
+  document.getElementById("totalValue").value = '$' +
+  (localStorage.getItem("quantity1") * 10.99 +
+      localStorage.getItem("quantity2") * 11.99 +
+      localStorage.getItem("quantity3") * 8.99 +
+      localStorage.getItem("quantity4") * 10.99 +
+      localStorage.getItem("quantity5") * 11.99 +
+      localStorage.getItem("quantity6") * 8.99);
+
 }
 function darkModeChanges(){
   if(localStorage.getItem("darkModeCount") % 2 == 0){
@@ -344,3 +352,29 @@ function logoChange2(){
 }
 
 
+function cartPage() {
+  location.href = "cart.html";
+}
+
+function checkout(){
+
+
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+
+  if(firstName = null || firstName == ""){
+    alert("Please enter your first name");
+  } else if (lastName = null || lastName ==""){
+    alert("Please enter your last email");
+  } else if (email = null || email ==""){
+    alert("Please enter your email");
+  } else {
+    
+    document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
+    document.getElementById("form5").style.display = "none";
+  }
+
+
+
+}

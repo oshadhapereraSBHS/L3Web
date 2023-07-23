@@ -60,6 +60,11 @@ function startQuiz(){
     document.getElementById("result").style.display = "none";
     document.getElementById("checkAnswer").style.display = "block";
     document.getElementById("nextQuestion").style.display = "none";
+    document.getElementsByClassName("answers")[0].style.color = "#073B4C";
+    document.getElementsByClassName("answers")[1].style.color = "#073B4C";
+    document.getElementsByClassName("answers")[2].style.color = "#073B4C";
+    document.getElementsByClassName("answers")[3].style.color = "#073B4C";
+
     if(questionNumber < questions.length-1){
       questionNumber++;
       document.getElementById("questions").innerHTML = questions[questionNumber];
@@ -90,13 +95,13 @@ function startQuiz(){
   
   var givenAnswer = 0;
   function check(){
-
+var validAnswer = true
         if(document.getElementById("choose1").checked == true){givenAnswer = 1;}
          else if(document.getElementById("choose2").checked == true){givenAnswer = 2;}
         else if(document.getElementById("choose3").checked == true){givenAnswer = 3;}
         else if(document.getElementById("choose4").checked == true){givenAnswer = 4;}
         else {
-            var validAnswer = false;
+            validAnswer = false;
             alert("Please select an answer");
         }
         
@@ -107,12 +112,32 @@ function startQuiz(){
             document.getElementById("result").innerHTML = "Correct!";
             document.getElementById("nextQuestion").style.display = "block";
             document.getElementById("checkAnswer").style.display = "none";
-        } else if (validAnswer){
-            document.getElementById("result").style.display = "block";
-            document.getElementById("result").innerHTML = "Wrong!" +givenAnswer + " " + answers[questionNumber];
+
             
+
+            document.getElementsByClassName("answers")[givenAnswer-1].style.color = "green";
+
+
+
+
+
+
+
+        } else if (validAnswer){
+          document.getElementsByClassName("answers")[answers[questionNumber]-1].style.color = "green";  
+          document.getElementsByClassName("answers")[givenAnswer-1].style.color = "red";
+          document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = "Incorrect!";
             document.getElementById("nextQuestion").style.display = "block";
             document.getElementById("checkAnswer").style.display = "none";
+
+
+
+
+
+
+
+
         }
   }
   

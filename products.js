@@ -22,61 +22,61 @@ window.onload = function () {
     if (localStorage.getItem("quantity3") == null) {
         document.getElementById("quantity3").value = 0
     }
-    if (localStorage.getItem("quantity4") == null) {
-        document.getElementById("quantity4").value = 0
-    }
-    if (localStorage.getItem("quantity5") == null) {
-        document.getElementById("quantity5").value = 0
-    }
-    if (localStorage.getItem("quantity6") == null) {
-        document.getElementById("quantity6").value = 0
-    }
+//     if (localStorage.getItem("quantity4") == null) {
+//         document.getElementById("quantity4").value = 0
+//     }
+//     if (localStorage.getItem("quantity5") == null) {
+//         document.getElementById("quantity5").value = 0
+//     }
+//     if (localStorage.getItem("quantity6") == null) {
+//         document.getElementById("quantity6").value = 0
+//     }
 
 
-}
+// }
 
 
 
 
-function minus1() {
-    //if user have added items to cart (so quantity is > 0)
-    if (localStorage.getItem("quantity1") > 0) {
-        //reduce quantity by 1
-        document.getElementById("quantity1").stepDown();
-        //store new value as quantity
-        localStorage.setItem("quantity1", document.getElementById("quantity1").value)
-    }
-}
+// function minus1() {
+//     //if user have added items to cart (so quantity is > 0)
+//     if (localStorage.getItem("quantity1") > 0) {
+//         //reduce quantity by 1
+//         document.getElementById("quantity1").stepDown();
+//         //store new value as quantity
+//         localStorage.setItem("quantity1", document.getElementById("quantity1").value)
+//     }
+// }
 
-function plus1() {
-    //increase quantity by 1
-    document.getElementById("quantity1").stepUp();
-    //store new value as quantity
-    localStorage.setItem("quantity1", document.getElementById("quantity1").value)
+// function plus1() {
+//     //increase quantity by 1
+//     document.getElementById("quantity1").stepUp();
+//     //store new value as quantity
+//     localStorage.setItem("quantity1", document.getElementById("quantity1").value)
 
-}
+// }
 
-//above repeated for every product
-function minus2() {
-    if (localStorage.getItem("quantity2") > 0) {
-        document.getElementById("quantity2").stepDown();
-        localStorage.setItem("quantity2", document.getElementById("quantity2").value)
+// //above repeated for every product
+// function minus2() {
+//     if (localStorage.getItem("quantity2") > 0) {
+//         document.getElementById("quantity2").stepDown();
+//         localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-    }
+//     }
 
-}
+// }
 
-function plus2() {
-    document.getElementById("quantity2").stepUp();
-    localStorage.setItem("quantity2", document.getElementById("quantity2").value)
+// function plus2() {
+//     document.getElementById("quantity2").stepUp();
+//     localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-}
+// }
 
 
-function minus3() {
-    if (localStorage.getItem("quantity3") > 0) {
-        document.getElementById("quantity3").stepDown();
-        localStorage.setItem("quantity3", document.getElementById("quantity3").value)
+// function minus3() {
+//     if (localStorage.getItem("quantity3") > 0) {
+//         document.getElementById("quantity3").stepDown();
+//         localStorage.setItem("quantity3", document.getElementById("quantity3").value)
 
 //     }
 
@@ -146,11 +146,11 @@ function minus3() {
 // //repeat above for every product
 // function updateQuantity2() {
 //     localStorage.setItem("quantity2", document.getElementById("quantity2").value)
-}
+// }
 
-function updateQuantity3() {
-    localStorage.setItem("quantity3", document.getElementById("quantity3").value)
-}
+// function updateQuantity3() {
+//     localStorage.setItem("quantity3", document.getElementById("quantity3").value)
+// }
 
 function updateQuantity4() {
     localStorage.setItem("quantity4", document.getElementById("quantity4").value)

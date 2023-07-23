@@ -57,16 +57,16 @@ function startQuiz(){
   }
   
   function next() {
-    // document.getElementById("result").style.display = "none";
-    // document.getElementById("checkAnswer").style.display = "block";
-    // document.getElementById("nextQuestion").style.display = "none";
-    // if(questionNumber < questions.length-1){
-    //   questionNumber++;
-    //   document.getElementById("questions").innerHTML = questions[questionNumber];
-    //   document.getElementById("option1").innerHTML = options[questionNumber][0];
-    //   document.getElementById("option2").innerHTML = options[questionNumber][1];
-    //   document.getElementById("option3").innerHTML = options[questionNumber][2];
-    //   document.getElementById("option4").innerHTML = options[questionNumber][3];
+    document.getElementById("result").style.display = "none";
+    document.getElementById("checkAnswer").style.display = "block";
+    document.getElementById("nextQuestion").style.display = "none";
+    if(questionNumber < questions.length-1){
+      questionNumber++;
+      document.getElementById("questions").innerHTML = questions[questionNumber];
+      document.getElementById("option1").innerHTML = options[questionNumber][0];
+      document.getElementById("option2").innerHTML = options[questionNumber][1];
+      document.getElementById("option3").innerHTML = options[questionNumber][2];
+      document.getElementById("option4").innerHTML = options[questionNumber][3];
       
     // } else {
     //   document.getElementById("questions").style.display = "none";

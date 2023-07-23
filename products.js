@@ -178,13 +178,13 @@ function updateItemNumber() {
         localStorage.getItem("quantity5") * 1 +
         localStorage.getItem("quantity6") * 1);
 
-//     if (totalItems > 0 && totalItems != null) {
-//         //if total item number is above 0 or null, show item number beside cart
-//         document.getElementById("itemNumber").style.display = "block";
-//         document.getElementById("itemNumber").innerHTML = totalItems;
-//     } else {
-//         //if total item number is below 0, don't show item number beside cart
-//         document.getElementById("itemNumber").style.display = "none";
-//     }
+    if (totalItems > 0 && totalItems != null) {
+        //if total item number is above 0 or null, show item number beside cart
+        document.getElementById("itemNumber").style.display = "block";
+        document.getElementById("itemNumber").innerHTML = totalItems;
+    } else {
+        //if total item number is below 0, don't show item number beside cart
+        document.getElementById("itemNumber").style.display = "none";
+    }
 
-// }
+}

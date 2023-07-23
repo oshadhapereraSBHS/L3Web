@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -17,13 +17,13 @@
     <div class="container">
 
 
+
         <div class="logoDiv">
             <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
             <nav>
-
                 <div class="dropdownGroup1">
                     <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
 
@@ -46,24 +46,28 @@
 
         <div class="navbarDiv2">
             <div class="dropdownItems1" id="dropdownItems1">
-                <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-                <div id="gallery"><a href="gallery.html">Gallery</a></div>
-                <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
             </div>
 
             <div class="dropdownItems2" id="dropdownItems2">
-                <div id="notices"><a href="notices.html">Notices</a></div>
-                <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-                <div id="resources"><a href="resources.html">Resources</a> </div>
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
             </div>
         </div>
 
-        <div class="contactDiv">
+        <div class="contactDiv" id="contactDiv">
             <div id="contactHeadingDiv">
                 <h1>Contact Us</h1>
+                
+                
             </div>
 
-
+            <div id="darkModeDiv">
+                <img id="dark" title="Switch to Dark Mode" src="images/dark.png" onclick="darkModeOn()" width="50%">
+            </div>
             <div id="contactCol1">
                 <p id="contactReceived"></p>
                 <form id="contactForm">

@@ -71,46 +71,45 @@
 
         <div class="contactDiv" id="contactDiv">
             <div id="contactHeadingDiv">
-                <h1>Contact Us</h1>
+                <h1>Play</h1>
                 
                 
             </div>
 
-    
+       
             <div id="contactCol1">
-                <p id="contactReceived"></p>
-                <form id="contactForm">
-                    <label>Name</label>
-                    <br>
-                    <input placeholder="Required" id="name" type="text" for="name">
-                    <br><br>
-                    <label>Email</label>
-                    <br>
-                    <input placeholder="Required" id="email" type="email">
-                    <br><br>
-                    <label>Phone number</label>
-                    <br>
-                    <input type="tel">
-                    <br><br>
-                    <label>Message</label>
-                    <br>
-                    <input placeholder="Required" id="message" type="text">
-                    <br><br>
-                    <button id="contactButton" type="button" onclick="contactSubmit()">Submit</button>
-                </form>
-
-
-
+                <h3>Daily puzzle from Chess.com</h3>
+                <iframe width="70%" src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
 
 
             </div>
-            <div id="contactCol2">
-                <h3 class="contactText">Teacher-in-Charge</h3>
-                <p class="contactText">Mrs Tabita Sales</p>
-                <h3 class="contactText">Email</h3>
-                <p class="contactText">tabita.sales@sbhs.school.nz</p>
-                <h3 class="contactText">Room number</h3>
-                <p class="contactText">3P</p>
+            <div id="puzzleCol2">
+                <form id="quizGrid">
+<div class="wholeColumn">
+    <h3 id="welcome">Quiz</h3>
+
+        <p id="questions"></p>
+</div>
+                
+                    <input name="quizOptions" id="choose1" type="radio">
+                    <label class="answers" for="choose1" id="option1"></label>
+                    <input name="quizOptions" id="choose2" type="radio">
+                    <label class="answers" for="choose2" id="option2"></label>
+                    <input name="quizOptions" id="choose3" type="radio">
+                    <label class="answers" for="choose3" id="option3"></label>
+                    <input name="quizOptions" id="choose4" type="radio">
+                    <label class="answers" for="choose4" id="option4"></label>
+<div class="wholeColumn" id="resultDiv">
+    <p id="result"></p>
+    <p id="result2"></p>
+    </div>
+    <div class="wholeColumn">
+    <button id="nextQuestion" onclick="next()" type="button">Next</button>
+    <button id="checkAnswer" onclick="check()" type="button">Submit</button>
+    <button id="restart" type="submit">Restart</button>
+</div>
+                    
+                </form>
 
             </div>
         </div>

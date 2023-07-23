@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg">
 
     <title>SBHS Chess Club</title>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body>
@@ -16,9 +18,9 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        
+
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -37,26 +39,35 @@
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
                 
+                <div id="cartDiv">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()">
+                </div>
+                
+                <div id="itemNumberDiv">
+                    <a href="cart.html" id="itemNumber"></a>
+                </div>
 
-
-
+                <div id="darkModeDiv">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%">
+                </div>
 
             </nav>
         </div>
-
         <div class="navbarDiv2">
-        <div class="dropdownItems1" id="dropdownItems1">
-            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-            <div id="gallery"><a href="gallery.html">Gallery</a></div>
-            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
-        </div>
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+                <div id="merch"><a class="links" href="products.html">Merchandise</a></div>
+            </div>
 
-        <div class="dropdownItems2" id="dropdownItems2">
-            <div id="gallery"><a href="notices.html">Notices</a></div>
-            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-            <div id="resources"><a href="resources.html">Resources</a> </div>
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+                <div id="play"><a class="links" href="puzzles.html">Play</a></div>
+            </div>
         </div>
-    </div>
 
 
         <div class="signUpDiv">
@@ -65,26 +76,39 @@
             </div>
 
             <div id="signUpCol2">
-                <p>Thank you for your interest in joining the SBHS Chess Club. Please complete the following form and
-                    turn up to chess club at lunchtime on Tuesdays.</p></div>
+                <p>We invite anyone who wants to learn to play chess or already knows how to play, to join our chess club. <br><br><br>To join the club:<br><br>1. Fill in the sign up form on the right.<br><br>2.Come to 6P on the next Tuesday lunchtime.</p>
+            </div>
 
             <div id="signUpCol1">
+                <p id="signUpReceived"></p>
 
-                <form>
+                <form id="signUpForm">
                     <label>Name</label>
                     <br>
-                    <input type="text">
+                    <input placeholder="Required" id="signUpName" type="text">
                     <br><br>
-                    <label>Tutor class</label>
+                    <label>Tutor Class</label>
                     <br>
-                    <input>
+                    <input placeholder="Required" id="signUpTutor">
+                    <br><br>
+                    <label>Year Level</label>
+                    <br>
+                    <select>
+                        <option>Year 7</option>
+                        <option>Year 8</option>
+                        <option>Year 9</option>
+                        <option>Year 10</option>
+                        <option>Year 11</option>
+                        <option>Year 12</option>
+                        <option>Year 13</option>
+                    </select>
                     <br><br>
                     <label>Email</label>
                     <br>
                     <input type="email">
 
                     <br><br>
-                    <button id="contactButton">Submit</button>
+                    <button id="contactButton"  type="button" onclick="signUpSubmit()">Submit</button>
                 </form>
 
 

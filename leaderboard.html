@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 
     <title>SBHS Chess Club</title>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body>
@@ -16,9 +18,9 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-        
+
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -37,32 +39,41 @@
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
                 
+                <div id="cartDiv">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()">
+                </div>
+                
+                <div id="itemNumberDiv">
+                    <a href="cart.html" id="itemNumber"></a>
+                </div>
 
-
-
+                <div id="darkModeDiv">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%">
+                </div>
 
             </nav>
         </div>
-
         <div class="navbarDiv2">
-        <div class="dropdownItems1" id="dropdownItems1">
-            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-            <div id="gallery"><a href="gallery.html">Gallery</a></div>
-            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+                <div id="merch"><a class="links" href="products.html">Merchandise</a></div>
+            </div>
+
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+                <div id="play"><a class="links" href="puzzles.html">Play</a></div>
+            </div>
         </div>
 
-        <div class="dropdownItems2" id="dropdownItems2">
-            <div id="gallery"><a href="notices.html">Notices</a></div>
-            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-            <div id="resources"><a href="resources.html">Resources</a> </div>
-        </div>
-    </div>
 
-
-    <div class="leaderboardDiv">
-        <h1 id="leaderboardHeading">Leaderboard</h1>
-
-            <div class="row1">Rank</div>
+        <div class="leaderboardDiv">
+            <h1 id="leaderboardHeading">Leaderboard</h1>
+      
+            <!-- <div class="row1">Rank</div>
             <div class="row1">Name</div>
             <div class="row1">Year</div>
 
@@ -90,15 +101,71 @@
             <div class="row8">11</div>
             <div class="row9">1</div>
             <div class="row9">Lorem ipsum</div>
-            <div class="row9">11</div> 
-
+            <div class="row9">11</div>
             <div class="row10">1</div>
             <div class="row10">Lorem ipsum</div>
             <div class="row10">11</div>
-    </div>
+        </div> -->
+            <table class="leaderboardTable" style="width:100%">
+                <tr class="even">
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                </tr>
+                <tr class="odd">
+                    <td>1</td>
+                    <td>John Smith</td>
+                    <td>13</td>
+                </tr>
+                <tr class="even">
+                    <td>2</td>
+                    <td>James Perry</td>
+                    <td>12</td>
+                </tr>
+                <tr class="odd">
+                    <td>3</td>
+                    <td>Henare Thompson</td>
+                    <td>13</td>
+                </tr>
+                <tr class="even">
+                    <td>4</td>
+                    <td>Michael Wilson</td>
+                    <td>11</td>
+                </tr>
+                <tr class="odd">
+                    <td>5</td>
+                    <td>Robert Hill</td>
+                    <td>12</td>
+                </tr>
+                <tr class="even">
+                    <td>6</td>
+                    <td>Liam Fitzgibbon</td>
+                    <td>11</td>
+                </tr>
+                <tr class="odd">
+                    <td>7</td>
+                    <td>Oliver Page</td>
+                    <td>10</td>
+                </tr>
+                <tr class="even">
+                    <td>8</td>
+                    <td>Jerome Velghe</td>
+                    <td>10</td>
+                </tr>
+                <tr class="odd">
+                    <td>9</td>
+                    <td>Ben Hall</td>
+                    <td>9</td>
+                </tr>
+                <tr class="even">
+                    <td>10</td>
+                    <td>Darren Clarke</td>
+                    <td>10</td>
+                </tr>
+            </table>
 
 
-    </div>
+        </div>
 </body>
 
 </html>

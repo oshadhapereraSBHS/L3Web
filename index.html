@@ -1,58 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 
     <title>SBHS Chess Club</title>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body>
 
     <!--div for adding grid layout for page-->
     <div class="container">
-<!-- 
+
+
         <div class="logoDiv">
-            <img src="images/logo.png" alt="logo" width="20%" class="logo">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
         </div>
-
-        <div class="navbarDiv">
-            <nav>
-                <a id="overview">Overview</a>
-                <a id="forMembers">For members</a>
-                <a href="contact.html" id="contact">Contact</a>
-            </nav>
-        </div>
- -->
-
- <!-- <div class="logoDiv">
-    <img src="images/logo.png" alt="logo" width="20%" class="logo">
-</div>
-
- <div class="dropdownGroup1">
-    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
-    <div class="dropdownItems1">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-    </div>
-</div>
-
-<div class="dropdownGroup2">
-    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
-
-</div>
-<div class="dropdownGroup3">
-    <a href="contact.html" id="contact">Contact</a>
-</div> -->
-
-
-<div class="logoDiv">
-    <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
-</div>
 
         <div class="navbarDiv">
             <nav>
@@ -70,27 +39,35 @@
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
                 
+                <div id="cartDiv">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()">
+                </div>
+                
+                <div id="itemNumberDiv">
+                    <a href="cart.html" id="itemNumber"></a>
+                </div>
 
-
-
+                <div id="darkModeDiv">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%">
+                </div>
 
             </nav>
         </div>
-
         <div class="navbarDiv2">
-        <div class="dropdownItems1" id="dropdownItems1">
-            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-            <div id="gallery"><a href="gallery.html">Gallery</a></div>
-            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
-        </div>
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+                <div id="merch"><a class="links" href="products.html">Merchandise</a></div>
+            </div>
 
-        <div class="dropdownItems2" id="dropdownItems2">
-            <div id="notices"><a href="notices.html">Notices</a></div>
-            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-            <div id="resources"><a href="resources.html">Resources</a> </div>
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+                <div id="play"><a class="links" href="puzzles.html">Play</a></div>
+            </div>
         </div>
-    </div> 
-
 
         <div class="bodyDiv">
             <!--div for body text-->
@@ -98,7 +75,7 @@
                 <h1 id="homeHeadingText">SBHS CHESS CLUB</h1>
                 <!--heading-->
             </div>
-
+     
             <div id="homeBodyDiv">
                 <p id="homeBodyText">We are the largest school chess club in Invercargill
                     with over 50 members. <br><br>

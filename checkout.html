@@ -69,84 +69,83 @@
             </div>
         </div>
 
-
-
-        <div class="aboutUsDiv">
-            <div id="resourcesHeadingDiv">
-                <h1 class="resourcesHeading">Resources</h1>
-            </div>
-            
-
-
-            <div id="aboutUsBodyDiv1">
-                <h1 id="aboutUsHeadingText1">Chess Organisations</h1>
-   
-                <ul>
-                    <li><a href="https://iscc.nz/">Invercargill-Southland Chess Club</a></li>
-                    <li><a href="https://otagochess.org/">Otago Chess Club</a></li>
-                    <li><a href="https://www.newzealandchess.co.nz/">New Zealand Chess Federation</a></li>
-                    <li><a href="https://chesspower.co.nz/">Chess Power</a></li>
-                </ul>
-
-
-
-
-            </div>
-            <div id="aboutUsImage1">
-                <img src="images/aboutUs1.jpg" width="100%" height="100%">
+        <div class="checkoutDiv" id="checkoutDiv">
+            <div id="contactHeadingDiv">
+                <h1>Checkout</h1>
+                
+                
             </div>
 
-            <div id="aboutUsBodyDiv2">
-                <h1 id="aboutUsHeadingText2">Chess Tournaments</h1>
+            <div class="checkoutCol1">
+                <!--first column of checkout form-->
+                <form id="form4">
+                    <!--heading for column 1-->
+                    <h3>Billing Details</h3><br><br>
 
-                <ul>
-                    <li><a href="https://www.chesspower.co.nz/page/events">Chess Power Invercargill Regionals</a></li>
-                    <li><a href="https://www.newzealandchess.co.nz/interschools.html">NZCF Otago-Southland Regionals</a>
-                    </li>
-                    <li><a
-                            href="https://www.sporty.co.nz/southlandboys/Registrations/Active-Registrations">Interschools</a>
-                    </li>
-                </ul>
+                    <!--form with labels and input-->
+                    <label>First Name</label><br>
+                    <input type="text" placeholder="Required" id="firstName"><br><br>
 
-            </div>
-            <div id="aboutUsImage2">
-                <img src="images/aboutUs2.jpg" width="100%" height="100%">
-            </div>
+                    <label>Last Name</label><br>
+                    <input type="text" placeholder="Required" id="lastName"><br><br>
 
-            <div id="aboutUsBodyDiv3">
-                <h1 id="aboutUsHeadingText3">Online Chess</h1>
+                    <label>Phone number</label><br>
+                    <input type="number"><br><br>
 
-                <ul>
-                    <li><a href="https://chess.com/">Chess.com</a></li>
-                    <li><a href="https://lichess.org/">Lichess</a></li>
-                    <li><a href="https://www.chesskid.com/">Chesskid</a></li>
-                </ul>
+                    <label>Email</label><br>
+                    <input type="text" placeholder="Required" id="email"><br><br>
 
-            </div>
-            <div id="aboutUsImage3">
-                <img src="images/aboutUs3.jpg" width="100%" height="100%">
-            </div>
+                    <label>Street Address</label><br>
+                    <input type="text"><br><br>
 
-            <div id="aboutUsBodyDiv4">
-                <h1 id="aboutUsHeadingText4">Youtube Channels</h1>
+                    <label>City</label><br>
+                    <input type="text"><br><br>
 
-                <ul>
-                    <li><a href="https://www.youtube.com/channel/UCQHX6ViZmPsWiYSFAyS0a3Q">GothamChess</a></li>
-                    <li><a href="https://www.youtube.com/@eric-rosen">Eric Rosen</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCsKZ2yOsgfNxln8xH5WkGvg">Remote Chess Academy</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCM-ONC2bCHytG2mYtKDmIeA">Saint Louis Chess Club</a>
-                    </li>
-                </ul>
+                    <label>Post Code</label><br>
+                    <input type="number"><br><br>
+
+                    <input type="checkbox" checked="checked"> Shipping address same as billing
+
+
+                </form>
 
             </div>
-            <div id="aboutUsImage4">
-                <img src="images/aboutUs4.jpg" width="100%" height="100%">
+
+            <div class="checkoutCol2">
+                <!--first column of checkout form-->
+
+                <form id="form5">
+                    <!--heading for column 1-->
+
+                    <h3>Payment Details</h3><br><br>
+
+                    <!--form with labels and input-->
+
+                    <label>Credit Card Number</label><br>
+                    <input type="number"><br><br>
+
+                    <label>Expiry Date</label><br>
+                    <input type="number"><br><br>
+
+                    <label>CVV</label><br>
+                    <input type="number"><br><br>
+
+                    <!--total price as readonly text-->
+                    <label>Total</label><br>
+                    <input id="totalValue" type="text" readonly><br><br>
+
+
+
+                    <!--submit button-->
+                    <button type="button" id="confirmButton" onclick="checkout()">Confirm</button>
+
+
+
+                </form>
+
             </div>
-
-
-
-
         </div>
+
     </div>
 </body>
 

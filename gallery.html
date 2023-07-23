@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 
     <title>SBHS Chess Club</title>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body>
@@ -16,11 +18,10 @@
     <!--div for adding grid layout for page-->
     <div class="container">
 
-       
-      <div class="logoDiv">
-        <img src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
-    </div>
 
+        <div class="logoDiv">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+        </div>
 
         <div class="navbarDiv">
             <nav>
@@ -38,110 +39,129 @@
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
                 
+                <div id="cartDiv">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()">
+                </div>
+                
+                <div id="itemNumberDiv">
+                    <a href="cart.html" id="itemNumber"></a>
+                </div>
 
-
-
+                <div id="darkModeDiv">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%">
+                </div>
 
             </nav>
         </div>
-
         <div class="navbarDiv2">
-        <div class="dropdownItems1" id="dropdownItems1">
-            <div id="aboutUs"><a href="aboutUs.html">About Us</a></div>
-            <div id="gallery"><a href="gallery.html">Gallery</a></div>
-            <div id="signUp"><a href="signUp.html">Sign Up</a></div>
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+                <div id="merch"><a class="links" href="products.html">Merchandise</a></div>
+            </div>
 
-        </div>
-
-        <div class="dropdownItems2" id="dropdownItems2">
-            <div id="gallery"><a href="notices.html">Notices</a></div>
-            <div id="leaderboard"><a href="leaderboard.html">Leaderboard</a></div>
-            <div id="resources"><a href="resources.html">Resources</a> </div>
-
-        </div>
-    </div>
-
-
-<div id="galleryDiv">
-
-        <div class="column" id="img1Div">
-          <img id="img1" src="images/aboutUs1.jpg" style="width:100%" onclick="openOverlay();currentSlide(1)" class="hoverShadow cursor">
-          
-        </div>
-        <div class="column">
-          <img id="img2" src="images/aboutUs2.jpg" style="width:100%" onclick="openOverlay();currentSlide(2)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img3" src="images/aboutUs3.jpg" style="width:100%" onclick="openOverlay();currentSlide(3)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img4" src="images/aboutUs4.jpg" style="width:100%" onclick="openOverlay();currentSlide(4)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img5" src="images/aboutUs5.jpg" style="width:100%" onclick="openOverlay();currentSlide(5)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img6" src="images/aboutUs6.jpg" style="width:100%" onclick="openOverlay();currentSlide(6)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img7" src="images/aboutUs7.jpg" style="width:100%" onclick="openOverlay();currentSlide(7)" class="hoverShadow cursor">
-        </div>
-        <div class="column">
-          <img id="img8" src="images/aboutUs8.jpg" style="width:100%" onclick="openOverlay();currentSlide(8)" class="hoverShadow cursor">
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+                <div id="play"><a class="links" href="puzzles.html">Play</a></div>
+            </div>
         </div>
 
-      
+    <div id="galleryDiv">
+      <div class="galleryHeading">
+        <h1 id="galleryHeading">Gallery</h1>
+        <p>Hover on image for image captions. Click on image for slideshow.</p>
+
+      </div>
+    
+      <div class="column" id="img1Div">
+        <img id="img1" src="images/aboutUs1.jpg" style="width:100%" onmouseover="hover1()" onmouseout="hover1Stop()"
+          onclick="openOverlay();currentSlide(1)" class="hoverShadow cursor">
+
+      </div>
+      <div class="column">
+        <img id="img2" src="images/aboutUs2.jpg" style="width:100%"  onmouseover="hover2()" onmouseout="hover2Stop()" onclick="openOverlay();currentSlide(2)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img3" src="images/aboutUs3.jpg" style="width:100%" onmouseover="hover3()" onmouseout="hover3Stop()" onclick="openOverlay();currentSlide(3)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img4" src="images/aboutUs4.jpg" style="width:100%" onmouseover="hover4()" onmouseout="hover4Stop()" onclick="openOverlay();currentSlide(4)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img5" src="images/aboutUs5.jpg" style="width:100%" onmouseover="hover5()" onmouseout="hover5Stop()" onclick="openOverlay();currentSlide(5)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img6" src="images/aboutUs6.jpg" style="width:100%" onmouseover="hover6()" onmouseout="hover6Stop()" onclick="openOverlay();currentSlide(6)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img7" src="images/aboutUs7.jpg" style="width:100%" onmouseover="hover7()" onmouseout="hover7Stop()" onclick="openOverlay();currentSlide(7)"
+          class="hoverShadow cursor">
+      </div>
+      <div class="column">
+        <img id="img8" src="images/aboutUs8.jpg" style="width:100%" onmouseover="hover8()" onmouseout="hover8Stop()" onclick="openOverlay();currentSlide(8)"
+          class="hoverShadow cursor">
+      </div>
+
+
       <div id="galleryOverlay" class="galleryOverlay">
         <span class="close cursor" onclick="closeOverlay()">&times;</span>
         <div class="overlayContent">
-      
+
           <div class="slides">
-            <div class="slideNumber">1 / 4</div>
-            <img src="images/aboutUs1.jpg" style="width:100%">
+            <div class="slideNumber">1 / 8</div>
+            <img src="images/aboutUs1.jpg" style="height:95vh">
           </div>
-      
+
           <div class="slides">
-            <div class="slideNumber">2 / 4</div>
-            <img src="images/aboutUs2.jpg" style="width:100%">
+            <div class="slideNumber">2 / 8</div>
+            <img src="images/aboutUs2.jpg" style="height:95vh">
           </div>
-      
+
           <div class="slides">
-            <div class="slideNumber">3 / 4</div>
-            <img src="images/aboutUs3.jpg" style="width:100%">
+            <div class="slideNumber">3 / 8</div>
+            <img src="images/aboutUs3.jpg" style="height:95vh">
           </div>
-          
+
           <div class="slides">
-            <div class="slideNumber">4 / 4</div>
-            <img src="images/aboutUs4.jpg" style="width:100%">
+            <div class="slideNumber">4 / 8</div>
+            <img src="images/aboutUs4.jpg" style="height:95vh">
           </div>
           <div class="slides">
-            <div class="slideNumber">5 / 5</div>
-            <img src="images/aboutUs5.jpg" style="width:100%">
+            <div class="slideNumber">5 / 8</div>
+            <img src="images/aboutUs5.jpg" style="height:95vh">
           </div>
-      
+
           <div class="slides">
-            <div class="slideNumber">6 / 6</div>
-            <img src="images/aboutUs6.jpg" style="width:100%">
+            <div class="slideNumber">6 / 8</div>
+            <img src="images/aboutUs6.jpg" style="height:95vh">
           </div>
-      
+
           <div class="slides">
-            <div class="slideNumber">7 / 7</div>
-            <img src="images/aboutUs7.jpg" style="width:100%">
+            <div class="slideNumber">7 / 8</div>
+            <img src="images/aboutUs7.jpg" style="height:95vh">
           </div>
-          
+
           <div class="slides">
             <div class="slideNumber">8 / 8</div>
-            <img src="images/aboutUs8.jpg" style="width:100%">
+            <img src="images/aboutUs8.jpg" style="height:95vh">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
 
-      
-      
+
+
+
         </div>
       </div>
-</div>
+    </div>
 
 
 </body>

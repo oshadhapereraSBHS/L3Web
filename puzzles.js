@@ -1,8 +1,8 @@
 var questionNumber = 0;
 var correctAnswerCount = 0;
-
+var highScore = 0;
 const questions = [
-    "q1", 
+    "How many pieces are there on a chess board in total?", 
     "q2", 
     "q3", 
     "q4", 
@@ -85,9 +85,15 @@ function startQuiz(){
       document.getElementById("choose3").style.display = "none";
       document.getElementById("choose4").style.display = "none";
     document.getElementById("result").style.display = "block";
+
+    document.getElementById("result2").style.display = "block";
     document.getElementById("result").innerHTML = "You got " + correctAnswerCount + " answers correct, out of " + questions.length + " questions.";
+    document.getElementById("result2").innerHTML = "Your high score is " + localStorage.getItem("highScore") + "."
+
     document.getElementById("checkAnswer").style.display = "none";
     
+    if(correctAnswerCount > Number(localStorage.getItem("highScore"))) {localStorage.setItem("highScore", correctAnswerCount)}
+    document.getElementById("restart").style.display = "block";
       
     }
   

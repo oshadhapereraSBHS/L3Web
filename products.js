@@ -62,21 +62,21 @@ function minus2() {
         document.getElementById("quantity2").stepDown();
         localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-//     }
+    }
 
-// }
+}
 
-// function plus2() {
-//     document.getElementById("quantity2").stepUp();
-//     localStorage.setItem("quantity2", document.getElementById("quantity2").value)
+function plus2() {
+    document.getElementById("quantity2").stepUp();
+    localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 
-// }
+}
 
 
-// function minus3() {
-//     if (localStorage.getItem("quantity3") > 0) {
-//         document.getElementById("quantity3").stepDown();
-//         localStorage.setItem("quantity3", document.getElementById("quantity3").value)
+function minus3() {
+    if (localStorage.getItem("quantity3") > 0) {
+        document.getElementById("quantity3").stepDown();
+        localStorage.setItem("quantity3", document.getElementById("quantity3").value)
 
 //     }
 
@@ -138,14 +138,14 @@ function minus2() {
 // }
 
 
-function updateQuantity1() {
-    //when add to cart button is pressed, store the value entered by user
-    localStorage.setItem("quantity1", document.getElementById("quantity1").value)
-}
+// function updateQuantity1() {
+//     //when add to cart button is pressed, store the value entered by user
+//     localStorage.setItem("quantity1", document.getElementById("quantity1").value)
+// }
 
-//repeat above for every product
-function updateQuantity2() {
-    localStorage.setItem("quantity2", document.getElementById("quantity2").value)
+// //repeat above for every product
+// function updateQuantity2() {
+//     localStorage.setItem("quantity2", document.getElementById("quantity2").value)
 }
 
 function updateQuantity3() {

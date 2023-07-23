@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SBHS Chess Club</title>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</head>
+
+<body>
+
+    <!--div for adding grid layout for page-->
+    <div class="container">
+
+
+
+        <div class="logoDiv">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+        </div>
+
+        <div class="navbarDiv">
+            <nav>
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+
+
+
+
+
+            </nav>
+        </div>
+
+        <div class="navbarDiv2">
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+            </div>
+
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+            </div>
+        </div>
+
+        <div class="contactDiv" id="contactDiv">
+            <div id="contactHeadingDiv">
+                <h1>Contact Us</h1>
+                
+                
+            </div>
+
+            <div id="darkModeDiv">
+                <img id="dark" title="Switch to Dark Mode" src="images/dark.png" onclick="darkModeOn()" width="50%">
+            </div>
+            <div id="contactCol1">
+                <iframe SameSite=Lax style="width: 400px; height: 560px;" src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
+
+
+            </div>
+            <div id="contactCol2">
+                <p id="welcome">Quiz to test knowledge</p>
+                <button id="start" onclick="startQuiz()">Start</button>
+                <!-- <form>
+                    <p id="questions"></p>
+                    <input name="quizOptions" id="choose1" type="radio">
+                    <label for="choose1" id="option1"></label>
+                    <input name="quizOptions" id="choose2" type="radio">
+                    <label for="choose2" id="option2"></label>
+                    <input name="quizOptions" id="choose3" type="radio">
+                    <label for="choose3" id="option3"></label>
+                    <input name="quizOptions" id="choose4" type="radio">
+                    <label for="choose4" id="option4"></label>
+                    <p id="result"></p>
+                    <button id="nextQuestion" onclick="next()" type="button">Next</button>
+                    <button id="checkAnswer" onclick="check()" type="button">Submit</button>
+                </form> -->
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

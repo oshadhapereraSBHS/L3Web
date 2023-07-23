@@ -357,6 +357,24 @@ function cartPage() {
 }
 
 function checkout(){
-  document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
-            document.getElementById("form5").style.display = "none";
+
+
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+
+  if(firstName = null || firstName == ""){
+    alert("Please enter your first name");
+  } else if (lastName = null || lastName ==""){
+    alert("Please enter your last email");
+  } else if (email = null || email ==""){
+    alert("Please enter your email");
+  } else {
+    
+    document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
+    document.getElementById("form5").style.display = "none";
+  }
+
+
+
 }

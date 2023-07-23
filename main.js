@@ -1,10 +1,14 @@
+
 function signUpPage() {
   location.href = "signup.html";
 }
+
 var dropdown1Clicks = 1;
 var dropdown2Clicks = 1;
 var dropdown1Display = false;
 var dropdown2Display = false;
+
+
 window.onload = function() {
   localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")));
   localStorage.setItem("darkMode", localStorage.getItem("darkMode"));
@@ -338,4 +342,5 @@ function logoChange2(){
   }
   
 }
+
 

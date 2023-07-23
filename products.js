@@ -1,5 +1,10 @@
 window.onload = function () {
-
+    document.getElementById("totalValue").innerHTML = "$" + (localStorage.getItem("quantity1") * 19 +
+    localStorage.getItem("quantity2") * 19 +
+    localStorage.getItem("quantity3") * 19 +
+    localStorage.getItem("quantity4") * 4 +
+    localStorage.getItem("quantity5") * 4 +
+    localStorage.getItem("quantity6") * 4)	
     //set all quantities to stored values.
 
     document.getElementById("quantity1").value = localStorage.getItem("quantity1")
@@ -188,3 +193,4 @@ function updateItemNumber() {
     }
 
 }
+

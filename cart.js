@@ -241,6 +241,26 @@ function updateItemNumber() {
 setInterval(updateItems, 200);
 
 function updateItems() {
+        //calculate total items in cart
+        var totalItems = (localStorage.getItem("quantity1") * 1 +
+        localStorage.getItem("quantity2") * 1 +
+        localStorage.getItem("quantity3") * 1 +
+        localStorage.getItem("quantity4") * 1 +
+        localStorage.getItem("quantity5") * 1 +
+        localStorage.getItem("quantity6") * 1);
+
+    if (totalItems == 0) {
+        //if cart is empty
+        //say cart is empty, and hide the checkout button and total price field
+
+        document.getElementById("checkoutButton").style.display = "none";
+        document.getElementById("price").innerHTML = "Your cart is empty.";
+
+    } else {
+        //if there are items in cart, show checkout button and hide 'cart is empty' message
+        document.getElementById("checkoutButton").style.display = "block";
+
+    
     //show total for each item by multiplying quantity with price for each item
     document.getElementById("total1").innerHTML = '$' + localStorage.getItem("quantity1") * 19;
     document.getElementById("total2").innerHTML = '$' + localStorage.getItem("quantity2") * 19;
@@ -260,26 +280,6 @@ function updateItems() {
 
     //show total price
     document.getElementById("totalPrice").innerHTML = '$' + totalPrice;
-
-    //calculate total items in cart
-    var totalItems = (localStorage.getItem("quantity1") * 1 +
-        localStorage.getItem("quantity2") * 1 +
-        localStorage.getItem("quantity3") * 1 +
-        localStorage.getItem("quantity4") * 1 +
-        localStorage.getItem("quantity5") * 1 +
-        localStorage.getItem("quantity6") * 1);
-
-    if (totalItems == 0) {
-        //if cart is empty
-        //say cart is empty, and hide the checkout button and total price field
-
-        document.getElementById("checkoutButton").style.display = "none";
-        document.getElementById("price").innerHTML = "Your cart is empty.";
-
-    } else {
-        //if there are items in cart, show checkout button and hide 'cart is empty' message
-        document.getElementById("empty").style.display = "none";
-        document.getElementById("checkoutButton").style.display = "block";
-
     }
+
 }

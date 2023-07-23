@@ -10,6 +10,7 @@ var dropdown2Display = false;
 
 
 window.onload = function() {
+  
   localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")));
   localStorage.setItem("darkMode", localStorage.getItem("darkMode"));
   if(localStorage.getItem("darkModeCount") % 2 == 0){
@@ -21,20 +22,13 @@ window.onload = function() {
     document.getElementById("forMembers").style.color = "white";
     document.getElementById("contact").style.color = "white";
   }
-  document.getElementById("totalValue").value = '$' +
-  (localStorage.getItem("quantity1") * 10.99 +
-      localStorage.getItem("quantity2") * 11.99 +
-      localStorage.getItem("quantity3") * 8.99 +
-      localStorage.getItem("quantity4") * 10.99 +
-      localStorage.getItem("quantity5") * 11.99 +
-      localStorage.getItem("quantity6") * 8.99);
 
 }
 function darkModeChanges(){
   if(localStorage.getItem("darkModeCount") % 2 == 0){
   
     localStorage.setItem("darkMode", true)
-      document.getElementById("logo").src = "images/logoDark.png"
+      document.getElementById("logo").src = "images/logoDark.svg"
       document.getElementById("dark").src = "images/light.png"
       document.getElementById("dark").title = "Switch to Light Mode"
       document.getElementById("cart").src = "images/cartDark.png";
@@ -121,7 +115,7 @@ dropdown1Display = true;
     document.getElementById("dropdownItems1").style.display = "none";
 
     document.getElementById("overview").style.boxShadow = "none"
-    if(localStorage.getItem("darkMode") == false){
+    if(localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null){
       
     document.getElementById("forMembers").style.color = "#073B4C"
     document.getElementById("overview").style.color = "#073B4C"
@@ -170,7 +164,7 @@ dropdown2Display = true;
     dropdown2Display = false;
     document.getElementById("dropdownItems2").style.display = "none";
     document.getElementById("forMembers").style.boxShadow = "none"
-if(localStorage.getItem("darkMode") == false){
+if(localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null){
   document.getElementById("overview").style.color = "#073B4C"
     document.getElementById("forMembers").style.color = "#073B4C"
     document.getElementById("contact").style.color = "#073B4C"
@@ -342,8 +336,8 @@ function hover8Stop() {
     
 function logoChange1(){
   if(localStorage.getItem("darkMode") == "true"){
-    document.getElementById("logo").src = "images/logoDark1.png";
-  } else {    document.getElementById("logo").src = "images/logo1.png";
+    document.getElementById("logo").src = "images/logoDark1.svg";
+  } else {    document.getElementById("logo").src = "images/logo1.svg";
 
   }
 
@@ -351,8 +345,8 @@ function logoChange1(){
 
 function logoChange2(){
   if(localStorage.getItem("darkMode") == "true"){
-    document.getElementById("logo").src = "images/logoDark.png";
-  } else {    document.getElementById("logo").src = "images/logo.png";
+    document.getElementById("logo").src = "images/logoDark.svg";
+  } else {    document.getElementById("logo").src = "images/logo.svg";
 
   }
   
@@ -380,8 +374,15 @@ function checkout(){
     
     document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
     document.getElementById("form5").style.display = "none";
-  }
+    localStorage.setItem("quantity1", 0);
+    localStorage.setItem("quantity2", 0);
+    localStorage.setItem("quantity3", 0);
+    localStorage.setItem("quantity4", 0);
+    localStorage.setItem("quantity5", 0);
+    localStorage.setItem("quantity6", 0);
 
 
 
-}
+
+
+}}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+
+    <title>SBHS Chess Club</title>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="cart.js"></script>
+</head>
+
+<body>
+
+    <!--div for adding grid layout for page-->
+    <div class="container">
+
+
+        <div class="logoDiv">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.png" alt="logo" width="20%" class="logo" onclick="home()">
+        </div>
+
+        <div class="navbarDiv">
+            <nav>
+
+                <div class="dropdownGroup1">
+                    <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
+
+                </div>
+
+                <div class="dropdownGroup2">
+                    <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
+
+                </div>
+                <div class="dropdownGroup3">
+                    <a href="contact.html" id="contact">Contact</a>
+                </div>
+                <div id="cartDiv">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()">
+                </div>
+                <div id="darkModeDiv">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%">
+                </div>
+                <div>
+                    <a href="cart.html" id="itemNumber"></a>
+                </div>
+
+
+
+            </nav>
+        </div>
+        <div class="navbarDiv2">
+            <div class="dropdownItems1" id="dropdownItems1">
+                <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
+                <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
+                <div id="signUp"><a class="links" href="signUp.html">Sign Up</a></div>
+            </div>
+
+            <div class="dropdownItems2" id="dropdownItems2">
+                <div id="notices"><a class="links" href="notices.html">Notices</a></div>
+                <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
+                <div id="resources"><a class="links" href="resources.html">Resources</a> </div>
+            </div>
+        </div>
+
+
+        <div class="cartDiv">
+            <div class="noticesHeadingDiv">
+                <h1 id="noticesHeading">Cart</h1>
+                </div>
+
+
+        <!--grud for content-->
+
+            <!--product 1-->
+            <div class="cartProducts" id="cartProducts1">
+
+                <!--product image-->
+                <div>
+                    <img src="images/tshirt1.png" alt="tshirt">
+                </div>
+                
+
+                <div id="change1">
+                    <!--minus button-->
+                    <button class="minus" onclick="minus1()">-</button>
+                    <!--quantity field-->
+                    <input type="number" min="0" id="quantity1" step="1" value="0" readonly>
+                    <!--plus button-->
+                    <button class="plus" onclick="plus1()">+</button><br>
+                
+                <!--remove button-->
+                <p onclick="remove1()">Remove</p>
+            </div>
+                <!--total price-->
+                <p id="total1"></p>
+            </div>
+
+            <!--same format as above for the rest of the products-->
+            <div class="cartProducts" id="cartProducts2">
+                <div>
+                    <img src="images/tshirt2.png" alt="tshirt" width="50%">
+                </div>
+                
+
+                <div id="change2">
+                    <button class="minus" onclick="minus2()">-</button>
+                    <input type="number" min="0" id="quantity2" step="1" value="0" readonly>
+                    <button class="plus" onclick="plus2()">+</button><br>
+               
+
+                <p onclick="remove2()">Remove</p> </div>
+                <p id="total2"></p>
+            </div>
+
+            <div class="cartProducts" id="cartProducts3">
+                <div>
+                    <img src="images/tshirt3.png" alt="tshirt">
+                </div>
+                
+
+                <div id="change3">
+                    <button class="minus" onclick="minus3()">-</button>
+                    <input type="number" min="0" id="quantity3" step="1" value="0" readonly>
+                    <button class="plus" onclick="plus3()">+</button><br>
+               
+
+                <p onclick="remove3()">Remove</p> </div>
+                <p id="total3"></p>
+            </div>
+
+            <div class="cartProducts" id="cartProducts4">
+                <div>
+                    <img src="images/mug1.png" alt="mug">
+                </div>
+                
+
+                <div id="change4">
+                    <button class="minus" onclick="minus4()">-</button>
+                    <input type="number" min="0" id="quantity4" step="1" value="0" readonly>
+                    <button class="plus" onclick="plus4()">+</button><br>
+                
+
+                <p onclick="remove4()">Remove</p></div>
+                <p id="total4"></p>
+            </div>
+
+            <div class="cartProducts" id="cartProducts5">
+                <div>
+                    <img src="images/mug2.png" alt="mug">
+                </div>
+                
+
+                <div id="change5">
+                    <button class="minus" onclick="minus5()">-</button>
+                    <input type="number" min="0" id="quantity5" step="1" value="0" readonly>
+                    <button class="plus" onclick="plus5()">+</button><br>
+                
+
+                <p onclick="remove5()">Remove</p></div>
+                <!-- <p id="total5"></p>
+            </div>
+
+            <div class="cartProducts" id="cartProducts6">
+                <div>
+                    <img src="images/mug3.png" alt="tshirt">
+                </div>
+                
+
+                <div id="change6">
+                    <button class="minus" onclick="minus6()">-</button>
+                    <input type="number" min="0" id="quantity6" step="1" value="0" readonly>
+                    <button class="plus" onclick="plus6()">+</button><br>
+                
+
+                <p onclick="remove6()">Remove</p></div>
+                <p id="total6"></p>
+            </div>
+
+            <!--end of products list-->
+
+            <!--totals-->
+            <div class="price cartProducts" id="price">
+
+                <div id="totalText">
+                    <!--text saying total-->
+                    <p>Total</p>
+                </div>
+                <!--total price calculated-->
+                <div id="totalPrice"></div>
+
+
+            </div>
+
+
+            <div>
+
+                <!--field for text saying cart is empty-->
+                <p id="empty"></p>
+
+                <!--checkout button-->
+                <button id="checkoutButton" onclick="checkout()">Proceed to checkout</button>
+            </div>
+
+
+
+
+        </div>
+    </div> -->
+</body>
+
+</html>

@@ -68,23 +68,23 @@ function startQuiz(){
       document.getElementById("option3").innerHTML = options[questionNumber][2];
       document.getElementById("option4").innerHTML = options[questionNumber][3];
       
-    // } else {
-    //   document.getElementById("questions").style.display = "none";
-    //   document.getElementById("nextQuestion").style.display = "none";
-    //   document.getElementById("option1").style.display = "none";
-    //   document.getElementById("option2").style.display = "none";
-    //   document.getElementById("option3").style.display = "none";
-    //   document.getElementById("option4").style.display = "none";
-    //   document.getElementById("choose1").style.display = "none";
-    //   document.getElementById("choose2").style.display = "none";
-    //   document.getElementById("choose3").style.display = "none";
-    //   document.getElementById("choose4").style.display = "none";
-    // document.getElementById("result").style.display = "block";
-    // document.getElementById("result").innerHTML = "You got " + correctAnswerCount + " answers correct, out of " + questions.length + " questions.";
-    // document.getElementById("checkAnswer").style.display = "none";
+    } else {
+      document.getElementById("questions").style.display = "none";
+      document.getElementById("nextQuestion").style.display = "none";
+      document.getElementById("option1").style.display = "none";
+      document.getElementById("option2").style.display = "none";
+      document.getElementById("option3").style.display = "none";
+      document.getElementById("option4").style.display = "none";
+      document.getElementById("choose1").style.display = "none";
+      document.getElementById("choose2").style.display = "none";
+      document.getElementById("choose3").style.display = "none";
+      document.getElementById("choose4").style.display = "none";
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML = "You got " + correctAnswerCount + " answers correct, out of " + questions.length + " questions.";
+    document.getElementById("checkAnswer").style.display = "none";
     
       
-    // }
+    }
   
   }
   

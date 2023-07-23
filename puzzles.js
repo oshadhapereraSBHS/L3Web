@@ -3,41 +3,42 @@ var correctAnswerCount = 0;
 var highScore = 0;
 const questions = [
     "How many pieces are there on a chess board in total?", 
-    "q2", 
-    "q3", 
-    "q4", 
-    "q5", 
-    "q6", 
-    "q7", 
-    "q8",
-    "q9", 
-    "q10"]
+    "Which piece can only move diagonally?", 
+    "Which two pieces do you use to 'castle'?", 
+    "Which piece can a pawn not promote into?", 
+    "Which piece is used for en passant?",
+    "What is the least number of moves needed for checkmate?", 
+    "What opening starts with c4?", 
+    "What is the first move of the Bird's Opening?", 
+    "How many moves where there in the longest known chess game?", 
+    "Which computer won the first game against a GM?"]
+    const options = [
+      ["16", "32", "28", "64"],
+      ["Pawn", "Rook", "Bishop", "Queen"],
+      ["King & Rook", "Queen & Rook", "Two Rooks", "King & Queen"],
+      ["King", "Queen", "Knight", "Bishop"],
+      ["Queen", "Bishop", "King", "Pawn"],
+      ["3", "2", "4", "6"],
+      ["English Opening", "Scandinavian Opening", "French Defense", "Vienna Gambit"],
+      ["c3", "d3", "f4", "e4"],
+      ["307", "171", "269", "195"],
+      ["Super Knight", "Deep Blue", "Still Knight", "Deep Thought"],
+      
+      ]
   
   const answers = [
+    2, 
+    3, 
     1, 
     1, 
+    4, 
+    2, 
     1, 
-    1, 
-    1, 
-    1, 
-    1, 
-    1, 
-    1, 
-    1]
+    3, 
+    3, 
+    4]
   
-  const options = [
-  ["o1", "o2", "o3", "o4"],
-  ["o1 for 2", "o2 for 2", "o3 for 2", "o4 for 2"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  ["o1", "o2", "o3", "o4"],
-  
-  ]
+
 function startQuiz(){
   
     document.getElementById("welcome").style.display = "none";

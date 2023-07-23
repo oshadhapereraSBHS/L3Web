@@ -57,34 +57,34 @@ function startQuiz(){
   }
   
   function next() {
-    document.getElementById("result").style.display = "none";
-    document.getElementById("checkAnswer").style.display = "block";
-    document.getElementById("nextQuestion").style.display = "none";
-    if(questionNumber < questions.length-1){
-      questionNumber++;
-      document.getElementById("questions").innerHTML = questions[questionNumber];
-      document.getElementById("option1").innerHTML = options[questionNumber][0];
-      document.getElementById("option2").innerHTML = options[questionNumber][1];
-      document.getElementById("option3").innerHTML = options[questionNumber][2];
-      document.getElementById("option4").innerHTML = options[questionNumber][3];
+    // document.getElementById("result").style.display = "none";
+    // document.getElementById("checkAnswer").style.display = "block";
+    // document.getElementById("nextQuestion").style.display = "none";
+    // if(questionNumber < questions.length-1){
+    //   questionNumber++;
+    //   document.getElementById("questions").innerHTML = questions[questionNumber];
+    //   document.getElementById("option1").innerHTML = options[questionNumber][0];
+    //   document.getElementById("option2").innerHTML = options[questionNumber][1];
+    //   document.getElementById("option3").innerHTML = options[questionNumber][2];
+    //   document.getElementById("option4").innerHTML = options[questionNumber][3];
       
-    } else {
-      document.getElementById("questions").style.display = "none";
-      document.getElementById("nextQuestion").style.display = "none";
-      document.getElementById("option1").style.display = "none";
-      document.getElementById("option2").style.display = "none";
-      document.getElementById("option3").style.display = "none";
-      document.getElementById("option4").style.display = "none";
-      document.getElementById("choose1").style.display = "none";
-      document.getElementById("choose2").style.display = "none";
-      document.getElementById("choose3").style.display = "none";
-      document.getElementById("choose4").style.display = "none";
-    document.getElementById("result").style.display = "block";
-    document.getElementById("result").innerHTML = "You got " + correctAnswerCount + " answers correct, out of " + questions.length + " questions.";
-    document.getElementById("checkAnswer").style.display = "none";
+    // } else {
+    //   document.getElementById("questions").style.display = "none";
+    //   document.getElementById("nextQuestion").style.display = "none";
+    //   document.getElementById("option1").style.display = "none";
+    //   document.getElementById("option2").style.display = "none";
+    //   document.getElementById("option3").style.display = "none";
+    //   document.getElementById("option4").style.display = "none";
+    //   document.getElementById("choose1").style.display = "none";
+    //   document.getElementById("choose2").style.display = "none";
+    //   document.getElementById("choose3").style.display = "none";
+    //   document.getElementById("choose4").style.display = "none";
+    // document.getElementById("result").style.display = "block";
+    // document.getElementById("result").innerHTML = "You got " + correctAnswerCount + " answers correct, out of " + questions.length + " questions.";
+    // document.getElementById("checkAnswer").style.display = "none";
     
       
-    }
+    // }
   
   }
   
@@ -101,18 +101,18 @@ function startQuiz(){
         }
         
         
-        // if(givenAnswer == answers[questionNumber]){
-        //     correctAnswerCount++;
-        //     document.getElementById("result").style.display = "block";
-        //     document.getElementById("result").innerHTML = "Correct!";
-        //     document.getElementById("nextQuestion").style.display = "block";
-        //     document.getElementById("checkAnswer").style.display = "none";
-        // } else if (validAnswer){
-        //     document.getElementById("result").style.display = "block";
-        //     document.getElementById("result").innerHTML = "Wrong!" +givenAnswer + " " + answers[questionNumber];
+        if(givenAnswer == answers[questionNumber]){
+            correctAnswerCount++;
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = "Correct!";
+            document.getElementById("nextQuestion").style.display = "block";
+            document.getElementById("checkAnswer").style.display = "none";
+        } else if (validAnswer){
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = "Wrong!" +givenAnswer + " " + answers[questionNumber];
             
-        //     document.getElementById("nextQuestion").style.display = "block";
-        //     document.getElementById("checkAnswer").style.display = "none";
-        // }
+            document.getElementById("nextQuestion").style.display = "block";
+            document.getElementById("checkAnswer").style.display = "none";
+        }
   }
   

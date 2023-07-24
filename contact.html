@@ -5,49 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to stylesheet-->
     <link rel="stylesheet" href="styles.css">
+    <!--icon on tab-->
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg">
-
+    <!--page title-->
     <title>SBHS Chess Club</title>
+    <!--link to javascript file-->
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body>
 
-    <!--div for adding grid layout for page-->
+    <!--grid layout for page-->
     <div class="container">
 
 
         <div class="logoDiv">
+            <!--log img-->
             <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo"
                 width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
             <nav>
-
+                <!--main heading 1-->
                 <div class="dropdownGroup1">
                     <a class="overview" id="overview" onclick="dropdown1()">Overview</a>
-
                 </div>
 
+                <!--main heading 2-->
                 <div class="dropdownGroup2">
                     <a class="forMembers" id="forMembers" onclick="dropdown2()">For members</a>
-
                 </div>
+
+                <!--mian heading 3-->
                 <div class="dropdownGroup3">
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
 
+                <!--cart icon-->
                 <div id="cartDiv">
                     <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()" alt="cart">
                 </div>
 
+                <!--no of items in cart-->
                 <div id="itemNumberDiv">
                     <a href="cart.html" id="itemNumber"></a>
                 </div>
 
+                <!--icon for light/dark modes-->
                 <div id="darkModeDiv">
                     <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%" alt="dark">
                 </div>
@@ -55,6 +63,7 @@
             </nav>
         </div>
         <div class="navbarDiv2">
+            <!--subheadings from mainheading 1-->
             <div class="dropdownItems1" id="dropdownItems1">
                 <div id="aboutUs"><a class="links" href="aboutUs.html">About Us</a></div>
                 <div id="gallery"><a class="links" href="gallery.html">Gallery</a></div>
@@ -62,6 +71,7 @@
                 <div id="merch"><a class="links" href="products.html">Merchandise</a></div>
             </div>
 
+            <!--subheadings from main heading 2-->
             <div class="dropdownItems2" id="dropdownItems2">
                 <div id="notices"><a class="links" href="notices.html">Notices</a></div>
                 <div id="leaderboard"><a class="links" href="leaderboard.html">Leaderboard</a></div>
@@ -80,7 +90,9 @@
 
             <div id="contactCol1">
                 <p id="contactReceived"></p>
+                <!--contact form-->
                 <form id="contactForm">
+                    <!--labels and inputs for form-->
                     <label>Name</label>
                     <br>
                     <input placeholder="Required" id="name" type="text" for="name">
@@ -97,6 +109,7 @@
                     <br>
                     <input placeholder="Required" id="message" type="text">
                     <br><br>
+                    <!--submit button-->
                     <button id="contactButton" type="button" onclick="contactSubmit()">Submit</button>
                 </form>
 
@@ -116,6 +129,8 @@
             </div>
         </div>
         <footer>
+            <!--column 1 with links for main heading 1-->
+
             <div id="footer1">
                 <p>Overview</p>
                 <a href="aboutUs.html">About Us</a><br>
@@ -123,6 +138,7 @@
                 <a href="signUp.html">SignUp</a><br>
                 <a href="products.html">Merchandise</a>
             </div>
+            <!--column 2 with links for main heading 2-->
 
             <div id="footer2">
                 <p>For Members</p>
@@ -131,10 +147,13 @@
                 <a href="resources.html">Resources</a><br>
                 <a href="puzzles.html">Play</a><br>
             </div>
+            <!--column 3-->
 
             <div id="footer3">
                 <p>Contact</p>
             </div>
+            <!--column 4-->
+
             <div id="footer4">
                 <p>SBHS Chess Club</p>
                 <p>&#169; Oshadha Perera</p>

@@ -491,7 +491,7 @@ button:hover {
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 150%;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -1076,9 +1076,10 @@ form h3 {
     text-align: left;
 }
 
-/* #contactMessage {
-    
-} */
+
+#checkoutButtonDiv {
+    margin-bottom: 15%;
+}
 
 #contactCol2 h3 {
     font-family: "Ink Free Regular", cursive;
@@ -1094,6 +1095,9 @@ form h3 {
     font-size: 120%;
 }
 
+#totalText {
+    margin-bottom: 5%;
+}
 
 .date {
     font-weight: lighter;

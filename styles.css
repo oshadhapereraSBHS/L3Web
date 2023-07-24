@@ -25,9 +25,9 @@ html {
 
 .navbarDiv2 {
     grid-row: 3/4;
-    grid-column: 2/4;
+    grid-column: 2/8;
     display: grid;
-    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 4%;
     grid-template-rows: auto;
 }
 
@@ -36,6 +36,7 @@ html {
     grid-column: 2/3;
     background-color: rgba(229, 227, 223, 0.576);
 }
+
 #galleryDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,7 +54,7 @@ html {
 
 nav {
     display: grid;
-    grid-template-columns: 30% 1fr 1.6fr 1fr 0.5fr 0.5fr 0.2fr;
+    grid-template-columns: 30% 1.1fr 1.6fr 1fr 0.3fr 0.1fr 0.3fr;
     grid-template-rows: auto;
 }
 
@@ -94,23 +95,28 @@ a {
     text-decoration: none;
 }
 
-#homeHeadingText,
+p {
+    font-weight: lighter;
+
+}
+
 h1 {
-    text-decoration: underline;
     text-decoration-color: #118AB2;
-    font-family: "Ink Free Regular", cursive;
+    font-family: "Georgia", serif;
     font-size: 300%;
     font-weight: bold;
 }
 
-#signUpButton,
-#contactButton,
-#aboutUsButton {
+button {
     background-color: rgba(17, 138, 178, 0.5);
     border: none;
     color: #073B4C;
-    font-family: "Ink Free Regular", cursive;
     font-size: 150%;
+}
+
+button:hover {
+    color: rgba(229, 227, 223, 0.576);
+    background-color: #073B4C;
 }
 
 .bodyDiv {
@@ -131,31 +137,36 @@ h1 {
     grid-row: 4/5;
     grid-column: 2/4;
     row-gap: 2%;
-    
+
 }
 
-#contactReceived, #signUpReceived {
+#contactReceived,
+#signUpReceived {
     display: none;
 }
+
 .aboutUsBodyDivs {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto;
 }
-#aboutUsHeadingDiv, #resourcesHeadingDiv {
+
+#aboutUsHeadingDiv,
+#resourcesHeadingDiv {
     grid-row: 1/2;
     grid-column: 1/5;
     text-align: center;
     background-color: #e5e3df93;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 
 }
+
 #aboutUsBodyDiv1 {
     grid-row: 2/3;
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 
 }
 
@@ -164,7 +175,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 }
 
 #aboutUsBodyDiv3 {
@@ -172,7 +183,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 }
 
 #aboutUsBodyDiv4 {
@@ -180,7 +191,7 @@ h1 {
     grid-column: 1/4;
     background-color: #e5e3df93;
     padding: 2%;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 }
 
 #homeHeadingDiv {
@@ -199,14 +210,15 @@ h1 {
     justify-self: center;
 }
 
-.contactDiv, .checkoutDiv {
+.contactDiv,
+.checkoutDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
     grid-row: 4/5;
     grid-column: 2/4;
     background-color: #e5e3df93;
     margin-top: 2%;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
     margin-bottom: 2%;
 }
 
@@ -220,16 +232,24 @@ h1 {
     margin-bottom: 2%;
 }
 
-.signUpDiv, #galleryDiv, .leaderboardDiv, .noticesHeadingDiv, .notices, .leaderboardDiv, .productImgDivs {
+.signUpDiv,
+#galleryDiv,
+.leaderboardDiv,
+.noticesHeadingDiv,
+.notices,
+.leaderboardDiv,
+.productImgDivs {
     box-shadow: 3px 3px 4px 0 black;
 }
+
 .slides {
     background-color: black;
     text-align: center;
 
 }
-.slideNumber{
-    color:white;
+
+.slideNumber {
+    color: white;
 }
 
 
@@ -251,7 +271,8 @@ h1 {
     grid-row: 2/3;
 }
 
-#contactCol2, #puzzleCol2 {
+#contactCol2,
+#puzzleCol2 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
@@ -280,7 +301,7 @@ h1 {
 }
 
 #aboutUsBodyDiv2 {
-    grid-row:3/4;
+    grid-row: 3/4;
     grid-column: 2/4;
 }
 
@@ -297,26 +318,26 @@ h1 {
 #aboutUsImage1 {
     grid-row: 2/3;
     grid-column: 3/4;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 
 }
 
 #aboutUsImage2 {
     grid-row: 3/4;
     grid-column: 1/2;
-    box-shadow:0px 3px 4px 0px black;
+    box-shadow: 0px 3px 4px 0px black;
 }
 
 #aboutUsImage3 {
     grid-row: 4/5;
     grid-column: 3/4;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
 }
 
 #aboutUsImage4 {
     grid-row: 5/6;
     grid-column: 1/2;
-    box-shadow:0px 3px 4px 0px black;
+    box-shadow: 0px 3px 4px 0px black;
 }
 
 
@@ -347,11 +368,21 @@ h1 {
 
 }
 
-.dropdownItems1,
+.dropdownItems1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
 .dropdownItems2 {
-    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 
+}
+
+#leaderboard,
+#resources,
+#play {
+    text-align: center;
 }
 
 .navbarDiv2 a {
@@ -365,20 +396,33 @@ h1 {
 }
 
 #aboutUs {
-    grid-column: 2/3;
+    grid-column: 1/2;
+    text-align: center;
 }
 
 #gallery {
-    grid-column: 3/4;
-
+    grid-column: 2/3;
+    text-align: center;
 }
 
-#notices, #productImgDivs {
+#productImgDivs {
     grid-column: 2/3;
+}
+
+#notices {
+    grid-column: 1/2;
+    text-align: center;
+
 }
 
 #signUp {
     grid-column: 4/5;
+    text-align: center;
+}
+
+#merch {
+    grid-column: 5/6;
+    text-align: center;
 }
 
 #cross {
@@ -447,7 +491,7 @@ h1 {
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 150%;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -511,7 +555,16 @@ img.hoverShadow {
     margin-top: 2%;
 }
 
-.notices, .productsDiv, .productImgDivs{
+#checkoutButtonDiv {
+    background-color: #e5e3df93;
+    grid-column: 1/4;
+    box-shadow: 3px 3px 4px 0 black;
+
+}
+
+.notices,
+.productsDiv,
+.productImgDivs {
     background-color: #e5e3df93;
     padding: 2%;
 }
@@ -555,10 +608,11 @@ p a {
 }
 
 #noticesHeading,
-#leaderboardHeading  {
+#leaderboardHeading {
     grid-column: 2/3;
     text-align: center;
 }
+
 .noticesHeadingDiv {
     grid-column: 1/4;
     background-color: #e5e3df93;
@@ -567,8 +621,8 @@ p a {
 .leaderboardDiv {
     grid-row: 4/5;
     grid-column: 2/4;
-   margin-top: 2%;
-   margin-bottom: 4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
     grid-gap: 2%;
     padding-left: 2%;
     padding-right: 2%;
@@ -577,12 +631,13 @@ p a {
 }
 
 .leaderboardTable {
-text-align: center;
-border-collapse: collapse;
+    text-align: center;
+    border-collapse: collapse;
 }
 
 
-th, td {
+th,
+td {
     border: 1px solid black;
     max-width: 50px;
 }
@@ -658,26 +713,44 @@ li a:hover {
 }
 
 .even {
-    background-color: #999;
+    background-color: rgba(229, 227, 223, 0.576)
+}
 
+.notices {
+    font-size: 120%;
+}
+
+th {
+    font-size: 130%
 }
 
 .odd {
-    background-color: #073B4C;
-    color: #999;
+    background-color: rgba(7, 59, 76, 0.8);
+    color: rgba(255, 255, 255, 0.7)
 }
 
-.even, .odd {
+table {
+    font-family: "Ink Free", cursive;
+}
+
+.even,
+.odd {
     font-weight: bold;
 }
+
 #darkModeDiv {
-    grid-column: 5/6;
+    grid-column: 7/8;
     grid-row: 1/2;
     vertical-align: middle;
-    align-self: center;
+    align-self: last baseline
 }
 
-#choose1, #choose2, #choose3, #choose4, #nextQuestion, #checkAnswer, #restart, #result2 {
+#cartDiv {
+    align-self: last baseline
+}
+
+#checkAnswer,
+#restart {
     display: none;
 }
 
@@ -687,9 +760,17 @@ li a:hover {
     grid-template-columns: 1fr 10fr;
 }
 
-.wholeColumn{
+.wholeColumn {
     grid-column: 1/3;
 }
+
+.wholeColumn h3 {
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+    font-size: 120%;
+
+}
+
 
 #resultDiv {
     min-height: 50px;
@@ -701,8 +782,8 @@ li a:hover {
 }
 
 iframe {
-    min-height: 80%;
-    margin-bottom: 70%;
+    min-height: 530px;
+
 }
 
 
@@ -719,12 +800,15 @@ iframe {
 .productImgs:hover {
     opacity: 0.1;
 }
+
 .productTexts {
     z-index: -10;
 }
+
 .productTexts:hover {
     background-color: #e5e3df93;
 }
+
 /*aligning descriptions*/
 .productTextDivs {
     display: none;
@@ -799,7 +883,7 @@ li {
     grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: auto;
     background-color: #e5e3df93;
-    box-shadow:3px 3px 4px 0px black;
+    box-shadow: 3px 3px 4px 0px black;
     padding: 4%
 }
 
@@ -817,6 +901,7 @@ li {
 input {
     text-align: center;
 }
+
 .productImgDivs button {
     justify-self: center;
 }
@@ -834,7 +919,9 @@ input {
     text-align: center;
     vertical-align: middle;
     align-self: center;
-}/*aligning minus, plus and quantity*/
+}
+
+/*aligning minus, plus and quantity*/
 #change1,
 #change2,
 #change3,
@@ -846,28 +933,27 @@ input {
     margin-top: 16%;
 }
 
-/*aligning and display of cart empty message*/
-#empty {
-    text-align: center;
-    margin-top: 20%;
-    font-size: 20px;
-    display: block;
+#totalPrice {
+    justify-self: center;
+    align-self: center;
+}
+
+.plus,
+.minus {
+    font-size: 100%;
 
 }
 
 /*aligning checkout button*/
 #checkoutButton {
     text-align: center;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 3%;
+
     margin-bottom: 3%;
     padding: 1% 1% 1% 1%;
 }
 
-/*change background color on hover for better contrast and to let the user know the button is working*/
-/* #checkoutButton:hover, #contactSubmit:hover, #confirmButton:hover {
-  background-color: #e7d5f0
-}
 
 #totalText p {
     text-align: left;
@@ -881,4 +967,254 @@ input {
 .checkoutCol2 {
     grid-column: 4/5;
     grid-row: 2/3;
-} */
+}
+
+nav img {
+    width: 50%;
+
+}
+
+#dark {
+    width: 45%;
+
+}
+
+#darkModeDiv,
+#cartDiv {
+    vertical-align: bottom;
+    text-align: end;
+}
+
+#itemNumber {
+    vertical-align: baseline;
+    text-align: end;
+}
+
+#itemNumberDiv {
+    align-self: last baseline;
+}
+
+#signUp {
+    grid-column: 3/4;
+}
+
+#merch {
+    grid-column: 4/5;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+}
+
+#aboutUsBodyText1,
+#aboutUsBodyText2,
+#aboutUsBodyText3,
+#aboutUsBodyText4 {
+    font-size: 120%;
+}
+
+form,
+input {
+    font-family: "Ink Free Regular", cursive;
+}
+
+#form4 label,
+#form5 label {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+form h3 {
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+#form4,
+#form5 {
+    padding-left: 25%;
+    margin-bottom: 5%;
+    ;
+}
+
+#form4 input,
+#form5 input {
+    text-align: left;
+}
+
+#totalPrice,
+#totalText {
+    font-family: "Ink Free Regular", cursive;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#checkoutButton {
+    font-size: 120%;
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+
+}
+
+#shippingCheckbox {
+    font-weight: bold;
+}
+
+#contactForm label,
+#contactButton,
+#signUpButton,
+#aboutUsButton {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+}
+
+#contactForm input {
+    text-align: left;
+}
+
+
+#checkoutButtonDiv {
+    margin-bottom: 15%;
+}
+
+#contactCol2 h3 {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+}
+
+#contactCol2 p {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.galleryHeading p {
+    font-size: 120%;
+}
+
+#totalText {
+    margin-bottom: 5%;
+}
+
+.date {
+    font-weight: lighter;
+    font-size: 90%;
+    font-family: "Ink Free Regular", cursive;
+
+}
+
+.productImgDivs button {
+    font-family: "Ink Free Regular", cursive;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.noticesHeadingDiv p {
+    font-size: 120%;
+    text-align: center;
+
+}
+
+td {
+    font-family: "Georgia", serif;
+
+}
+
+.productTexts {
+    font-size: 120%;
+}
+
+#welcome {
+    font-family: "Georgia", serif;
+}
+
+.wholeColumn button {
+    font-family: "Ink Free Regular", cursive;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.resourcesList li {
+    list-style-type: circle;
+}
+
+#signUpCol2 p {
+    font-size: 120%;
+}
+
+.yearOption {
+    font-family: "Ink Free Regular", cursive;
+}
+
+footer p {
+    font-family: "Georgia", serif;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: auto;
+    background-color: rgba(229, 227, 223, 0.4);
+    grid-column: 2/4;
+    padding-bottom: 1%;
+    margin-top: 4%;
+}
+
+#footer1 {
+    grid-column: 2/3;
+}
+
+#footer2 {
+    grid-column: 3/4;
+}
+
+#footer3 {
+    grid-column: 4/5;
+}
+
+#footer4 p {
+    grid-column: 5/6;
+
+
+}
+
+#footer1 a:hover,
+#footer2 a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+}
+
+.productTexts {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+}
+
+#contactCol1 h3,
+#welcome {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bolder;
+    font-size: 170%;
+}
+
+#questions {
+    font-family: "Georgia", serif;
+    font-size: 120%;
+}
+
+.answers {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+iframe {
+    width: 90%;
+    height: 20%
+}

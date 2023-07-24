@@ -47,7 +47,7 @@
 
                 <!--cart icon-->
                 <div id="cartDiv">
-                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()" alt="cart">
+                    <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()" alt="cart" title="Cart">
                 </div>
 
                 <!--no of items in cart-->
@@ -57,7 +57,7 @@
 
                 <!--icon for light/dark modes-->
                 <div id="darkModeDiv">
-                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%" alt="dark">
+                    <img id="dark" src="images/dark.png" onclick="darkModeOn()" width="50%" alt="dark" title="Switch to Dark Mode">
                 </div>
 
             </nav>
@@ -123,6 +123,9 @@
                         <button id="nextQuestion" onclick="next()" type="button">Next</button>
                         <button id="checkAnswer" onclick="check()" type="button">Submit</button>
                         <button id="restart" type="submit">Restart</button>
+                        <button id="start" type="button" onclick="quizStart()" title="Click to start quiz">Start
+                            Quiz</button>
+
                         <br><br>
                         <!--link to lichess team-->
                         <h3>To play online, you can join our lichess team on <a
@@ -157,7 +160,7 @@
             <!--column 3-->
 
             <div id="footer3">
-                <p>Contact</p>
+                <a href="contact.html">Contact</a>
             </div>
             <!--column 4-->
 

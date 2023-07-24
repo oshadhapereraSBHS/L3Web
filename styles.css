@@ -1,28 +1,34 @@
 html {
+    /*background image stretching to whole window*/
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /*font family and colour*/
     font-family: "Georgia", serif;
     color: #073B4C;
 }
 
+/*grid for whole page*/
 .container {
     display: grid;
     grid-template-columns: 4% 1.5fr 1fr 4%;
     grid-template-rows: auto;
 }
 
+/*positioning logo in nav bar*/
 .logoDiv {
     grid-row: 1/3;
     grid-column: 2/3;
     padding-top: 4%;
 }
 
+/*positioning nav bar in container*/
 .navbarDiv {
     grid-row: 2/3;
     grid-column: 2/4;
 }
 
+/*positioning dropdown in container*/
 .navbarDiv2 {
     grid-row: 3/4;
     grid-column: 2/8;
@@ -31,12 +37,14 @@ html {
     grid-template-rows: auto;
 }
 
+/*grid for index.html*/
 .bodyDiv {
     grid-row: 4/5;
     grid-column: 2/3;
     background-color: rgba(229, 227, 223, 0.576);
 }
 
+/*grid for gallery page, setting background image and paddings*/
 #galleryDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -51,13 +59,14 @@ html {
     padding-bottom: 5%;
 }
 
-
+/*grid for nav bar*/
 nav {
     display: grid;
     grid-template-columns: 30% 1.1fr 1.6fr 1fr 0.3fr 0.1fr 0.3fr;
     grid-template-rows: auto;
 }
 
+/*positioning heading in nav bar*/
 #overview {
     grid-column: 2/3;
 }
@@ -66,7 +75,7 @@ nav {
     height: auto;
 }
 
-
+/*font style for nav bar headings*/
 #contact,
 .overview,
 .forMembers {
@@ -74,15 +83,13 @@ nav {
     font-weight: bold;
 }
 
-
-#overview {
-    text-align: start;
-}
-
+/*aligning nav bar headings*/
+#overview,
 #forMembers {
     text-align: center;
 }
 
+/*font sizes for page headings*/
 #homeBodyText,
 .contactText,
 label {
@@ -90,6 +97,7 @@ label {
     font-size: 150%;
 }
 
+/*link colours and no underline*/
 a {
     color: #073B4C;
     text-decoration: none;
@@ -100,6 +108,7 @@ p {
 
 }
 
+/*font styling for main headings in each page*/
 h1 {
     text-decoration-color: #118AB2;
     font-family: "Georgia", serif;
@@ -107,6 +116,7 @@ h1 {
     font-weight: bold;
 }
 
+/*button formatting with background colors and font colors*/
 button {
     background-color: rgba(17, 138, 178, 0.5);
     border: none;
@@ -114,11 +124,13 @@ button {
     font-size: 150%;
 }
 
+/*change color and bg color on hover*/
 button:hover {
     color: rgba(229, 227, 223, 0.576);
     background-color: #073B4C;
 }
 
+/*index.html page grid*/
 .bodyDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -128,6 +140,7 @@ button:hover {
     padding-bottom: 5%;
 }
 
+/*grid for  about us.html*/
 .aboutUsDiv {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
@@ -140,17 +153,20 @@ button:hover {
 
 }
 
+/*hide form received messages*/
 #contactReceived,
 #signUpReceived {
     display: none;
 }
 
+/*grids for each section in about us and resource pages*/
 .aboutUsBodyDivs {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto;
 }
 
+/*divs for resource and about us heading page*/
 #aboutUsHeadingDiv,
 #resourcesHeadingDiv {
     grid-row: 1/2;
@@ -161,6 +177,7 @@ button:hover {
 
 }
 
+/*positioning each div in about and resources, with bg colors and box shadows.*/
 #aboutUsBodyDiv1 {
     grid-row: 2/3;
     grid-column: 1/4;
@@ -170,6 +187,7 @@ button:hover {
 
 }
 
+/*abve structure repeated for every div*/
 #aboutUsBodyDiv2 {
     grid-row: 3/4;
     grid-column: 1/4;
@@ -194,6 +212,7 @@ button:hover {
     box-shadow: 3px 3px 4px 0px black;
 }
 
+/*positioning headings*/
 #homeHeadingDiv {
     grid-row: 1/2;
     grid-column: 2/3;
@@ -204,12 +223,14 @@ button:hover {
     grid-column: 2/3;
 }
 
+/*sign up button positioning*/
 #signUpButtonDiv {
     grid-row: 3/4;
     grid-column: 2/3;
     justify-self: center;
 }
 
+/*grid for contact and checkout page, and bg colors and box shadows*/
 .contactDiv,
 .checkoutDiv {
     display: grid;
@@ -222,6 +243,7 @@ button:hover {
     margin-bottom: 2%;
 }
 
+/*grid for sign up page*/
 .signUpDiv {
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
@@ -232,6 +254,7 @@ button:hover {
     margin-bottom: 2%;
 }
 
+/*box shadows for each heading*/
 .signUpDiv,
 #galleryDiv,
 .leaderboardDiv,
@@ -242,17 +265,19 @@ button:hover {
     box-shadow: 3px 3px 4px 0 black;
 }
 
+/*bg color for slideshow*/
 .slides {
     background-color: black;
     text-align: center;
 
 }
 
+/*color for slide caption*/
 .slideNumber {
     color: white;
 }
 
-
+/*positioning columns in sign up page*/
 #signUpCol1 {
     grid-column: 4/5;
     grid-row: 2/3;
@@ -266,6 +291,7 @@ button:hover {
 
 }
 
+/*positioning columns in contact and play pages*/
 #contactCol1 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -277,15 +303,14 @@ button:hover {
     grid-row: 2/3;
 }
 
+/*positioning headings in contact and sign up page*/
 #contactHeadingDiv {
     grid-column: 2/5;
     grid-row: 1/2;
-    justify-self: center;
 }
 
 #signUpHeadingDiv {
     grid-column: 2/5;
-    justify-self: center;
     grid-row: 1/2;
 }
 
@@ -295,6 +320,24 @@ button:hover {
     justify-self: center;
 }
 
+/*padding for divs in about us and resources pages*/
+#aboutUsBodyDiv1,
+#aboutUsBodyDiv2,
+#aboutUsBodyDiv3,
+#aboutUsBodyDiv4 {
+    padding: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+/*text aligning in first and thirds divs*/
+#aboutUsBodyDiv1,
+#aboutUsBodyDiv3 {
+    text-align: right;
+}
+
+
+/*positoning divs in about us*/
 #aboutUsBodyDiv1 {
     grid-row: 2/3;
     grid-column: 1/3;
@@ -315,6 +358,7 @@ button:hover {
     grid-column: 2/4;
 }
 
+/*positioning imgs in about us and resources, and nox shadows*/
 #aboutUsImage1 {
     grid-row: 2/3;
     grid-column: 3/4;
@@ -341,7 +385,7 @@ button:hover {
 }
 
 
-
+/*positioning dropdown headings*/
 .dropdownGroup1 {
     grid-column: 2/3;
 }
@@ -354,6 +398,7 @@ button:hover {
     grid-column: 4/5;
 }
 
+/*positioning dropdowns*/
 .dropdownItems1 {
     grid-row: 2/3;
     grid-column: 1/5;
@@ -368,6 +413,7 @@ button:hover {
 
 }
 
+/*grid layout for dropdowns*/
 .dropdownItems1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -379,22 +425,26 @@ button:hover {
 
 }
 
+/*text align in divs*/
 #leaderboard,
 #resources,
 #play {
     text-align: center;
 }
 
+/*font sizes for dropdowns*/
 .navbarDiv2 a {
 
     font-size: 130%;
 }
 
+/*text align for dropdown*/
 .navbarDiv2 {
     padding-top: 2%;
     text-align: start;
 }
 
+/*positioning links in dropdown*/
 #aboutUs {
     grid-column: 1/2;
     text-align: center;
@@ -425,6 +475,7 @@ button:hover {
     text-align: center;
 }
 
+/*positioning cross icon in slideshow*/
 #cross {
     text-align: end;
 }
@@ -432,7 +483,7 @@ button:hover {
 
 
 
-/* The Modal (background) */
+/* slideshow background*/
 .galleryOverlay {
     display: none;
     position: fixed;
@@ -445,7 +496,7 @@ button:hover {
     background-color: black;
 }
 
-/* Modal Content */
+/* slideshow Content */
 .overlayContent {
     position: relative;
     background-color: #fefefe;
@@ -455,7 +506,7 @@ button:hover {
     max-width: 1200px;
 }
 
-/* The Close Button */
+/*close icon */
 .close {
     color: white;
     position: absolute;
@@ -465,6 +516,7 @@ button:hover {
     font-weight: bold;
 }
 
+/*close icon chaning color on hover*/
 .close:hover,
 .close:focus {
     color: #999;
@@ -472,6 +524,7 @@ button:hover {
     cursor: pointer;
 }
 
+/*slides hidden*/
 .slides {
     display: none;
 }
@@ -480,7 +533,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Next & previous buttons */
+/*next and previous buttons with colors, padding, and transition */
 .prev,
 .next {
     cursor: pointer;
@@ -498,19 +551,19 @@ button:hover {
     -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* positioning right button and adding border radius */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover change bg color*/
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+/* adding slide captions*/
 .numberText {
     color: #f2f2f2;
     font-size: 12px;
@@ -519,6 +572,7 @@ button:hover {
     top: 0;
 }
 
+/*transition between imgs in slideshow*/
 img.hoverShadow {
     transition: 0.3s;
 }
@@ -527,12 +581,14 @@ img.hoverShadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*positioning heading*/
 .galleryHeading {
     grid-row: 1/2;
     grid-column: 1/5;
     text-align: center;
 }
 
+/*grid layout for notices, with grid gaps to seperate them*/
 .noticesDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -544,6 +600,7 @@ img.hoverShadow {
     margin-top: 2%;
 }
 
+/*grid layout for cart*/
 .cartDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -555,6 +612,7 @@ img.hoverShadow {
     margin-top: 2%;
 }
 
+/*bg color and box shadow for checkout button*/
 #checkoutButtonDiv {
     background-color: #e5e3df93;
     grid-column: 1/4;
@@ -562,6 +620,7 @@ img.hoverShadow {
 
 }
 
+/*padding and bg color for notices and products*/
 .notices,
 .productsDiv,
 .productImgDivs {
@@ -569,6 +628,7 @@ img.hoverShadow {
     padding: 2%;
 }
 
+/*positioning notices*/
 #notice1 {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -607,6 +667,7 @@ p a {
     grid-row: 3/4;
 }
 
+/*positioning headings*/
 #noticesHeading,
 #leaderboardHeading {
     grid-column: 2/3;
@@ -618,6 +679,7 @@ p a {
     background-color: #e5e3df93;
 }
 
+/*grid for leaderboard*/
 .leaderboardDiv {
     grid-row: 4/5;
     grid-column: 2/4;
@@ -630,18 +692,20 @@ p a {
     background-color: #e5e3df93;
 }
 
+/*table for leaderboard with centred text and no borders*/
 .leaderboardTable {
     text-align: center;
     border-collapse: collapse;
 }
 
-
+/*borders*/
 th,
 td {
     border: 1px solid black;
     max-width: 50px;
 }
 
+/*positionining rows*/
 .row1 {
     grid-row: 2/3;
 
@@ -683,27 +747,39 @@ td {
     grid-row: 11/12;
 }
 
+/*underline on hover for resources page's links*/
 li a:hover {
     text-decoration: underline;
 }
 
-
+/*underline and zoom on hover for nav links*/
 #overview:hover,
 #forMembers:hover,
-#contact:hover {
+#contact:hover,
+#aboutUs:hover,
+
+#gallery:hover,
+#notices:hover,
+#signUp:hover,
+#merch:hover,
+#resources:hover,
+#play:hover,
+#leaderboard:hover {
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .navbarDiv2 {
     min-height: 40px;
-    ;
 }
 
+/*box shadow for dropdown links*/
 .dropdownItems1,
 .dropdownItems2 {
     box-shadow: 2px 2px 2px 0 black;
 }
 
+/*padding for nav bar*/
 #overview,
 #forMembers,
 #contact {
@@ -712,21 +788,23 @@ li a:hover {
     padding-right: 5%;
 }
 
+/*change bg color in every second row in leaderboardtable*/
 .even {
     background-color: rgba(229, 227, 223, 0.576)
 }
 
+.odd {
+    background-color: rgba(7, 59, 76, 0.8);
+    color: rgba(255, 255, 255, 0.7)
+}
+
+/*font sizes, weights and styles*/
 .notices {
     font-size: 120%;
 }
 
 th {
     font-size: 130%
-}
-
-.odd {
-    background-color: rgba(7, 59, 76, 0.8);
-    color: rgba(255, 255, 255, 0.7)
 }
 
 table {
@@ -738,6 +816,7 @@ table {
     font-weight: bold;
 }
 
+/*positioning dark mode icon*/
 #darkModeDiv {
     grid-column: 7/8;
     grid-row: 1/2;
@@ -749,17 +828,20 @@ table {
     align-self: last baseline
 }
 
+/*hide restart and submit buttons in quiz*/
 #checkAnswer,
 #restart {
     display: none;
 }
 
+/*grid for quiz*/
 #quizGrid {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 10fr;
 }
 
+/*columns for quiz*/
 .wholeColumn {
     grid-column: 1/3;
 }
@@ -776,11 +858,12 @@ table {
     min-height: 50px;
 }
 
+/*column for contact page*/
 #contactCol1 {
-    min-width: 500px;
     padding-bottom: 5%;
 }
 
+/*chess board embedded from chess.com*/
 iframe {
     min-height: 530px;
 
@@ -791,12 +874,12 @@ iframe {
     display: block;
 }
 
-/*show description when user hovers over text. this allows user to see the description only if they hover on them - this makes the page more organised and less messy while allowing interested cutomers to still view the description*/
+/*show description when user hovers over text*/
 .productTextDivs:hover {
     display: block;
 }
 
-/*reduce opacity when hovering over product - this creates contrast against the description text*/
+/*reduce opacity when hovering over product*/
 .productImgs:hover {
     opacity: 0.1;
 }
@@ -820,6 +903,7 @@ iframe {
 /*removing bullet-style ordering*/
 li {
     list-style: none;
+
 }
 
 /*poditions and dimensions of images*/
@@ -877,6 +961,7 @@ li {
     grid-row: 1/2;
 }
 
+/*grid for cart*/
 .cartProducts {
     grid-column: 1/4;
     display: grid;
@@ -887,12 +972,14 @@ li {
     padding: 4%
 }
 
+/*grid for displaying total price*/
 .price {
     display: grid;
     grid-template-columns: 2fr 0.5fr;
     grid-template-rows: auto;
 }
 
+/*aligning prices*/
 .productPrices {
     justify-self: center;
     text-align: center;
@@ -906,6 +993,7 @@ input {
     justify-self: center;
 }
 
+/*padding and width for imgs in cart*/
 .cartProducts img {
     width: 50%;
     height: auto;
@@ -959,6 +1047,7 @@ input {
     text-align: left;
 }
 
+/*positioning divs in checkout*/
 .checkoutCol1 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -969,6 +1058,7 @@ input {
     grid-row: 2/3;
 }
 
+/*sizing of nav bar imgs*/
 nav img {
     width: 50%;
 
@@ -979,6 +1069,7 @@ nav img {
 
 }
 
+/*aligning nav bar items*/
 #darkModeDiv,
 #cartDiv {
     vertical-align: bottom;
@@ -994,6 +1085,7 @@ nav img {
     align-self: last baseline;
 }
 
+/*positioning dropdown items*/
 #signUp {
     grid-column: 3/4;
 }
@@ -1002,10 +1094,12 @@ nav img {
     grid-column: 4/5;
 }
 
+/*underlines for links*/
 h3 a:hover {
     text-decoration: underline;
 }
 
+/*refining font sizes, weight and weights*/
 button {
     font-family: "Georgia", serif;
     font-weight: lighter;
@@ -1038,7 +1132,7 @@ form h3 {
 #form5 {
     padding-left: 25%;
     margin-bottom: 5%;
-    ;
+
 }
 
 #form4 input,
@@ -1087,8 +1181,18 @@ form h3 {
 }
 
 #contactCol2 p {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 110%;
+    margin-bottom: 11%;
+}
+
+li a:hover {
+    font-family: "Ink Free Regular", cursive;
+    font-weight: bold;
+}
+
+#totalText {
+    font-weight: bold;
 }
 
 .galleryHeading p {
@@ -1139,6 +1243,20 @@ td {
 
 .resourcesList li {
     list-style-type: circle;
+
+    list-style-position: inside;
+}
+
+.evenList li {
+    list-style-position: outside;
+
+}
+
+#aboutUsHeadingText1,
+#aboutUsHeadingText2,
+#aboutUsHeadingText3,
+#aboutUsHeadingText4 {
+    font-size: 160%;
 }
 
 #signUpCol2 p {
@@ -1154,6 +1272,7 @@ footer p {
 
 }
 
+/*grid for footer, bg color a bit lighter than other divs*/
 footer {
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
@@ -1164,6 +1283,7 @@ footer {
     margin-top: 4%;
 }
 
+/*positioning each div in footer*/
 #footer1 {
     grid-column: 2/3;
 }
@@ -1182,6 +1302,7 @@ footer {
 
 }
 
+/*refining font sizes, font weights and font families*/
 #footer1 a:hover,
 #footer2 a:hover {
     text-decoration: underline;
@@ -1217,4 +1338,44 @@ footer a {
 iframe {
     width: 90%;
     height: 20%
+}
+
+.contactCol2 p {
+    font-weight: lighter;
+}
+
+#choose1,
+#choose2,
+#choose3,
+#choose4,
+#nextQuestion {
+    display: none;
+}
+
+#result,
+#result2 {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#footer3 a {
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+
+}
+
+#footer3 a:hover {
+    text-decoration: underline;
+}
+
+#footer3 {
+    margin-top: 0%;
+}
+
+#totalValue {
+    font-weight: bold;
+}
+
+#signUpForm label {
+    font-weight: bold;
 }

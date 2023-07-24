@@ -20,7 +20,8 @@
 
 
         <div class="logoDiv">
-            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo"
+                width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -38,11 +39,11 @@
                 <div class="dropdownGroup3">
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
-                
+
                 <div id="cartDiv">
                     <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()" alt="cart">
                 </div>
-                
+
                 <div id="itemNumberDiv">
                     <a href="cart.html" id="itemNumber"></a>
                 </div>
@@ -75,187 +76,194 @@
                 <h1 id="noticesHeading">Merchandise</h1>
                 <p>Hover over image for details. Click on image for slideshow.</p>
             </div>
-   
 
-                <!--product 1-->
-                <li class="productImgDivs" id="product1">
-                    <!--product image-->
-                    <img class="productImgs" id="product1Img" src="images/tshirt1.png" alt="tshirt" onclick="openOverlay();currentSlide(1)">
-                    <!--product description-->
-                    <div class="productTextDivs" id="product1TextDiv">
-                        <p class="productTexts" id="product1Text">
-                            Colour: Blue<br>
-                            Material: Cotton<br>
-                            Neckline: Crew Neck<br>
-                            Size: Medium<br>
-                        </p>
-                    </div>
-    
-    
-                    <!--product price-->
-                    <p class="productPrices">$19<br><br>
-                        <!--minus button-->
-                        <button class="minus" onclick="minus1()">-</button>
-                        <!--quantity field-->
-                        <input type="number" min="0" id="quantity1" step="1">
-                        <!--plus button-->
-                        <button class="plus" onclick="plus1()">+</button><br>
+
+            <!--product 1-->
+            <li class="productImgDivs" id="product1">
+                <!--product image-->
+                <img class="productImgs" id="product1Img" src="images/tshirt1.png" alt="tshirt"
+                    onclick="openOverlay();currentSlide(1)">
+                <!--product description-->
+                <div class="productTextDivs" id="product1TextDiv">
+                    <p class="productTexts" id="product1Text">
+                        Colour: Blue<br>
+                        Material: Cotton<br>
+                        Neckline: Crew Neck<br>
+                        Size: Medium<br>
                     </p>
-    
-                    <!--add to cart button-->
-                    <button id="add1" onclick="updateQuantity1()">Add to Cart</button>
-    
-                </li>
-    
-                <!--same format as above for the rest of the products-->
-                <li class="productImgDivs" id="product2">
-                    <img class="productImgs" id="product2Img" src="images/tshirt2.png" alt="tshirt" onclick="openOverlay();currentSlide(1)">
-                    <div class="productTextDivs" id="product2TextDiv">
-    
-                        <p class="productTexts" id="product2Text">
-                            Colour: Blue<br>
-                            Material: Cotton<br>
-                            Neckline: Crew Neck<br>
-                            Size: Medium<br>
-                        </p>
-                    </div>
-    
-                    <p class="productPrices">$19<br><br>
-    
-                        <button class="minus" onclick="minus2()">-</button>
-                        <input type="number" min="0" id="quantity2" step="1" value="0">
-                        <button class="plus" onclick="plus2()">+</button><br>
+                </div>
+
+
+                <!--product price-->
+                <p class="productPrices">$19<br><br>
+                    <!--minus button-->
+                    <button class="minus" onclick="minus1()">-</button>
+                    <!--quantity field-->
+                    <input type="number" min="0" id="quantity1" step="1">
+                    <!--plus button-->
+                    <button class="plus" onclick="plus1()">+</button><br>
+                </p>
+
+                <!--add to cart button-->
+                <button id="add1" onclick="updateQuantity1()">Add to Cart</button>
+
+            </li>
+
+            <!--same format as above for the rest of the products-->
+            <li class="productImgDivs" id="product2">
+                <img class="productImgs" id="product2Img" src="images/tshirt2.png" alt="tshirt"
+                    onclick="openOverlay();currentSlide(1)">
+                <div class="productTextDivs" id="product2TextDiv">
+
+                    <p class="productTexts" id="product2Text">
+                        Colour: Blue<br>
+                        Material: Cotton<br>
+                        Neckline: Crew Neck<br>
+                        Size: Medium<br>
                     </p>
-                    <button id="add2" onclick="updateQuantity1()">Add to Cart</button>
-                </li>
-    
-                <li class="productImgDivs" id="product3">
-                    <img class="productImgs" id="product3Img" src="images/tshirt3.png" alt="tshirt" onclick="openOverlay();currentSlide(3)">
-                    <div class="productTextDivs" id="product3TextDiv">
-    
-                        <p class="productTexts" id="product3Text">
-                            Colour: Blue<br>
-                            Material: Cotton<br>
-                            Neckline: Crew Neck<br>
-                            Sizes: Medium<br>
-                        </p>
-                    </div>
-    
-                    <p class="productPrices">$19<br><br>
-    
-                        <button class="minus" onclick="minus3()">-</button>
-                        <input type="number" min="0" id="quantity3" step="1" value="0">
-                        <button class="plus" onclick="plus3()">+</button><br>
+                </div>
+
+                <p class="productPrices">$19<br><br>
+
+                    <button class="minus" onclick="minus2()">-</button>
+                    <input type="number" min="0" id="quantity2" step="1" value="0">
+                    <button class="plus" onclick="plus2()">+</button><br>
+                </p>
+                <button id="add2" onclick="updateQuantity1()">Add to Cart</button>
+            </li>
+
+            <li class="productImgDivs" id="product3">
+                <img class="productImgs" id="product3Img" src="images/tshirt3.png" alt="tshirt"
+                    onclick="openOverlay();currentSlide(3)">
+                <div class="productTextDivs" id="product3TextDiv">
+
+                    <p class="productTexts" id="product3Text">
+                        Colour: Blue<br>
+                        Material: Cotton<br>
+                        Neckline: Crew Neck<br>
+                        Sizes: Medium<br>
                     </p>
-                    <button id="add3" onclick="updateQuantity1()">Add to Cart</button>
-                </li>
-    
-                <li class="productImgDivs" id="product4">
-                    <img class="productImgs" id="product4Img" src="images/mug1.png" alt="mug" onclick="openOverlay();currentSlide(4)">
-                    <div class="productTextDivs" id="product4TextDiv">
-    
-                        <p class="productTexts" id="product4Text">
-                            Colour: Black<br>
-                            Material: Porcelain<br>
-                            Size: 320mL<br>
-                        </p>
-                    </div>
-    
-                    <p class="productPrices">$4<br><br>
-    
-                        <button class="minus" onclick="minus4()">-</button>
-                        <input type="number" min="0" id="quantity4" step="1" value="0">
-                        <button class="plus" onclick="plus4()">+</button><br>
+                </div>
+
+                <p class="productPrices">$19<br><br>
+
+                    <button class="minus" onclick="minus3()">-</button>
+                    <input type="number" min="0" id="quantity3" step="1" value="0">
+                    <button class="plus" onclick="plus3()">+</button><br>
+                </p>
+                <button id="add3" onclick="updateQuantity1()">Add to Cart</button>
+            </li>
+
+            <li class="productImgDivs" id="product4">
+                <img class="productImgs" id="product4Img" src="images/mug1.png" alt="mug"
+                    onclick="openOverlay();currentSlide(4)">
+                <div class="productTextDivs" id="product4TextDiv">
+
+                    <p class="productTexts" id="product4Text">
+                        Colour: Black<br>
+                        Material: Porcelain<br>
+                        Size: 320mL<br>
                     </p>
-                    <button id="add4" onclick="updateQuantity1()">Add to Cart</button>
-                </li>
-    
-                <li class="productImgDivs" id="product5">
-                    <img class="productImgs" id="product5Img" src="images/mug2.png" alt="mug" onclick="openOverlay();currentSlide(5)">
-                    <div class="productTextDivs" id="product5TextDiv">
-    
-                        <p class="productTexts" id="product5Text">
-                            Colour: Black<br>
-                            Material: Porcelain<br>
-                            Size: 320mL<br>
-                        </p>
-                    </div>
-    
-                    <p class="productPrices">$4<br><br>
-    
-                        <button class="minus" onclick="minus5()">-</button>
-                        <input type="number" min="0" id="quantity5" step="1" value="0">
-                        <button class="plus" onclick="plus5()">+</button><br>
+                </div>
+
+                <p class="productPrices">$4<br><br>
+
+                    <button class="minus" onclick="minus4()">-</button>
+                    <input type="number" min="0" id="quantity4" step="1" value="0">
+                    <button class="plus" onclick="plus4()">+</button><br>
+                </p>
+                <button id="add4" onclick="updateQuantity1()">Add to Cart</button>
+            </li>
+
+            <li class="productImgDivs" id="product5">
+                <img class="productImgs" id="product5Img" src="images/mug2.png" alt="mug"
+                    onclick="openOverlay();currentSlide(5)">
+                <div class="productTextDivs" id="product5TextDiv">
+
+                    <p class="productTexts" id="product5Text">
+                        Colour: Black<br>
+                        Material: Porcelain<br>
+                        Size: 320mL<br>
                     </p>
-                    <button id="add5" onclick="updateQuantity1()">Add to Cart</button>
-                </li>
-    
-                <li class="productImgDivs" id="product6">
-                    <img class="productImgs" id="product6Img" src="images/mug3.png" alt="mug" onclick="openOverlay();currentSlide(6)">
-                    <div class="productTextDivs" id="product6TextDiv">
-    
-                        <p class="productTexts" id="product6Text">
-                            Colour: Black<br>
-                            Material: Porcelain<br>
-                            Size: 320mL<br>
-                        </p>
-                    </div>
-    
-                    <p class="productPrices">$4<br><br>
-    
-                        <button class="minus" onclick="minus6()">-</button>
-                        <input type="number" min="0" id="quantity6" step="1" value="0">
-                        <button class="plus" onclick="plus6()">+</button><br>
+                </div>
+
+                <p class="productPrices">$4<br><br>
+
+                    <button class="minus" onclick="minus5()">-</button>
+                    <input type="number" min="0" id="quantity5" step="1" value="0">
+                    <button class="plus" onclick="plus5()">+</button><br>
+                </p>
+                <button id="add5" onclick="updateQuantity1()">Add to Cart</button>
+            </li>
+
+            <li class="productImgDivs" id="product6">
+                <img class="productImgs" id="product6Img" src="images/mug3.png" alt="mug"
+                    onclick="openOverlay();currentSlide(6)">
+                <div class="productTextDivs" id="product6TextDiv">
+
+                    <p class="productTexts" id="product6Text">
+                        Colour: Black<br>
+                        Material: Porcelain<br>
+                        Size: 320mL<br>
                     </p>
-                    <button id="add6" onclick="updateQuantity1()">Add to Cart</button>
-                </li>
-    
-                <!--end of products-->
-    
-                <div id="galleryOverlay" class="galleryOverlay">
-                    <span class="close cursor" onclick="closeOverlay()">&times;</span>
-                    <div class="overlayContent">
-            
-                      <div class="slides">
+                </div>
+
+                <p class="productPrices">$4<br><br>
+
+                    <button class="minus" onclick="minus6()">-</button>
+                    <input type="number" min="0" id="quantity6" step="1" value="0">
+                    <button class="plus" onclick="plus6()">+</button><br>
+                </p>
+                <button id="add6" onclick="updateQuantity1()">Add to Cart</button>
+            </li>
+
+            <!--end of products-->
+
+            <div id="galleryOverlay" class="galleryOverlay">
+                <span class="close cursor" onclick="closeOverlay()">&times;</span>
+                <div class="overlayContent">
+
+                    <div class="slides">
                         <div class="slideNumber">Tshirt 1</div>
                         <img alt="playing chess" src="images/tshirt1.png" style="height:95vh">
-                      </div>
-            
-                      <div class="slides">
+                    </div>
+
+                    <div class="slides">
                         <div class="slideNumber">Tshirt 2</div>
                         <img alt="playing chess" src="images/tshirt2.png" style="height:95vh">
-                      </div>
-            
-                      <div class="slides">
+                    </div>
+
+                    <div class="slides">
                         <div class="slideNumber">Tshirt 3</div>
                         <img alt="playing chess" src="images/tshirt3.png" style="height:95vh">
-                      </div>
-            
-                      <div class="slides">
+                    </div>
+
+                    <div class="slides">
                         <div class="slideNumber">Coffee Mug 1</div>
                         <img alt="playing chess" src="images/mug1.png" style="height:95vh">
-                      </div>
-                      <div class="slides">
+                    </div>
+                    <div class="slides">
                         <div class="slideNumber">Coffee Mug 2</div>
                         <img alt="playing chess" src="images/mug2.png" style="height:95vh">
-                      </div>
-            
-                      <div class="slides">
+                    </div>
+
+                    <div class="slides">
                         <div class="slideNumber">Coffee Mug 3</div>
                         <img alt="playing chess" src="images/mug3.png" style="height:95vh">
-                      </div>
-            
-               
-                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            
-            
-            
                     </div>
-                  </div>
 
-        </div>        <footer>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <footer>
             <div id="footer1">
                 <p>Overview</p>
                 <a href="aboutUs.html">About Us</a><br>
@@ -263,17 +271,18 @@
                 <a href="signUp.html">SignUp</a><br>
                 <a href="products.html">Merchandise</a>
             </div>
-            
-            <div id="footer2"><p>For Members</p>
+
+            <div id="footer2">
+                <p>For Members</p>
                 <a href="notices.html">Notices</a><br>
                 <a href="leaderboard.html">Leaderboard</a><br>
                 <a href="resources.html">Resources</a><br>
                 <a href="puzzles.html">Play</a><br>
-                </div>
+            </div>
 
-                <div id="footer3">
-                    <p>Contact</p>
-                </div>
+            <div id="footer3">
+                <p>Contact</p>
+            </div>
             <div id="footer4">
                 <p>SBHS Chess Club</p>
                 <p>&#169; Oshadha Perera</p>

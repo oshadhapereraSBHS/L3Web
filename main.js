@@ -1,4 +1,3 @@
-
 function signUpPage() {
   location.href = "signup.html";
 }
@@ -9,84 +8,91 @@ var dropdown1Display = false;
 var dropdown2Display = false;
 
 
-window.onload = function() {
-  
+window.onload = function () {
+
   localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")));
   localStorage.setItem("darkMode", localStorage.getItem("darkMode"));
-  if(localStorage.getItem("darkModeCount") % 2 == 0){
+  if (localStorage.getItem("darkModeCount") % 2 == 0) {
     darkModeChanges();
   }
 
-  if(localStorage.getItem("darkMode") == "true"){
+  if (localStorage.getItem("darkMode") == "true") {
     document.getElementById("overview").style.color = "white";
     document.getElementById("forMembers").style.color = "white";
     document.getElementById("contact").style.color = "white";
   }
 
 }
-function darkModeChanges(){
-  if(localStorage.getItem("darkModeCount") % 2 == 0){
-  
+
+function darkModeChanges() {
+  if (localStorage.getItem("darkModeCount") % 2 == 0) {
+
     localStorage.setItem("darkMode", true)
-      document.getElementById("logo").src = "images/logoDark.svg"
-      document.getElementById("dark").src = "images/light.png"
-      document.getElementById("dark").title = "Switch to Light Mode"
-      document.getElementById("cart").src = "images/cartDark.png";
-document.getElementById("itemNumber").style.color = "white";
-      document.getElementById("dark").style.width = "60%";
-      document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+    document.getElementById("logo").src = "images/logoDark.svg"
+    document.getElementById("dark").src = "images/light.png"
+    document.getElementById("dark").title = "Switch to Light Mode"
+    document.getElementById("cart").src = "images/cartDark.png";
+    document.getElementById("itemNumber").style.color = "white";
+    document.getElementById("dark").style.width = "60%";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
 
-      document.getElementById("html").style.background = "none";
+    document.getElementById("html").style.background = "none";
 
-      document.body.style.color = "rgba(0, 0, 0, 0.8)"
-      document.getElementById("overview").style.color = "white";
-      document.getElementById("forMembers").style.color = "white";
-      document.getElementById("contact").style.color = "white";
-      document.getElementsByClassName("links")[0].style.color = "white"
-      document.getElementsByClassName("links")[1].style.color = "white"
-      document.getElementsByClassName("links")[2].style.color = "white"
-      document.getElementsByClassName("links")[3].style.color = "white"
-      document.getElementsByClassName("links")[4].style.color = "white"
-      document.getElementsByClassName("links")[5].style.color = "white"
-      document.getElementsByClassName("links")[6].style.color = "white"
-      document.getElementsByClassName("links")[7].style.color = "white"
-      document.getElementById("forMembers").style.color = "white"
-      if(dropdown1Display){document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 white"}
-      if(dropdown2Display){document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 white"}
-      
-      
-      document.getElementById("dropdownItems2").style.boxShadow = "2px 2px 1px 0 white"
-      document.getElementById("dropdownItems1").style.boxShadow = "2px 2px 1px 0 white"
-    } else {
-      localStorage.setItem("darkMode", false)
-    
-      location.reload();
-    
-    }
-}
-function darkModeOn(){
-localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")) + 1);
-darkModeChanges();
-
-}
-function dropdown1() {
-  dropdown2Clicks = 1;
-  dropdown1Clicks++;
-  dropdown2Display = false;
-  if(localStorage.getItem("darkMode") == true){
+    document.body.style.color = "rgba(0, 0, 0, 0.8)"
+    document.getElementById("overview").style.color = "white";
+    document.getElementById("forMembers").style.color = "white";
+    document.getElementById("contact").style.color = "white";
     document.getElementsByClassName("links")[0].style.color = "white"
     document.getElementsByClassName("links")[1].style.color = "white"
     document.getElementsByClassName("links")[2].style.color = "white"
     document.getElementsByClassName("links")[3].style.color = "white"
-    
+    document.getElementsByClassName("links")[4].style.color = "white"
+    document.getElementsByClassName("links")[5].style.color = "white"
+    document.getElementsByClassName("links")[6].style.color = "white"
+    document.getElementsByClassName("links")[7].style.color = "white"
+    document.getElementById("forMembers").style.color = "white"
+    if (dropdown1Display) {
+      document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 white"
+    }
+    if (dropdown2Display) {
+      document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 white"
+    }
+
+
+    document.getElementById("dropdownItems2").style.boxShadow = "2px 2px 1px 0 white"
+    document.getElementById("dropdownItems1").style.boxShadow = "2px 2px 1px 0 white"
+  } else {
+    localStorage.setItem("darkMode", false)
+
+    location.reload();
+
+  }
 }
+
+function darkModeOn() {
+  localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")) + 1);
+  darkModeChanges();
+
+}
+
+function dropdown1() {
+  dropdown2Clicks = 1;
+  dropdown1Clicks++;
+  dropdown2Display = false;
+  if (localStorage.getItem("darkMode") == true) {
+    document.getElementsByClassName("links")[0].style.color = "white"
+    document.getElementsByClassName("links")[1].style.color = "white"
+    document.getElementsByClassName("links")[2].style.color = "white"
+    document.getElementsByClassName("links")[3].style.color = "white"
+
+  }
   if (dropdown1Clicks % 2 === 0) {
-dropdown1Display = true;
+    dropdown1Display = true;
     document.getElementById("dropdownItems1").style.display = "grid";
-    
+
     document.getElementById("forMembers").style.boxShadow = "none";
     document.getElementById("dropdownItems2").style.display = "none";
-    if(localStorage.getItem("darkMode") == "true"){
+    if (localStorage.getItem("darkMode") == "true") {
 
       document.getElementById("forMembers").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
@@ -102,26 +108,26 @@ dropdown1Display = true;
       document.getElementsByClassName("links")[6].style.color = "white"
       document.getElementsByClassName("links")[7].style.color = "white"
 
-    }else {
+    } else {
       document.getElementById("overview").style.boxShadow = "-2px -2px 1px 0 black";
       document.getElementById("overview").style.color = "#073B4C"
       document.getElementById("forMembers").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
     }
-    
-    
+
+
   } else {
     dropdown1Display = false;
     document.getElementById("dropdownItems1").style.display = "none";
 
     document.getElementById("overview").style.boxShadow = "none"
-    if(localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null){
-      
-    document.getElementById("forMembers").style.color = "#073B4C"
-    document.getElementById("overview").style.color = "#073B4C"
-    document.getElementById("contact").style.color = "#073B4C"
+    if (localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null) {
+
+      document.getElementById("forMembers").style.color = "#073B4C"
+      document.getElementById("overview").style.color = "#073B4C"
+      document.getElementById("contact").style.color = "#073B4C"
+    }
   }
-}
 
 
 
@@ -131,30 +137,30 @@ function dropdown2() {
   dropdown1Display = false;
   dropdown1Clicks = 1;
   dropdown2Clicks++;
-  if(localStorage.getItem("darkMode") == "true"){
+  if (localStorage.getItem("darkMode") == "true") {
     document.getElementsByClassName("links")[4].style.color = "white"
     document.getElementsByClassName("links")[5].style.color = "white"
     document.getElementsByClassName("links")[6].style.color = "white"
     document.getElementsByClassName("links")[7].style.color = "white"
-}
+  }
   if (dropdown2Clicks % 2 === 0) {
 
 
-dropdown2Display = true;
+    dropdown2Display = true;
     document.getElementById("dropdownItems2").style.display = "grid";
     document.getElementById("dropdownItems1").style.display = "none";
     document.getElementById("overview").style.boxShadow = "none";
-    if(localStorage.getItem("darkMode") == "true"){
+    if (localStorage.getItem("darkMode") == "true") {
 
 
-    document.getElementById("overview").style.color = "#999"
+      document.getElementById("overview").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
       document.getElementById("forMembers").style.color = "white"
       document.getElementById("forMembers").style.boxShadow = "-2px -2px 1px 0 white"
       document.getElementById("dropdownItems2").style.boxShadow = "2px 2px 1px 0 white"
-      
+
     } else {
-      
+
       document.getElementById("overview").style.color = "#999"
       document.getElementById("contact").style.color = "#999"
       document.getElementById("forMembers").style.color = "#073B4C"
@@ -164,12 +170,12 @@ dropdown2Display = true;
     dropdown2Display = false;
     document.getElementById("dropdownItems2").style.display = "none";
     document.getElementById("forMembers").style.boxShadow = "none"
-if(localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null){
-  document.getElementById("overview").style.color = "#073B4C"
-    document.getElementById("forMembers").style.color = "#073B4C"
-    document.getElementById("contact").style.color = "#073B4C"
-    
-}
+    if (localStorage.getItem("darkMode") == "false" || localStorage.getItem("darkMode") == null) {
+      document.getElementById("overview").style.color = "#073B4C"
+      document.getElementById("forMembers").style.color = "#073B4C"
+      document.getElementById("contact").style.color = "#073B4C"
+
+    }
   }
 }
 
@@ -290,66 +296,68 @@ function hover8Stop() {
 
 
 
-  function contactSubmit(){ 
+function contactSubmit() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name = null || name == "") {
+    alert("Please enter your name");
+  } else if (email = null || email == "") {
+    alert("Please enter your email");
+  } else if (message = null || message == "") {
+    alert("Please enter your message");
+  } else {
     var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
 
-    if(name = null || name == ""){
-      alert("Please enter your name");
-    } else if (email = null || email ==""){
-      alert("Please enter your email");
-    } else if (message = null || message ==""){
-      alert("Please enter your message");
-    } else {
-      var name = document.getElementById("name").value;
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("contactReceived").style.display = "block";
+    document.getElementById("contactReceived").innerHTML = "Thank you " + name + ", we will get back to you as soon as possible.";
+  }
 
-      document.getElementById("contactForm").style.display = "none";
-      document.getElementById("contactReceived").style.display = "block";
-      document.getElementById("contactReceived").innerHTML = "Thank you " + name + ", we will get back to you as soon as possible.";
-    }
-    
-      
-    }
-    
-  
 
-    function signUpSubmit(){ 
-      var signUpName = document.getElementById("signUpName").value;
-      var signUpTutor = document.getElementById("signUpTutor").value;
-  
-      if(signUpName = null || signUpName == ""){
-        alert("Please enter your name");
-      } else if (signUpTutor = null || signUpTutor ==""){
-        alert("Please enter your tutor class");
-      } else {
-        var signUpName = document.getElementById("signUpName").value;
-  
-        document.getElementById("signUpForm").style.display = "none";
-        document.getElementById("signUpReceived").style.display = "block";
-        document.getElementById("signUpReceived").innerHTML = "Thank you for your interest in joining the chess club, " + signUpName + ". All you have to do now is turn up to chess club next Tuesday in 6P.";
-      }
-      
-        
-      }
-      
-    
-function logoChange1(){
-  if(localStorage.getItem("darkMode") == "true"){
+}
+
+
+
+function signUpSubmit() {
+  var signUpName = document.getElementById("signUpName").value;
+  var signUpTutor = document.getElementById("signUpTutor").value;
+
+  if (signUpName = null || signUpName == "") {
+    alert("Please enter your name");
+  } else if (signUpTutor = null || signUpTutor == "") {
+    alert("Please enter your tutor class");
+  } else {
+    var signUpName = document.getElementById("signUpName").value;
+
+    document.getElementById("signUpForm").style.display = "none";
+    document.getElementById("signUpReceived").style.display = "block";
+    document.getElementById("signUpReceived").innerHTML = "Thank you for your interest in joining the chess club, " + signUpName + ". All you have to do now is turn up to chess club next Tuesday in 6P.";
+  }
+
+
+}
+
+
+function logoChange1() {
+  if (localStorage.getItem("darkMode") == "true") {
     document.getElementById("logo").src = "images/logoDark1.svg";
-  } else {    document.getElementById("logo").src = "images/logo1.svg";
+  } else {
+    document.getElementById("logo").src = "images/logo1.svg";
 
   }
 
 }
 
-function logoChange2(){
-  if(localStorage.getItem("darkMode") == "true"){
+function logoChange2() {
+  if (localStorage.getItem("darkMode") == "true") {
     document.getElementById("logo").src = "images/logoDark.svg";
-  } else {    document.getElementById("logo").src = "images/logo.svg";
+  } else {
+    document.getElementById("logo").src = "images/logo.svg";
 
   }
-  
+
 }
 
 
@@ -357,21 +365,21 @@ function cartPage() {
   location.href = "cart.html";
 }
 
-function checkout(){
+function checkout() {
 
 
   var firstName = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
   var email = document.getElementById("email").value;
 
-  if(firstName = null || firstName == ""){
+  if (firstName = null || firstName == "") {
     alert("Please enter your first name");
-  } else if (lastName = null || lastName ==""){
+  } else if (lastName = null || lastName == "") {
     alert("Please enter your last email");
-  } else if (email = null || email ==""){
+  } else if (email = null || email == "") {
     alert("Please enter your email");
   } else {
-    
+
     document.getElementById("form4").innerHTML = "Thank you for shopping with us.";
     document.getElementById("form5").style.display = "none";
     localStorage.setItem("quantity1", 0);
@@ -385,4 +393,5 @@ function checkout(){
 
 
 
-}}
+  }
+}

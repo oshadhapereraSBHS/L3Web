@@ -21,7 +21,8 @@
 
 
         <div class="logoDiv">
-            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo" width="20%" class="logo" onclick="home()">
+            <img id="logo" onmouseout="logoChange2()" onmouseover="logoChange1()" src="images/logo.svg" alt="logo"
+                width="20%" class="logo" onclick="home()">
         </div>
 
         <div class="navbarDiv">
@@ -39,11 +40,11 @@
                 <div class="dropdownGroup3">
                     <a href="contact.html" id="contact">Contact</a>
                 </div>
-                
+
                 <div id="cartDiv">
                     <img id="cart" src="images/cart.png" width="60%" onclick="cartPage()" alt="cart">
                 </div>
-                
+
                 <div id="itemNumberDiv">
                     <a href="cart.html" id="itemNumber"></a>
                 </div>
@@ -73,11 +74,11 @@
         <div class="contactDiv" id="contactDiv">
             <div id="contactHeadingDiv">
                 <h1>Play</h1>
-                
-                
+
+
             </div>
 
-       
+
             <div id="contactCol1">
                 <h3>Daily puzzle from Chess.com</h3>
                 <iframe width="70%" src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
@@ -86,13 +87,12 @@
             </div>
             <div id="puzzleCol2">
                 <form id="quizGrid">
-<div class="wholeColumn">
-    <h3>To play online, you can join our lichess team on <a href="https://lichess.org/team/sbhs-chess-club">https://lichess.org/team/sbhs-chess-club</a></h3><br><br>
-    <h3 id="welcome">Quiz</h3>
+                    <div class="wholeColumn">
+                        <h3 id="welcome">Quiz</h3>
 
-        <p id="questions"></p>
-</div>
-                
+                        <p id="questions"></p>
+                    </div>
+
                     <input name="quizOptions" id="choose1" type="radio">
                     <label class="answers" for="choose1" id="option1"></label>
                     <input name="quizOptions" id="choose2" type="radio">
@@ -101,16 +101,21 @@
                     <label class="answers" for="choose3" id="option3"></label>
                     <input name="quizOptions" id="choose4" type="radio">
                     <label class="answers" for="choose4" id="option4"></label>
-<div class="wholeColumn" id="resultDiv">
-    <p id="result"></p>
-    <p id="result2"></p>
-    </div>
-    <div class="wholeColumn">
-    <button id="nextQuestion" onclick="next()" type="button">Next</button>
-    <button id="checkAnswer" onclick="check()" type="button">Submit</button>
-    <button id="restart" type="submit">Restart</button>
-</div>
-                    
+                    <div class="wholeColumn" id="resultDiv">
+                        <p id="result"></p>
+                        <p id="result2"></p>
+                    </div>
+                    <div class="wholeColumn">
+                        <button id="nextQuestion" onclick="next()" type="button">Next</button>
+                        <button id="checkAnswer" onclick="check()" type="button">Submit</button>
+                        <button id="restart" type="submit">Restart</button>
+                        <br><br>
+                        <h3>To play online, you can join our lichess team on <a
+                                href="https://lichess.org/team/sbhs-chess-club">https://lichess.org/team/sbhs-chess-club</a>
+                        </h3><br><br>
+
+                    </div>
+
                 </form>
 
             </div>
@@ -123,17 +128,18 @@
                 <a href="signUp.html">SignUp</a><br>
                 <a href="products.html">Merchandise</a>
             </div>
-            
-            <div id="footer2"><p>For Members</p>
+
+            <div id="footer2">
+                <p>For Members</p>
                 <a href="notices.html">Notices</a><br>
                 <a href="leaderboard.html">Leaderboard</a><br>
                 <a href="resources.html">Resources</a><br>
                 <a href="puzzles.html">Play</a><br>
-                </div>
+            </div>
 
-                <div id="footer3">
-                    <p>Contact</p>
-                </div>
+            <div id="footer3">
+                <p>Contact</p>
+            </div>
             <div id="footer4">
                 <p>SBHS Chess Club</p>
                 <p>&#169; Oshadha Perera</p>

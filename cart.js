@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
     //don't show items that weren't added to cart (if quantity is 0 or null)
     if (localStorage.getItem("quantity1") == 0 || localStorage.getItem("quantity1") == null) {
@@ -241,8 +239,8 @@ function updateItemNumber() {
 setInterval(updateItems, 200);
 
 function updateItems() {
-        //calculate total items in cart
-        var totalItems = (localStorage.getItem("quantity1") * 1 +
+    //calculate total items in cart
+    var totalItems = (localStorage.getItem("quantity1") * 1 +
         localStorage.getItem("quantity2") * 1 +
         localStorage.getItem("quantity3") * 1 +
         localStorage.getItem("quantity4") * 1 +
@@ -260,26 +258,26 @@ function updateItems() {
         //if there are items in cart, show checkout button and hide 'cart is empty' message
         document.getElementById("checkoutButton").style.display = "block";
 
-    
-    //show total for each item by multiplying quantity with price for each item
-    document.getElementById("total1").innerHTML = '$' + localStorage.getItem("quantity1") * 19;
-    document.getElementById("total2").innerHTML = '$' + localStorage.getItem("quantity2") * 19;
-    document.getElementById("total3").innerHTML = '$' + localStorage.getItem("quantity3") * 19;
-    document.getElementById("total4").innerHTML = '$' + localStorage.getItem("quantity4") * 4;
-    document.getElementById("total5").innerHTML = '$' + localStorage.getItem("quantity5") * 4;
-    document.getElementById("total6").innerHTML = '$' + localStorage.getItem("quantity6") * 4;
 
-    //calculate total price by adding all individual prices
-    var totalPrice = (localStorage.getItem("quantity1") * 19 +
-        localStorage.getItem("quantity2") * 19 +
-        localStorage.getItem("quantity3") * 19 +
-        localStorage.getItem("quantity4") * 4 +
-        localStorage.getItem("quantity5") * 4 +
-        localStorage.getItem("quantity6") * 4)
+        //show total for each item by multiplying quantity with price for each item
+        document.getElementById("total1").innerHTML = '$' + localStorage.getItem("quantity1") * 19;
+        document.getElementById("total2").innerHTML = '$' + localStorage.getItem("quantity2") * 19;
+        document.getElementById("total3").innerHTML = '$' + localStorage.getItem("quantity3") * 19;
+        document.getElementById("total4").innerHTML = '$' + localStorage.getItem("quantity4") * 4;
+        document.getElementById("total5").innerHTML = '$' + localStorage.getItem("quantity5") * 4;
+        document.getElementById("total6").innerHTML = '$' + localStorage.getItem("quantity6") * 4;
+
+        //calculate total price by adding all individual prices
+        var totalPrice = (localStorage.getItem("quantity1") * 19 +
+            localStorage.getItem("quantity2") * 19 +
+            localStorage.getItem("quantity3") * 19 +
+            localStorage.getItem("quantity4") * 4 +
+            localStorage.getItem("quantity5") * 4 +
+            localStorage.getItem("quantity6") * 4)
 
 
-    //show total price
-    document.getElementById("totalPrice").innerHTML = '$' + totalPrice;
+        //show total price
+        document.getElementById("totalPrice").innerHTML = '$' + totalPrice;
     }
 
 }

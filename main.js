@@ -173,11 +173,15 @@ function quizStart() {
   document.getElementById("option4").innerHTML = options[0][3];
 }
 window.onload = function () {
+
   //save how many times the dark mode icon was clicked
   localStorage.setItem("darkModeCount", Number(localStorage.getItem("darkModeCount")));
+  if(localStorage.getItem("darkModeCount") == 0){
+    localStorage.setItem("darkModeCount", 1);
+  }
   localStorage.setItem("darkMode", localStorage.getItem("darkMode"));
   //if dark mode is pressed once, or in multiples of two after that, change to dark mode
-  if (localStorage.getItem("darkModeCount") % 2 == 0) {
+  if (localStorage.getItem("darkModeCount") % 2 == 0 || localStorage.getItem("darkModeCount") == null) {
     darkModeChanges();
   }
 

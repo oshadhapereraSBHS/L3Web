@@ -1379,3 +1379,8 @@ iframe {
 #signUpForm label {
     font-weight: bold;
 }
+
+#contactLink {
+    text-decoration: none;
+ 
+}
